@@ -1,5 +1,8 @@
 DRAFT — for owner approval
 
+> Superseded 2026-10-21 (wave 2): answer in the single form `owner-inputs-wave2.md` (same questions plus dry-run
+> details, grouped by due date, with the tasks each answer unblocks).
+
 # Operations: questions for the owner (answers unblock OPS tasks)
 
 OPS-01, agent `aw-operations`, 2026-10-21. Ordered by due date. Each answer is short; reply inline. Numbers match

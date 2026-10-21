@@ -32,7 +32,7 @@ campaigns and A2. Watch it weekly in the CX summary.
 | 4 | Sender name "Kristine from Autumn & Wool", sending domain/email verified | MailerLite domain settings | TODO owner |
 | 5 | Footer: legal name AUTUMN AND WOOL, SIA, postal address, unsubscribe link | copy the address from the site footer (already live per `implementation-report.md`) | [VERIFY] |
 | 6 | Reply promise matches the site (ruling C2: 1-2 business days) | read the Contact page | Contact page still says 24 h (CRO) |
-| 7 | UTM names match GRO's `business-os/growth/utm-links.csv` | compare | [VERIFY]; GRO approves the taxonomy by 31 Oct |
+| 7 | UTM names match GRO's `business-os/growth/utm-links.csv` | compare | Drafts aligned 21 Oct to `utm-taxonomy.md` v1 (`<flow>-<yyyy-mm>` + `w/p/b<n>-<position>`); owner approves the taxonomy by 31 Oct (C15); Growth adds the CX rows |
 | 8 | Products in W4 / campaigns are on this week's GREEN list | PRD `capacity-YYYY-Www.md` | none GREEN yet (costs unknown) |
 | 9 | Test send to the owner's inbox, links clicked, mobile view checked | owner | TODO |
 

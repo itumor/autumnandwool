@@ -1,4 +1,5 @@
 Decision needed: 7 growth asks, 5 due by 31 Oct. Draft, not sent. Owner reads in WBR.
+SUPERSEDED 2026-10-21 (wave 2): answer in `owner-inputs-wave2.md` (one fill-in form, 13 rows). Kept as history.
 
 # Growth asks for owner   Status: DRAFT   2026-10-21
 

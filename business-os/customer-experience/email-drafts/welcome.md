@@ -4,8 +4,12 @@ DRAFT — for owner approval. Not uploaded, not scheduled, not sent. The origina
 # A1 Welcome flow: 4 emails (CX-12, CX-13, CX-14)
 
 Segment: group "Newsletter". Exit: buys (owner removes), unsubscribes. All links carry
-`?utm_source=mailerlite&utm_medium=email&utm_campaign=welcome-<n>` [VERIFY against GRO `utm-links.csv`, ruling
-C15]. Footer on every email: AUTUMN AND WOOL, SIA, [VERIFY: postal address from the site footer],
+`?utm_source=mailerlite&utm_medium=email&utm_campaign=welcome-2026-11&utm_content=w<n>-<link-position>`, aligned
+on 21 Oct (wave 2) with Growth's `business-os/growth/utm-taxonomy.md` s3 (email row: campaign
+`<flow>-<yyyy-mm>`, position in `utm_content`) and the two `email-welcome-*` rows in `utm-links.csv`. CX adds the
+`w<n>-` prefix so each step can be read separately; the new content values are proposed to Growth for
+`utm-links.csv` (Growth owns that file). If activation slips past November, the owner changes `2026-11` to the
+activation month in every link. Footer on every email: AUTUMN AND WOOL, SIA, [VERIFY: postal address from the site footer],
 unsubscribe link, "You are receiving this because you signed up at autumnandwool.com [or: at <market>]".
 
 ---
@@ -28,13 +32,13 @@ Body:
 > few pieces I would start with. After that, about two letters a month.
 >
 > If you are unsure about size, the size guide shows how to compare your measurements with each garment:
-> [Size guide](https://www.autumnandwool.com/size-guide?utm_source=mailerlite&utm_medium=email&utm_campaign=welcome-1)
+> [Size guide](https://www.autumnandwool.com/size-guide?utm_source=mailerlite&utm_medium=email&utm_campaign=welcome-2026-11&utm_content=w1-size-guide-link)
 >
 > And if you have any question at all, just reply to this email. I usually reply within 1-2 business days.
 >
 > Kristine, Autumn & Wool
 
-CTA button: "See the collection" -> https://www.autumnandwool.com/shop?utm_source=mailerlite&utm_medium=email&utm_campaign=welcome-1
+CTA button: "See the collection" -> https://www.autumnandwool.com/shop?utm_source=mailerlite&utm_medium=email&utm_campaign=welcome-2026-11&utm_content=w1-shop-link
 Facts used: Riga studio, Kristine (brand voice s3; README s2); reply time (live FAQ, ruling C2); `/shop` and
 `/size-guide` URLs (existing draft).
 [OWNER DECISION]: reply promise (decision 26). [VERIFY]: does the first-name merge field exist on the signup form?
@@ -68,7 +72,7 @@ Body (story, about 180 words; the owner replaces the brackets with her own words
 >
 > Kristine
 
-CTA button: "Read our story" -> https://www.autumnandwool.com/about?utm_source=mailerlite&utm_medium=email&utm_campaign=welcome-2 [VERIFY: the About page URL slug]
+CTA button: "Read our story" -> https://www.autumnandwool.com/about?utm_source=mailerlite&utm_medium=email&utm_campaign=welcome-2026-11&utm_content=w2-story-button [VERIFY: the About page URL slug]
 Facts used: manual machines + hand finishing (brand voice s2-3); "sewn, finished, washed and pressed" (live FAQ);
 Etsy line (ruling C1); handle (brand voice s5).
 Not used on purpose: "handmade", "hand-knitted", "sustainable".
@@ -99,7 +103,7 @@ Body (about 170 words):
 >
 > Kristine
 
-CTA button: "Open the size guide" -> https://www.autumnandwool.com/size-guide?utm_source=mailerlite&utm_medium=email&utm_campaign=welcome-3
+CTA button: "Open the size guide" -> https://www.autumnandwool.com/size-guide?utm_source=mailerlite&utm_medium=email&utm_campaign=welcome-2026-11&utm_content=w3-size-guide-button
 Facts used: measuring method and flat x 2 (live `/size-guide`); ease bands are labelled as a guide (CX skill s3);
 care (live `/faq`).
 [VERIFY]: the owner agrees to publish the ease bands (they also appear in `faq-proposals.md`).
@@ -128,7 +132,22 @@ Body (about 150 words; only SKUs on that week's GREEN list, re-checked the day t
 >
 > Kristine
 
-CTA button: "See all knitwear" -> https://www.autumnandwool.com/shop?utm_source=mailerlite&utm_medium=email&utm_campaign=welcome-4
+CTA button: "See all knitwear" -> https://www.autumnandwool.com/shop?utm_source=mailerlite&utm_medium=email&utm_campaign=welcome-2026-11&utm_content=w4-shop-button
+Product links: `utm_content=w4-<sku-slug>` (e.g. `w4-hat-scarf-set`).
 Facts used: dispatch and free shipping (live `/faq`).
 BLOCKED: no SKU is GREEN yet (PRD: every SKU is AMBER, "cost unknown", until G1/G2, the first real GREEN after
 4 Nov). Real photo per colour needed (CRE). No discount code.
+
+Wave 2 (21 Oct): provisional candidates, NOT approved for use. Taken from GM's
+`business-os/head-of-ecommerce/priority-5-sku-proposal-2026-10-21.md` (owner decides 24 Oct, re-confirms 4 Nov).
+Each one goes into W4 only if it is on the GREEN list the week the flow goes live.
+
+| Slot | Candidate | Why it fits W4 | Must be true before use |
+|---|---|---|---|
+| 1 | Merino Wool Raglan Cardigan | GM hero piece; full cm measurements on the PDP | GREEN; promote only colours with a real photo (Blue has none); fibre wording copied from the live PDP; one size or several [VERIFY owner] |
+| 2 | Women's Classic Lambswool Crew Sweater | everyday core sweater, 4 sizes | GREEN; garment measurements on the PDP (CRO size-fit standard s2 shows none); fibre wording from the live PDP |
+| 3 | Merino Wool Hat & Scarf Set (Black) | one-size gift option (head 54-58 cm, scarf 190 x 36 cm per CRO s2) | GREEN; Black only until Brown/Gray photos exist; no "RWS / mulesing-free" wording (brand voice s3) |
+| alt | Rib-Knit Beanie | gift entry price | GREEN; colour photos; stock confirmed (decision 4); add-to-cart colour bug fixed |
+
+Not proposed for W4: the Dusty Pink raglan, because its title says "Hand-Knitted" (claim gate, decision 16) and
+it has only 6 units.

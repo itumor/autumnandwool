@@ -30,9 +30,34 @@ can cost the sale).
 
 | Product (visible) | Sizes | Flat width cm | Length cm | Sleeve cm | Fit type | Source |
 |---|---|---|---|---|---|---|
-| [VERIFY: one row per visible garment, copied from the live PDP; owner confirms] | | | | | | |
+Wave 2 (21 Oct): pre-filled from CRO's gap matrix (`business-os/ecommerce-cro/2026-10-21-size-fit-standard.md`
+s2). "live" = CRO read the live PDP on 21 Oct; "feed" = feed-script text only, not checked live. **None is
+owner-confirmed.** Do not quote a "feed" number to a customer without opening the live PDP first.
 
-Until this table is filled, every size reply reads that product's live page on the day and quotes it exactly.
+| Product (visible) | Sizes | Flat width cm | Length cm | Sleeve cm | Fit type | Source |
+|---|---|---|---|---|---|---|
+| Oversized Merino V-Neck Sweater Vest | one size | 59 | 68 | n/a (armhole 30) | Oversized, relaxed | live |
+| Merino Wool Raglan Cardigan | one size [VERIFY owner] | 61 | 67 (front) | 82 / 49 [VERIFY which method] | Relaxed, slightly oversized | live |
+| Oversized Wool V-Neck Vest, Beige Melange | one size | 57 | 69 | n/a | [VERIFY] | feed |
+| Oversized Wool Raglan Sweater, Beige Melange | one size | 59 | 60 front / 69 back | [VERIFY] | Oversized | feed |
+| Distressed Wool Raglan Sweater | one size | 57 | 66 front / 71 back | [VERIFY] | Oversized | feed |
+| Merino Striped Oversized Sweater | one size | 59 | 67 (front) | 74 [VERIFY method] | Oversized | feed |
+| Open-Front Wool Cardigan, Side-Slit Knit | one size | 56 | 70 | [VERIFY] | [VERIFY owner] | feed |
+| Oversized Merino Turtleneck, Dusty Pink Raglan | one size | 53 | 63 front / 70 back | [VERIFY] | Oversized | feed |
+| Merino Wool Raglan Sweater, Dusty Pink | S/M, L/XL | [copy per size from live PDP] | [live] | [live] | Oversized | live (per size; not copied by CRO) |
+| Rib-Knit Beanie | one size | head 54-58 | height [VERIFY] | n/a | n/a | CRO s2 |
+| Merino Wool Hat & Scarf Set | one size | head 54-58; scarf 190 x 36 | n/a | n/a | n/a | CRO s2 |
+| Pure Wool Side-Slit Sweater, Camel + Light Grey | S-XL | [VERIFY: owner measures; size guide example S = 50] | [VERIFY] | [VERIFY] | Relaxed | none on file |
+| Lambswool Raglan Crew (Brown, Green) + Classic Lambswool Crew | S-XL | [VERIFY: owner measures] | [VERIFY] | [VERIFY] | Relaxed | none on file |
+| 100% Wool Long Shawl Cardigan; Long Wool Cardigan, Shawl Collar | S-XL | [VERIFY: owner measures] | [VERIFY] | [VERIFY] | Straight, relaxed | none on file (model 171 cm wears M, live) |
+| Merino Turtleneck, Lightweight Knit | XS, S, M | [VERIFY: owner measures] | [VERIFY] | [VERIFY] | Close to the body | none on file |
+| Pure Wool Stand-Collar Sweater, Beige + Blue | S-XL | [VERIFY: owner measures] | [VERIFY] | [VERIFY] | Relaxed | none on file |
+
+Gap: 10 sized garments have no garment measurements on file (CRO count). Measuring-method conflict to settle:
+the live `/size-guide` says sleeve = armpit to cuff; CRO's proposed standard says sleeve from neck. The owner picks
+one (question in `owner-inputs-wave2.md`), then CX advice and CRO's PDP block use the same method.
+
+Until this table is owner-confirmed, every size reply reads that product's live page on the day and quotes it exactly.
 
 ## Method (one recommendation, one reason, one alternative)
 

@@ -1,4 +1,4 @@
-# business-os/finance — Finance drafts (aw-finance), wave 1, 2026-10-21
+# business-os/finance — Finance drafts (aw-finance), waves 1-2, 2026-10-21
 
 All files are DRAFTS for owner approval. Nothing sent, paid, booked or written to shared CSVs.
 Not accounting, tax or investment advice; the accountant has the final word.
@@ -17,5 +17,12 @@ Not accounting, tax or investment advice; the accountant has the final word.
 | FIN-20 | `accountant-questions-2026-10-21.md` |
 | FIN-21 | `accountant-pack-2026-10.md` |
 | FIN-22 | `monthly-finance-review-template.md` |
+| Wave 2: all owner asks, one form | `owner-inputs-wave2.md` |
+| Wave 2: FIN-03, FIN-17, FIN-18, FIN-19 worksheets (blocked) | `blocked-task-worksheets-wave2.md` |
+| Wave 2: FIN-11 prepared | `kpi-baseline-2026-10-19.md` |
+| Wave 2: FIN-23 prepared | `monthly-finance-2026-10.md` |
+| Wave 2: FIN-24 prepared | `accountant-pack-2026-11.md` |
+| Wave 2: FIN-25 prepared | `year-end-pack-2026.md` |
+| Wave 2: FIN-26..29 prepared | `plan-2027-quarters-draft.md` |
 
 Status: `plans/2026-2027/status/finance.md`.

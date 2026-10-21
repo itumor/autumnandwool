@@ -1,55 +1,47 @@
-# E-commerce & CRO — status 2026-10-21
+# E-commerce & CRO — status 2026-10-21 (wave 2)
 Summary: 16 done · 10 blocked · 8 todo
 
 | ID | Task | Due | Status | Output / blocker |
 |---|---|---|---|---|
 | CRO-01 | Feed QA report incl. availability vs stock check, image-mismatch count, fix list | 2026-10-23 | DONE | [feed QA](../../../business-os/ecommerce-cro/2026-10-21-feed-qa.md), [fix list CSV](../../../business-os/ecommerce-cro/2026-10-21-feed-fix-list.csv). 46 mismatch rows (not 48), 1 blank colour, beanie title ≠ H1; full proposal TSV waits for CRO-23 |
-| CRO-02 | Read Merchant Center diagnostics (approved > 0 checkpoint) | 2026-10-23 (approved > 0 by 28 Oct) | BLOCKED | Owner: MC Products → Diagnostics screenshot (no login for agents) |
-| CRO-03 | PayPal connected | 2026-10-31 | BLOCKED | Owner: PayPal credentials, Settings → Payments → Connect (decision 14) |
-| CRO-04 | Provisional 5 priority PDPs proposed to GM (readiness-based) | 2026-10-24 | DONE | [PDP audits s0](../../../business-os/ecommerce-cro/2026-10-21-pdp-audits.md): raglan cardigan, beanie, hat & scarf set, long shawl-collar cardigan, dusty pink raglan. GM/owner confirm 24 Oct, re-confirm 4 Nov |
+| CRO-02 | Read Merchant Center diagnostics (approved > 0 checkpoint) | 2026-10-23 (approved > 0 by 28 Oct) | BLOCKED | Owner: MC Diagnostics screenshot, [owner form](../../../business-os/ecommerce-cro/owner-inputs-wave2.md) item 1 |
+| CRO-03 | PayPal connected | 2026-10-31 | BLOCKED | Owner: connect PayPal (decision 14), [owner form](../../../business-os/ecommerce-cro/owner-inputs-wave2.md) item 2 |
+| CRO-04 | Provisional 5 priority PDPs proposed to GM (readiness-based) | 2026-10-24 | DONE | [PDP audits s0](../../../business-os/ecommerce-cro/2026-10-21-pdp-audits.md); wave 2 aligned with GM's 5 (lambswool crew replaces long shawl cardigan): [wave-2 updates s1](../../../business-os/ecommerce-cro/2026-10-21-wave2-updates.md). Owner confirms 24 Oct, re-confirm 4 Nov |
 | CRO-05 | KPI baseline input for week 2026-10-19 (conversion, AOV, notes text) | 2026-10-24 | DONE | [weekly baseline s3](../../../business-os/ecommerce-cro/2026-10-21-weekly-baseline.md); kpi-weekly.csv not edited (ruling C16) |
-| CRO-06 | One shared PDP delivery line + made-to-order variant | 2026-10-28 | DONE | [copy proposals s0](../../../business-os/ecommerce-cro/2026-10-21-pdp-copy-proposals.md); OPS must reconcile with MC 4–10 day service (C8) |
+| CRO-06 | One shared PDP delivery line + made-to-order variant | 2026-10-28 | DONE | v2 reconciled with OPS-12 single source (working days, Latvia row): [wave-2 updates s2](../../../business-os/ecommerce-cro/2026-10-21-wave2-updates.md); v1 superseded. Owner approves (form item 14); MTO days from owner (item 8) |
 | CRO-07 | Priority PDP 1–2 audits (cardigan, beanie) | 2026-10-31 | DONE | [PDP audits](../../../business-os/ecommerce-cro/2026-10-21-pdp-audits.md) |
 | CRO-08 | Priority PDP 1–2 copy diffs | 2026-10-31 | DONE | [copy proposals](../../../business-os/ecommerce-cro/2026-10-21-pdp-copy-proposals.md), [CSV](../../../business-os/ecommerce-cro/2026-10-21-pdp-copy-proposals.csv) |
-| CRO-09 | Priority PDP 3–5 audits + copy diffs | 2026-11-07 | DONE | Same two files (provisional set; redo per-SKU copy if GM picks other SKUs) |
+| CRO-09 | Priority PDP 3–5 audits + copy diffs | 2026-11-07 | DONE | Wave 1 files + GM priority 3 (Lambswool Crew) added in wave 2: [audit + copy s4](../../../business-os/ecommerce-cro/2026-10-21-wave2-updates.md), [CSV](../../../business-os/ecommerce-cro/2026-10-21-wave2-pdp-copy-lambswool-crew.csv). Crew PDP already has cm table per size (GM [VERIFY CRO] answered) |
 | CRO-10 | Size/fit + cm measurement format, one block for all PDPs, gap matrix | 2026-11-07 | DONE | [size-fit standard](../../../business-os/ecommerce-cro/2026-10-21-size-fit-standard.md): 10 sized garments lack measurements, 4 lack fibre % |
-| CRO-11 | Scoped unfreeze request for the 5 priority PDPs | 2026-10-31 | DONE | [copy proposals s6](../../../business-os/ecommerce-cro/2026-10-21-pdp-copy-proposals.md); owner decides (decision 19) |
+| CRO-11 | Scoped unfreeze request for the 5 priority PDPs | 2026-10-31 | DONE | [copy proposals s6](../../../business-os/ecommerce-cro/2026-10-21-pdp-copy-proposals.md); owner decides (decision 19, form item 10) |
 | CRO-12 | November real test-order + refund checklist (desktop + phone, card + PayPal) | 2026-11-07 | DONE | [checklist](../../../business-os/ecommerce-cro/2026-10-21-test-order-checklist-november.md) |
-| CRO-13 | November test-order run + refunds | 2026-11-07 | BLOCKED | Owner runs it (agents never order); PayPal runs need CRO-03 |
+| CRO-13 | November test-order run + refunds | 2026-11-07 | BLOCKED | Owner runs it (agents never order); PayPal runs need CRO-03. [Owner form](../../../business-os/ecommerce-cro/owner-inputs-wave2.md) items 2, 3 |
 | CRO-14 | Cart / checkout / mobile audit from repo evidence | 2026-10-21 | DONE | [checkout-mobile audit](../../../business-os/ecommerce-cro/2026-10-21-checkout-mobile-audit.md) |
-| CRO-15 | Site-wide buying-copy conflicts (returns wording, reply time, made-to-order, "hand-knitted"/"handmade", FAQ payments) | 2026-10-31 | DONE | [checkout-mobile audit C2–C6](../../../business-os/ecommerce-cro/2026-10-21-checkout-mobile-audit.md); final returns wording waits for adviser (G9) |
+| CRO-15 | Site-wide buying-copy conflicts (returns wording, reply time, made-to-order, "hand-knitted"/"handmade", FAQ payments) | 2026-10-31 | DONE | [checkout-mobile audit C2–C6](../../../business-os/ecommerce-cro/2026-10-21-checkout-mobile-audit.md); live re-check 21 Oct: Contact text now 1–2 business days, FAQ MTO-time contradiction, US/CA/AU unit missing ([wave-2 updates s3](../../../business-os/ecommerce-cro/2026-10-21-wave2-updates.md)); final returns wording waits for adviser (G9) |
 | CRO-16 | CSS proposals keeping overlay fix | 2026-10-31 | DONE | [CSS + native proposals](../../../business-os/ecommerce-cro/2026-10-21-css-native-proposals.md); selectors marked [VERIFY] |
 | CRO-17 | Cart reassurance line, Shop H1, "No results found" fix proposals | 2026-11-21 | DONE | [CSS + native proposals P4, P5, N2](../../../business-os/ecommerce-cro/2026-10-21-css-native-proposals.md) |
 | CRO-18 | Plan-upgrade input (what CRO gains; when worth it) | 2026-11-04 | DONE | [checkout-mobile audit s4](../../../business-os/ecommerce-cro/2026-10-21-checkout-mobile-audit.md); price TODO owner |
-| CRO-19 | Weekly note #0 (baseline) + experiment log (EXP-01, EXP-02) | 2026-10-24 | DONE | [weekly baseline](../../../business-os/ecommerce-cro/2026-10-21-weekly-baseline.md) |
-| CRO-20 | Weekly site-improvement notes every Friday (24 Oct – 26 Dec) | 2026-10-24 first | TODO | Needs that week's sessions/orders; first note Fri 24 Oct |
-| CRO-21 | Weekly 390px smoke + ATC-without-colour retest | weekly from 2026-10-24 | BLOCKED | Owner phone screenshots (WebFetch cannot see JS/overlays); text-level pass done in CRO-14 |
-| CRO-22 | Monthly check that overlay CSS is still in Custom CSS | 2026-10-31 | BLOCKED | Owner screenshot of Custom CSS panel (checklist step A1) |
-| CRO-23 | Variant photos bound → feed proposal TSV + QA + re-upload checklist | 2026-11-14 | BLOCKED | Owner/Creative: per-colour photos (turtleneck 31 Oct, rest 14 Nov, C7) + confirmed stock (decision 4). Re-upload checklist ready in feed QA |
-| CRO-24 | Trim decision for 46 at-risk feed rows if no photos | 2026-11-14 | BLOCKED | Owner decision 29; trim list ready in fix list CSV |
-| CRO-25 | Christmas last-order-date banner per country | 2026-11-14 (publish 20 Nov) | BLOCKED | OPS carrier-backed cut-offs (14 Nov) + owner approval; template in CSS + native proposals |
-| CRO-26 | Gift options (wrap, note, gift-receipt wording) | 2026-11-14 | BLOCKED | FIN cost check (sku-economics blank) + owner decision 31 |
-| CRO-27 | Apply all approved PDP changes | 2026-12-05 | BLOCKED | Owner approval + scoped unfreeze (decision 19); PRD/owner facts: lead times, measurements, fibre %, claims evidence (G8) |
-| CRO-28 | Site-change freeze from 12 Dec + defect-watch 12–24 Dec | 2026-12-12 | TODO | Future |
-| CRO-29 | December test order (phone, card) + refund | 2026-12-15 | TODO | Future; reuse CRO-12 checklist R2 |
-| CRO-30 | Q4 retrospective with before/after table | 2026-12-31 | TODO | Future |
-| CRO-31 | Q1 2027: plan-upgrade decision applied, 22 PDPs on one template, category pages with SEO, colour-twin copy, native contact form, adviser returns wording | 2027-03-31 | TODO | Future |
-| CRO-32 | Q2 2027: first conversion read, funnel events if upgraded, bundles/threshold after unit economics, spring PDPs, monthly feed refresh | 2027-06-30 | TODO | Future |
-| CRO-33 | Q3 2027: on-site reviews, Shop page restructure, A/B only at ~1,000 sessions/week, LV/DE feasibility, gift landing page | 2027-09-30 | TODO | Future |
-| CRO-34 | Q4 2027: freeze from mid-Nov, gift flow reused, monthly test orders, retrospective, 2028 input | 2027-12-31 | TODO | Future |
+| CRO-19 | Weekly note #0 (baseline) + experiment log (EXP-01, EXP-02) | 2026-10-24 | DONE | [weekly baseline](../../../business-os/ecommerce-cro/2026-10-21-weekly-baseline.md); EXP-03 (crew sweater) in [wave-2 updates s4](../../../business-os/ecommerce-cro/2026-10-21-wave2-updates.md) |
+| CRO-20 | Weekly site-improvement notes every Friday (24 Oct – 26 Dec) | 2026-10-24 first | TODO | Prepared: [prepared drafts s1](../../../business-os/ecommerce-cro/2026-10-21-wave2-prepared-drafts.md) (note #1 skeleton); finish on 2026-10-24 with owner numbers (form item 6) |
+| CRO-21 | Weekly 390px smoke + ATC-without-colour retest | weekly from 2026-10-24 | BLOCKED | Owner phone screenshots, [owner form](../../../business-os/ecommerce-cro/owner-inputs-wave2.md) item 5; text-level pass done in CRO-14 |
+| CRO-22 | Monthly check that overlay CSS is still in Custom CSS | 2026-10-31 | BLOCKED | URGENT: public `/site.css` scan 21 Oct did not find the two overlay rules (inconclusive, [wave-2 updates s3b](../../../business-os/ecommerce-cro/2026-10-21-wave2-updates.md)). Owner screenshot, form item 4 (due 24 Oct) |
+| CRO-23 | Variant photos bound → feed proposal TSV + QA + re-upload checklist | 2026-11-14 | BLOCKED | Owner/Creative per-colour photos + confirmed stock, [owner form](../../../business-os/ecommerce-cro/owner-inputs-wave2.md) items 8, 11a, 11b. Re-upload checklist ready in feed QA |
+| CRO-24 | Trim decision for 46 at-risk feed rows if no photos | 2026-11-14 | BLOCKED | Owner decision 29, form items 11a/11b; trim list ready in fix list CSV |
+| CRO-25 | Christmas last-order-date banner per country | 2026-11-14 (publish 20 Nov) | BLOCKED | OPS-08 is provisional only; carrier-backed OPS-09 due 14 Nov + owner approval (form item 15). Copy ready, UK removed per OPS-12: [prepared drafts s2](../../../business-os/ecommerce-cro/2026-10-21-wave2-prepared-drafts.md) |
+| CRO-26 | Gift options (wrap, note, gift-receipt wording) | 2026-11-14 | BLOCKED | FIN-19 margin check (blocked on costs) + owner decision 31 (form item 16). Options G1–G4 drafted: [prepared drafts s3](../../../business-os/ecommerce-cro/2026-10-21-wave2-prepared-drafts.md) |
+| CRO-27 | Apply all approved PDP changes | 2026-12-05 | BLOCKED | Owner approval + scoped unfreeze + facts + claims evidence, [owner form](../../../business-os/ecommerce-cro/owner-inputs-wave2.md) items 7–10, 12–14, 17–19 |
+| CRO-28 | Site-change freeze from 12 Dec + defect-watch 12–24 Dec | 2026-12-12 | TODO | Prepared: [prepared drafts s4](../../../business-os/ecommerce-cro/2026-10-21-wave2-prepared-drafts.md); finish on 2026-12-12 |
+| CRO-29 | December test order (phone, card) + refund | 2026-12-15 | TODO | Prepared: [prepared drafts s5](../../../business-os/ecommerce-cro/2026-10-21-wave2-prepared-drafts.md) (R2 + December checks); owner runs by 2026-12-15 |
+| CRO-30 | Q4 retrospective with before/after table | 2026-12-31 | TODO | Prepared: [prepared drafts s6](../../../business-os/ecommerce-cro/2026-10-21-wave2-prepared-drafts.md) (baselines filled); finish on 2026-12-31 |
+| CRO-31 | Q1 2027: plan-upgrade decision applied, 22 PDPs on one template, category pages with SEO, colour-twin copy, native contact form, adviser returns wording | 2027-03-31 | TODO | Prepared: gates + reusable parts in [prepared drafts s7](../../../business-os/ecommerce-cro/2026-10-21-wave2-prepared-drafts.md); start Jan 2027 |
+| CRO-32 | Q2 2027: first conversion read, funnel events if upgraded, bundles/threshold after unit economics, spring PDPs, monthly feed refresh | 2027-06-30 | TODO | Prepared: gates in prepared drafts s7; start Apr 2027 |
+| CRO-33 | Q3 2027: on-site reviews, Shop page restructure, A/B only at ~1,000 sessions/week, LV/DE feasibility, gift landing page | 2027-09-30 | TODO | Prepared: gates in prepared drafts s7; start Jul 2027 |
+| CRO-34 | Q4 2027: freeze from mid-Nov, gift flow reused, monthly test orders, retrospective, 2028 input | 2027-12-31 | TODO | Prepared: prepared drafts s2–s6 reusable; start Oct 2027 |
 
 ## Blocked on owner
-- Merchant Center Diagnostics screenshot today (21 Oct checkpoint) so CRO can read approvals (CRO-02).
-- Connect PayPal by 31 Oct, then run the November test-order checklist with refunds by 7 Nov (CRO-03, CRO-13).
-- Raglan cardigan: are Brown and Blue in stock (export: 2 each) or made to order? Lead time? Do made-to-order
-  colours keep the 14-day return? (CRO-08, CRO-27; adviser G9.)
-- Scoped unfreeze of the 5 priority PDPs, or proposals-only (decision 19, 31 Oct) (CRO-11, CRO-27).
-- Per-colour photos (turtleneck by 31 Oct; beanie, set, cardigan Blue by 14 Nov) or approve trimming the 46 feed rows
-  (CRO-23, CRO-24).
-- Confirm physical stock per SKU (beanie 20/colour and turtleneck 10/variant look like placeholders) (CRO-01, CRO-23).
-- Facts for PDP copy: fibre % (dusty pink pieces, beige vest, distressed), garment measurements for 10 sized
-  garments, model height/size, beanie height, V-neck vest colour name (CRO-10, CRO-27).
-- Claims evidence: "hand-sewn in Latvia", "extra-fine", "Italian-spun" by 31 Oct (G8, decisions 16 and 34).
-- Screenshots: Custom CSS panel (overlay lines), Contact page at 390px (reply-time CSS line), Shop page at 390px
-  ("No results found"), weekly abandoned-cart count (CRO-21, CRO-22).
-- Approve or reject the copy, CSS and native proposals in `business-os/ecommerce-cro/` (CRO-27).
+All CRO questions are in one fill-in form: [business-os/ecommerce-cro/owner-inputs-wave2.md](../../../business-os/ecommerce-cro/owner-inputs-wave2.md)
+(20 items, grouped urgent / by 31 Oct / November, each with why, due date and task IDs it unblocks). Most urgent:
+- Item 4: check the overlay CSS lines are still in Custom CSS (public stylesheet scan did not find them) — 24 Oct (CRO-22).
+- Item 1: Merchant Center Diagnostics screenshot — 23 Oct (CRO-02).
+- Items 7–9: confirm the GM's 5, physical stock + made-to-order days, raglan cardigan size/colour status — 24 Oct (CRO-23, CRO-27).
+- Item 2: connect PayPal — 31 Oct (CRO-03, CRO-13).
