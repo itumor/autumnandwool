@@ -1,0 +1,11 @@
+# local agent memory, logs, session state
+.remember/
+.memsearch/
+**/.claude/logs/
+.claude/.claude/
+**/collision-guard.json
+__pycache__/
+# admin screenshots + browser session notes
+evidence/ego-2026-10-18/
+*.bak
+.DS_Store
