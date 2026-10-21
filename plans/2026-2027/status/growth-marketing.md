@@ -1,5 +1,5 @@
-# Growth Marketing — status 2026-10-21 (wave 2)
-Summary: 15 done · 3 blocked · 11 todo
+# Growth Marketing — status 2026-10-21 (wave 3)
+Summary: 15 done · 3 assumed · 1 blocked · 10 todo
 | ID | Task | Due | Status | Output / blocker |
 |---|---|---|---|---|
 | GRO-01 | Create `business-os/growth/` and results log with week 2026-10-19 row (spend 0 [VERIFY], call INVESTIGATE) | 21 Oct | DONE | [ads-results-log.csv](../../../business-os/growth/ads-results-log.csv) |
@@ -16,10 +16,10 @@ Summary: 15 done · 3 blocked · 11 todo
 | GRO-12 | December test brief, one SKU, 2-3 concepts, traffic objective, kill lines as formulas | 7 Nov | DONE | [test-2026-10-21-dec-first-signal.md](../../../business-os/growth/test-2026-10-21-dec-first-signal.md) (brief status BLOCKED, 8-step unblock list). Wave 2: candidate SKUs from GM proposal and provisional window from OPS cutoffs added (EU MTO about 9 working days after a 20 Nov go; US/CA/AU excluded) |
 | GRO-13 | Landing-page brief for the December test, for CRO (`aw-cro-audit`) | 7 Nov | DONE | [landing-brief-2026-10-21-dec-first-signal.md](../../../business-os/growth/landing-brief-2026-10-21-dec-first-signal.md). Found: hat & scarf set PDP shows newsletter "needs a storage option" error |
 | GRO-14 | December budget proposal capped by BE_CAC and capacity | 20 Nov | DONE | [budget-proposal-2026-12.md](../../../business-os/growth/budget-proposal-2026-12.md): EUR 0 unless 6/6 gates pass |
-| GRO-15 | Compute BE_CAC and target CAC for the 5 priority SKUs; fill budget, kill and scale lines in the brief | 15 Nov | BLOCKED | Wave 2 check: no confirmed costs (FIN staging CSV all TODO), no capacity file (PRD-02 write block), GM 5-SKU pick still provisional. Owner rows 5-7 + PRD G1/G2. Prepared: [be-cac-worksheet-priority-skus.md](../../../business-os/growth/be-cac-worksheet-priority-skus.md) (net prices + formulas, cost cells TODO) |
-| GRO-16 | Conversion-signal gate re-check after plan decision | mid-Nov | BLOCKED | Owner: [owner-inputs-wave2.md](../../../business-os/growth/owner-inputs-wave2.md) row 8 (plan upgrade, decision 24, 4 Nov); CRO runs checklist in paid-test-gates.md if upgraded |
+| GRO-15 | Compute BE_CAC and target CAC for the 5 priority SKUs; fill budget, kill and scale lines in the brief | 15 Nov | ASSUMED | ASSUMPTION: BE_CAC = GM assumed CM2 (P2 25.82 LV / 24.82 EE-LT, P3 23.00 / 22.00, P4 18.82 / 17.82, P1 13.87, P5 13.09), min contribution EUR 10, CAC goal P2 14.82 / P3 12.00; paid-promotable only P2, P3 in LV+EE/LT; register: [growth/assumptions-wave3.md](../../../business-os/growth/assumptions-wave3.md) (A-GRO-01..03; FIN sku-margins file not present, GM CM2 used). Output: [be-cac-worksheet-priority-skus.md](../../../business-os/growth/be-cac-worksheet-priority-skus.md); brief budget/kill lines filled in [test-2026-10-21-dec-first-signal.md](../../../business-os/growth/test-2026-10-21-dec-first-signal.md). DONE when owner confirms costs (G1) and FIN runs `unit_economics.py` |
+| GRO-16 | Conversion-signal gate re-check after plan decision | mid-Nov | ASSUMED | ASSUMPTION: Basic plan through Q4, no Code Injection (A-GM-05) -> gate 5 FAIL, any test = traffic objective read by UTM + Squarespace Orders; register: [head-of-ecommerce/assumptions-wave3.md](../../../business-os/head-of-ecommerce/assumptions-wave3.md). Output: [paid-test-gates.md](../../../business-os/growth/paid-test-gates.md) wave-3 table (1 PASS, 2 ASSUMED, 2 FAIL, 1 MISSING). Re-run checklist only if owner upgrades (decision 24, 4 Nov) |
 | GRO-17 | Weekly Monday readouts, results-log rows and proposed KPI rows, 2 Nov to 28 Dec | weekly from 2 Nov | TODO | Prepared: [weekly-readout-template.md](../../../business-os/growth/templates/weekly-readout-template.md), exports asked in owner-inputs-wave2 rows 1-3; finish weekly from 2 Nov |
-| GRO-18 | Owner go/no-go on December test and ceiling | 20 Nov | TODO | Prepared: [dec-test-go-no-go-2026-11-20.md](../../../business-os/growth/dec-test-go-no-go-2026-11-20.md) part 1; finish on 20 Nov (decision 33; depends on GRO-15, GRO-16) |
+| GRO-18 | Owner go/no-go on December test and ceiling | 20 Nov | ASSUMED | ASSUMPTION: NO-GO, EUR 0 (A-GM-08); if GO: SKU P2, LV/EE/LT, 2 concepts x EUR 74.46 = EUR 148.92, about EUR 8.76/day 23 Nov-15 Dec, Kill 1 EUR 49.64, illustrative expected CAC about EUR 40 vs BE_CAC 24.82; register: [growth/assumptions-wave3.md](../../../business-os/growth/assumptions-wave3.md). Output: [dec-test-go-no-go-2026-11-20.md](../../../business-os/growth/dec-test-go-no-go-2026-11-20.md) part 1b, [budget-proposal-2026-12.md](../../../business-os/growth/budget-proposal-2026-12.md). Owner decides 20 Nov (decision 33) |
 | GRO-19 | December test run (only if approved): no edits 3-5 days, weekly readouts, stop at kill lines | Dec | TODO | Prepared: [dec-test-go-no-go-2026-11-20.md](../../../business-os/growth/dec-test-go-no-go-2026-11-20.md) part 2 (run sheet); finish in Dec only if GO. Default is no test (C10) |
 | GRO-20 | Monthly competitor refresh (prices first) and `_angles.md` update, Nov and Dec | 21 Nov, 21 Dec | TODO | Prepared: [_refresh-sheet-2026-11.md](../../../business-os/growth/competitors/_refresh-sheet-2026-11.md) (price re-check table, Krista Elsta, Arela retry, ad pass); finish on 21 Nov and 21 Dec. Owner browser: owner-inputs-wave2 row 12 |
 | GRO-21 | Monthly creative performance report (organic UTM posts if no paid), Nov and Dec | 30 Nov, 31 Dec | TODO | Prepared: [creative-performance-report-template.md](../../../business-os/growth/templates/creative-performance-report-template.md); Creative's wave-1 links registered (GRO-29); finish on 30 Nov and 31 Dec |
@@ -33,12 +33,13 @@ Summary: 15 done · 3 blocked · 11 todo
 | GRO-29 | Register Creative's wave-1 links (gift-2026 gs-a/gs-b, vs-b, vs-c, pin-making-1, pin-founder-1) in the link register | 21 Oct | DONE | 6 rows in [utm-links.csv](../../../business-os/growth/utm-links.csv), all draft-hold; 3 landing URLs assumed, CRE to confirm |
 
 ## Blocked on owner
-All owner inputs are in one fill-in form: [owner-inputs-wave2.md](../../../business-os/growth/owner-inputs-wave2.md).
-- Rows 1-4: weekly Monday exports (Squarespace Orders, GA4 traffic acquisition), no-spend confirmation, Merchant Center approved count. Blocks GRO-06, GRO-17.
-- Rows 5-6: approve 5 priority SKUs (decision 2, 24 Oct); production timings and cost confirmation (G0, G1). Blocks GRO-15.
-- Row 7: minimum contribution per order (decision 23, 4 Nov). Blocks target CAC (GRO-15).
-- Row 8: Squarespace plan upgrade yes/no (decision 24, 4 Nov). Blocks GRO-16.
+All owner inputs are in one fill-in form: [owner-inputs-wave2.md](../../../business-os/growth/owner-inputs-wave2.md). Wave 3 assumptions: [growth/assumptions-wave3.md](../../../business-os/growth/assumptions-wave3.md).
+- Rows 1-4: weekly Monday exports (Squarespace Orders, GA4 traffic acquisition), no-spend confirmation, Merchant Center approved count. Blocks GRO-06, GRO-17 (real exports, no assumption possible).
+- Rows 5-6: approve 5 priority SKUs (decision 2, 24 Oct); production timings and cost confirmation (G0, G1). Turns GRO-15 from ASSUMED into DONE.
+- Row 7: minimum contribution per order (decision 23, 4 Nov). Assumed EUR 10 (A-GM-20); confirms GRO-15 CAC goals.
+- Row 8: Squarespace plan upgrade yes/no (decision 24, 4 Nov). Assumed Basic (A-GM-05); confirms GRO-16.
 - Row 9: Marketing > Discounts screenshot (decision 11, 28 Oct). Blocks creator codes.
 - Rows 10-11: Etsy status and proof line (decisions 9, 17), claims evidence and photo rights (decision 16). Block ad concepts A/B.
 - Row 12: browser look at Meta Ad Library and the PappusStore Etsy page. Blocks competitor ad data (GRO-20).
-- Row 13: December ceiling or EUR 0, and the test SKU (decision 33, 20 Nov). Blocks GRO-18, GRO-19.
+- Row 13: December ceiling or EUR 0, and the test SKU (decision 33, 20 Nov). Assumed NO-GO EUR 0, SKU P2 (A-GM-08, A-GRO-01..04); confirms GRO-18, decides whether GRO-19 runs.
+- GM ruling needed (cross-register): A-GM-17 caps a creator gift at the beanie's BE_CAC (LV 13.09), but the assumed landed beanie gift cost is about EUR 19.83, so the rule blocks every gift. See [growth/assumptions-wave3.md](../../../business-os/growth/assumptions-wave3.md) "Cross-register flag".

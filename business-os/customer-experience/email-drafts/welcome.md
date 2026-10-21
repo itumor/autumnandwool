@@ -112,6 +112,65 @@ care (live `/faq`).
 
 ## W4: Three pieces to start with (day 10)
 
+### Wave 3: DRAFT-ASSUMPTION version (use this one)
+
+ASSUMPTION: products = Production GREEN (A) list W43 (A-CX-05: Lambswool Crew, Dusty Pink raglan, Hat & Scarf Set
+Black; alternate Beanie, photographed colour), prices A-GM-02 (17 Oct export), dispatch A-GM-03, claims A-GM-10;
+register: `business-os/customer-experience/assumptions-wave3.md`. GREEN (A) means GREEN on assumed stock and costs,
+organic use only (no paid spend). Re-check the GREEN list, prices and each live PDP the week the flow goes live.
+
+Subject (<=45): Three pieces I would start with
+Preheader (<=90): A grey crew, a dusty pink raglan, and a hat and scarf set for the cold months.
+
+Body (about 150 words):
+> Hello [first name],
+>
+> If you are new here and wondering where to begin, these are the three pieces I would choose.
+>
+> **Classic Lambswool Crew, grey.** A crew neck with raglan sleeves, ribbed cuffs and a gently curved hem. A relaxed
+> fit, in sizes S to XL. [CLAIM-CHECK: fibre name exactly as on the live PDP] EUR 136.
+> [See the crew](https://www.autumnandwool.com/shop/p/p/hand-knitted-lambswool-sweater-womens-grey-knit-jumper?utm_source=mailerlite&utm_medium=email&utm_campaign=welcome-2026-11&utm_content=w4-lambswool-crew)
+>
+> **Merino Raglan Sweater, Dusty Pink.** An oversized raglan in a soft, muted pink, in two sizes: S/M and L/XL.
+> [CLAIM-CHECK: fibre name exactly as on the live PDP] EUR 155.
+> [See the sweater](https://www.autumnandwool.com/shop/p/p/hand-knitted-merino-wool-raglan-sweater-dusty-pink-oversized-jumper?utm_source=mailerlite&utm_medium=email&utm_campaign=welcome-2026-11&utm_content=w4-dusty-pink-raglan)
+>
+> **Hat & Scarf Set, black.** A matching rib-knit beanie and scarf. One size: the beanie fits 54-58 cm heads, the
+> scarf is about 190 x 36 cm. [CLAIM-CHECK: fibre name exactly as on the live PDP] EUR 110.
+> [See the set](https://www.autumnandwool.com/shop/p/p/merino-wool-hat-scarf-set-extra-fine-rib-knit-soft-on-skin-warm-not-bulky-unisex-gift?utm_source=mailerlite&utm_medium=email&utm_campaign=welcome-2026-11&utm_content=w4-hat-scarf-set)
+>
+> Each piece is knitted on manual machines and finished by hand in Riga. Pieces in stock are dispatched within
+> 2-5 working days, and shipping is free to eligible destinations shown at checkout.
+>
+> Kristine
+
+CTA button: "See all knitwear" -> https://www.autumnandwool.com/shop?utm_source=mailerlite&utm_medium=email&utm_campaign=welcome-2026-11&utm_content=w4-shop-button
+
+Facts used + source:
+| Fact | Source | Status |
+|---|---|---|
+| The 3 SKUs and max units (6 / 8 / 6) | `knitwear-making/capacity-2026-W43.md` GREEN (A) | ASSUMPTION (A-PRD-12 stock, A-CX-05) |
+| Prices 136 / 155 / 110 | A-GM-02 (17 Oct export) | re-check live PDP |
+| Crew: raglan sleeves, ribbed cuffs, curved hem, relaxed, S-XL, grey | `seo-marketplace/2026-10-21-pin-batch-w45-draft.md` W5 + `onpage-proposals.md` (read from the PDP); `size-advice.md` fit type | re-check live PDP |
+| Dusty Pink: oversized, S/M + L/XL | `size-advice.md` (live, CRO) | re-check live PDP |
+| Set: beanie 54-58 cm, scarf about 190 x 36 cm, Black | CRO size-fit standard s2; GREEN Black only | re-check live PDP |
+| Process line, dispatch line, free shipping wording | A-GM-10, A-GM-03, aw-brand-voice s3 | ASSUMPTION |
+| URLs | existing live slugs (`partnerships/attribution-scheme.md`, `seo-marketplace/2026-10-21-etsy-batch-prep.md`) | product data frozen: slugs not changed |
+
+[CHECK] / [OWNER DECISION] items:
+- Fibre wording per piece: copy from the live PDP; no percentages (A-GM-10). Never "RWS", "mulesing-free",
+  "extra-fine", "spun in Italy" even though the set's slug contains "extra-fine".
+- The Dusty Pink name is written without "Hand-Knitted" (claim gate). Its URL slug and the lambswool crew's slug
+  both contain "hand-knitted": visible on hover. Slug change = SEO/CRO proposal for the owner (CX-W3-e).
+- No "gift packaging" line (A-GM-22: gift wrap no; CX-W3-d).
+- Swap rule: if any of the three drops to AMBER or RED, use the Rib-Knit Beanie in its photographed colour
+  (EUR 45, one size, head 54-58 cm; colour name [VERIFY PRD]), and only after the add-to-cart colour bug is fixed.
+- No discount code. Images: real photos per colour only (CRE).
+Compliance: newsletter sign-ups only (A-GM-14); unsubscribe; sender "Kristine at Autumn & Wool"; footer
+`[POSTAL_ADDRESS]` (owner fact).
+
+### Wave 1-2 skeleton (superseded by the wave 3 version above, kept for history)
+
 Subject: Three pieces I would start with
 Preheader: [VERIFY after the GREEN list: e.g. "A cardigan, a vest and a beanie for the cold months."]
 
@@ -151,3 +210,7 @@ Each one goes into W4 only if it is on the GREEN list the week the flow goes liv
 
 Not proposed for W4: the Dusty Pink raglan, because its title says "Hand-Knitted" (claim gate, decision 16) and
 it has only 6 units.
+
+Wave 3 change: Production's W43 capacity file puts the Raglan Cardigan at AMBER (thin CM2, Blue unphotographed) and
+the Dusty Pink raglan at GREEN (A), max 6, with the instruction not to repeat "Hand-Knitted". So the cardigan left W4
+and the Dusty Pink raglan came in, named without the title claim.

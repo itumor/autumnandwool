@@ -28,5 +28,21 @@ Christmas order-by dates G5 (OPS, carrier-backed 14 Nov) for test end date; phot
 
 I do not add, edit or remove any tag. Pixel/tag changes are owner-approved CRO work.
 
+## Wave 3 re-check on assumptions (2026-10-21, GRO-16)
+ASSUMPTION: Squarespace stays on Basic through Q4 2026, no Code Injection (A-GM-05); register:
+`business-os/head-of-ecommerce/assumptions-wave3.md`. Growth register: `business-os/growth/assumptions-wave3.md`.
+
+| # | Gate | Real state | On assumption | Note |
+|---|---|---|---|---|
+| 1 | Costed | FAIL | ASSUMED (P2/P3 positive Max CAC in LV+EE/LT) | `be-cac-worksheet-priority-skus.md`; planning only |
+| 2 | Safe to promote | MISSING (no owner-approved file) | ASSUMED GREEN: P2 6, P3 8, P4 Black 6, P5 1 colour 8 | `knitwear-making/capacity-2026-W43.md` is DRAFT and says no paid ads |
+| 3 | PDP ready | FAIL | FAIL / MISSING | No assumption replaces photos or a CRO PASS |
+| 4 | Orders countable | PASS | PASS | |
+| 5 | Conversion signal | UNVERIFIED | **FAIL** | Basic plan: no purchase event for Meta or Google. Checklist above is not run. Any test = traffic objective, read via UTMs + Squarespace Orders. Re-run only if the owner upgrades |
+| 6 | Owner ceiling | MISSING | MISSING (A-GM-08: EUR 0, no ceiling assumed) | |
+
+Result: 1 PASS, 2 ASSUMED, 2 FAIL, 1 MISSING. No gate set allows spend. December default stays NO-GO, EUR 0.
+
 ## Change log
+- 2026-10-21 (wave 3): re-check on assumptions; gate 5 FAIL on A-GM-05.
 - 2026-10-21: tracker created. 1 PASS, 2 FAIL, 2 MISSING, 1 UNVERIFIED.

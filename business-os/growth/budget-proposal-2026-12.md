@@ -29,4 +29,10 @@ If they all pass:
 Weekly readouts of free channels with UTMs (`utm-links.csv`), first real orders counted from Squarespace, BE_CAC table
 built as costs arrive, and a January budget proposal from that evidence.
 
+## Wave 3 numbers on assumptions (2026-10-21)
+ASSUMPTION: P2 Dusty Pink BE_CAC EUR 24.82 (EE/LT), 2 concepts, LV/EE/LT only, A-GM-08 EUR 0; register:
+`business-os/growth/assumptions-wave3.md`. Budget per concept EUR 74.46; test total EUR 148.92; December ceiling on
+assumption **EUR 0** (no owner ceiling). If the owner names a ceiling, the cap is min(ceiling, 148.92), and it is never
+above the GROWTH-PLAN EUR 200-300 range. P3 fallback: EUR 66.00 per concept, EUR 132.00 total.
+
 Owner decision: [ ] EUR 0   [ ] EUR ____ ceiling, conditional on 6/6 gates   (initials + date)

@@ -7,6 +7,39 @@ Purpose: learning (first CAC read), not gift-season revenue.
 Gates: costed FAIL / safe-to-promote MISSING / PDP FAIL / orders countable PASS / conversion signal UNVERIFIED / budget MISSING
 (detail and owners: `paid-test-gates.md`)
 
+## Wave 3 fill on assumptions (2026-10-21) — brief stays BLOCKED
+ASSUMPTION: test SKU P2 Dusty Pink, BE_CAC EUR 24.82 (EE/LT, used for the whole Baltic set), CAC goal EUR 14.82, 2 concepts,
+countries LV/EE/LT, December decision NO-GO EUR 0; register: `business-os/growth/assumptions-wave3.md` (A-GRO-01..06),
+`head-of-ecommerce/assumptions-wave3.md` (A-GM-02, -05, -08, -10, -20), `operations/assumptions-wave3.md` (A-OPS-16/17).
+
+| Gate | On assumption | Why it still blocks spend |
+|---|---|---|
+| Costed | ASSUMED (P2 BE_CAC 24.82 EE/LT, 25.82 LV) | Not owner-confirmed; Production says no paid spend until cost confirmed |
+| Safe to promote | ASSUMED GREEN, max 6 from stock (`knitwear-making/capacity-2026-W43.md`) | Capacity file is DRAFT, not owner-approved; it says "Paid ads: none" |
+| PDP | MISSING | CRO landing brief not PASS for P2 |
+| Orders countable | PASS | Squarespace Orders (manual) |
+| Conversion signal | FAIL on assumption | A-GM-05: Basic plan, no Code Injection, so traffic objective only |
+| Budget | MISSING | A-GM-08: no ceiling assumed; default EUR 0 |
+
+Numbers if the owner ever says GO (ASSUMPTION):
+| Line | Value |
+|---|---|
+| SKU | P2 Merino Raglan Sweater, Dusty Pink (`69105bd9b0c4`), in-stock units only, max 6 |
+| Countries | LV, EE, LT (A-GRO-03). EU-other and US/CA/AU excluded: Max CAC negative |
+| Concepts | 2: B proof, C product truth (A-GRO-04) |
+| Budget per concept | 3 x 24.82 = **EUR 74.46** |
+| Test total | 2 x 74.46 = **EUR 148.92** (owner ceiling may be lower; the lower wins) |
+| Window | Earliest launch Mon 23 Nov to in-stock order-by Tue 15 Dec (EE/LT, A-OPS-17) / Wed 16 Dec (LV, A-OPS-16): 17 working days, minus LV holiday 18 Nov (before launch) |
+| Daily | 148.92 / 17 = **about EUR 8.76 per day** (both concepts) |
+| Kill 1 (per concept) | spend >= **EUR 49.64** with 0 Squarespace orders -> stop |
+| Kill 2 (per concept) | spend >= **EUR 74.46** with CAC > EUR 24.82 -> stop |
+| CAC goal | <= **EUR 14.82** (lower of 0.6 x BE_CAC 14.89 and Max CAC 14.82) |
+| Scale | none in December |
+| Expected outcome (L, A-GRO-05/06) | CPC 0.40 at 1% CVR -> CAC about EUR 40: likely Kill 1. Break-even CPC EUR 0.15-0.25 |
+
+The Baltic in-stock window (17 working days) is longer than the wave-2 EU MTO window (about 9 days), because P2 ships
+from stock and the test excludes EU-other.
+
 SKU(s): ONE SKU, owner's pick from the 5 priority SKUs (master decision 2, re-confirmed 4 Nov). TODO.
 Candidates (wave 2, from `../head-of-ecommerce/priority-5-sku-proposal-2026-10-21.md`): raglan cardigan, Dusty Pink
 sweater, lambswool crew, hat & scarf set (Black only until photos), beanie. Net prices and BE_CAC cells:

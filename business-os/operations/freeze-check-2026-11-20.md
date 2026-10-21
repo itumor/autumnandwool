@@ -17,9 +17,9 @@ Sources (to read on 16 Nov): `christmas-cutoffs-2026.md`, `carrier-rates.md`, `d
 | 2 | Carriers' 2026 Christmas last-posting dates | Published by the carrier | | | Keep worst-case dates (Latvijas Pasts published 2025 dates only on 8 Dec) |
 | 3 | Dry run done (6 Nov) | T1 + T2 delivered inside promise, undamaged, costs recorded | | | Widen published ranges to measured transit; no faster claims |
 | 4 | Dispatch promise decided (MP 3) | Owner answer on file | | | Use 5 working days for all dates |
-| 5 | Stock / production calendar | Owner-confirmed shelf stock per gift SKU; MTO stop date = earliest regional cutoff (about 2-3 Dec EU) agreed with Production | | | In-stock column not published; MTO only, earliest cutoff |
+| 5 | Stock / production calendar | Owner-confirmed shelf stock per gift SKU; main MTO stop 19 Nov garments / 26 Nov accessories + Baltic second stop (LV 4 / EE-LT 3 Dec; 11 / 10 Dec) agreed with Production (W3-11); cardigan Brown/Blue promised MTO (W3-10) | | | In-stock column not published; MTO only, main stop; after-cutoff line "may arrive after Christmas" + gift note (W3-6) |
 | 6 | Returns wording | Adviser answered; one wording live on page, Merchant Center, macros | | | Replies follow statutory floor case by case (C12); no "free returns" in December copy |
-| 7 | Free-shipping regions (MP 21) | Owner decision on file; "Rest of World" handled | | | Owner decides before any Christmas copy names a region |
+| 7 | Free-shipping regions (MP 21) | Owner decision on file (proposal W3-13: LV/EE/LT free; EU free >= EUR 150 else 12; US/CA/AU 15; RoW no promise); "Rest of World" handled | | | Owner decides before any Christmas copy names a region |
 | 8 | Packaging supplies for peak | Stock of mailers/tissue/cards for [VERIFY expected orders] parcels on hand | | | Plain materials; owner buys |
 | 9 | Tracking email | Owner confirmed fulfilled email shows tracking (item 16) | | | Manual tracking message via CX macro 3A |
 | 10 | Market stall (if any) | Stall stock ring-fenced; packing hours planned | | | Online first |

@@ -32,16 +32,19 @@ Current values marked `[VERIFY]` come from the 18 Oct QA report; GROWTH-PLAN S9 
 | `/shop/vests` | TODO | Oversized Wool Sweater Vests for Women \| Autumn & Wool (54) | Oversized V-neck sweater vests in wool and merino wool, cut to layer over shirts and dresses. Garment measurements on every page. Ships from Riga. (146) |
 | `/size-guide` | "Find Your Perfect Fit – Shop Now" (QA) `[VERIFY]` | Wool Size Chart & Knitwear Size Guide \| Autumn & Wool (53) | Wool size chart for women's knitwear: S–XL in cm and inches (EU 36–42, UK 8–14, US 6–12), fit types and how to measure. (119) |
 | `/cart` | "Autumn & Wool" (generic, QA) | Your cart \| Autumn & Wool (25) | n/a (keep cart out of search; Squarespace already does not list it in the sitemap) |
-| Vest PDP | "Oversized Merino Wool Sweater Vest" ≠ H1 (QA) | Oversized Merino Wool V-Neck Sweater Vest \| Autumn & Wool (57) | Oversized V-neck sweater vest in 100% merino wool that layers over shirts and dresses. Width 59 cm, length 68 cm. Free shipping to eligible destinations. (153) |
-| Merino Raglan Cardigan PDP | "Merino Wool Raglan Cardigan — Black, Brown or Blue \| Autumn & Wool" (handbook §5, 66 chars, cut in results) | Merino Raglan Cardigan, Black, Brown or Blue \| Autumn & Wool (60) | Relaxed raglan cardigan in 100% merino wool, in black, brown or blue. Width 61 cm, front length 67 cm. Free shipping to eligible destinations. (142) |
-| Striped PDP | TODO | Oversized Merino Wool Sweater, Striped \| Autumn & Wool (54) | Oversized striped sweater in 100% merino wool with Japanese-style shoulder shaping. Width 59 cm, front length 67 cm. Ships from Riga in 2–5 working days. (153) |
-| Beanie PDP | TODO | Rib-Knit Merino Wool Beanie, Unisex \| Autumn & Wool (51) | Unisex rib-knit beanie in 100% merino wool with a fold-over cuff. One size, fits 54–58 cm heads. 11 colours. Free shipping to eligible destinations. (148) |
-| Hat & Scarf Set PDP | TODO | Merino Wool Hat and Scarf Set, Gift Idea \| Autumn & Wool (56) | Matching rib-knit beanie and scarf in 100% merino wool. Beanie fits 54–58 cm heads, scarf about 190 × 36 cm. Black, gray or brown. Ships in gift packaging. (155) |
-| Oversized Wool Raglan Beige PDP | TODO | Oversized Wool Raglan Sweater, Beige Melange \| Autumn & Wool (60) | Oversized raglan sweater in beige melange, 100% pure wool, ribbed neck and cuffs. Width 59 cm, back length 69 cm. Free shipping to eligible destinations. (153) |
+| Vest PDP | "Oversized Merino Wool Sweater Vest" ≠ H1 (QA) | Oversized Merino Wool V-Neck Sweater Vest \| Autumn & Wool (57) | Oversized V-neck sweater vest in merino wool [CLAIM-CHECK] that layers over shirts and dresses. Width 59 cm, length 68 cm. Free shipping to eligible destinations. (148) |
+| Merino Raglan Cardigan PDP | "Merino Wool Raglan Cardigan — Black, Brown or Blue \| Autumn & Wool" (handbook §5, 66 chars, cut in results) | Merino Raglan Cardigan, Black, Brown or Blue \| Autumn & Wool (60) | Relaxed raglan cardigan in merino wool [CLAIM-CHECK], in black, brown or blue. Width 61 cm, front length 67 cm. Free shipping to eligible destinations. (137) |
+| Striped PDP | TODO | Oversized Merino Wool Sweater, Striped \| Autumn & Wool (54) | Oversized striped sweater in merino wool [CLAIM-CHECK] with Japanese-style shoulder shaping. Width 59 cm, front length 67 cm. Ships from Riga in 2–5 working days. (148) |
+| Beanie PDP | TODO | Rib-Knit Merino Wool Beanie, Unisex \| Autumn & Wool (51) | Unisex rib-knit beanie in merino wool [CLAIM-CHECK] with a fold-over cuff. One size, fits 54–58 cm heads. 11 colours. Free shipping to eligible destinations. (143) |
+| Hat & Scarf Set PDP | TODO | Merino Wool Hat and Scarf Set, Gift Idea \| Autumn & Wool (56) | Matching rib-knit beanie and scarf in merino wool [CLAIM-CHECK]. Beanie fits 54–58 cm heads, scarf about 190 × 36 cm. Black, gray or brown. Add a handwritten gift note. (154) |
+| Oversized Wool Raglan Beige PDP | TODO | Oversized Wool Raglan Sweater, Beige Melange \| Autumn & Wool (60) | Oversized raglan sweater in beige melange, pure wool [CLAIM-CHECK], ribbed neck and cuffs. Width 59 cm, back length 69 cm. Free shipping to eligible destinations. (148) |
 
 Checks: fibre wording copied from the feed `D` list; owner confirms it matches the live PDP (`aw-brand-voice` §3: copy
 the PDP wording exactly). "Free shipping to eligible destinations" is the brand-voice approved line. The vest and set
 metas drop "extra-fine" (CLAIM-CHECK). Prices left out of PDP metas so a price change cannot make them wrong.
+Wave 3 (GM rulings W3-7, W3-8; A-GM-10, A-GM-22): fibre % removed from every meta ("merino wool", "pure wool", no
+"100%", no "extra-fine") until a spec sheet/invoice clears G8; `[CLAIM-CHECK]` is a marker, delete it before pasting
+(counts exclude it). Set meta: "Ships in gift packaging" replaced by "Add a handwritten gift note" (no gift wrap).
 
 ## C. Alt text, 5 working-set PDPs (Squarespace image editor → Alt text / filename)
 The working set is provisional until decision 2 (24 Oct). I could not view the photos (no image access in this
@@ -81,7 +84,7 @@ the owner confirms what they show and that we have the rights (decision 16).
 > each fit.
 
 **Sweater vests (≈ 70 words)**
-> Two oversized V-neck sweater vests for layering over shirts, dresses and long sleeves. One is 100% merino wool with
+> Two oversized V-neck sweater vests for layering over shirts, dresses and long sleeves. One is merino wool [CLAIM-CHECK] with
 > Japanese-style shoulder shaping, 59 cm wide and 68 cm long. The other is a wool vest in beige melange with a ribbed
 > finish, 57 cm wide and 69 cm long. Both are cut loose and roomy. See the size guide for how our oversized pieces fit.
 

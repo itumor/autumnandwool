@@ -8,6 +8,14 @@ as of 2026-10-19). No booking, no application, no message.
 `owner-unblock-pack.md`, 28 Oct). If one market is taken, KuKu Tirgus is the lowest known fee (EUR 50.00, deadline
 10 Nov). Final recommendation needs the four inputs below.
 
+**Wave 3 recommendation on assumptions (2026-10-21), owner to confirm:** apply for **KuKu Tirgus, 29 Nov only**
+(EUR 50.00). Apply by 10 Nov only if the owner confirms (a) bank balance >= buffer (planning EUR 460) + EUR 50 + committed
+items, and (b) the stock to bring exists. Bring in-stock P2/P3 sweaters (best assumed CM2: EUR 23-26 each before stall
+costs; the fee needs about 2-3 of them sold to be covered) and beanies as the low-price item. No Baltic EXPO, Old Riga or White Xmas.
+ASSUMPTION: A-GM-15, A-GM-09, A-PRD-12; register: `business-os/head-of-ecommerce/assumptions-wave3.md`. Stall sales carry
+no shipping, so CM2 per sweater is roughly the LV column of `min-contribution-assumed-2026-10-21.md` plus EUR 5.00. Booking is
+irreversible and is never made on an assumption.
+
 ## Options (known facts only)
 | Market | Dates | Deadline | Fee known | Refund | GM note |
 |---|---|---|---|---|---|

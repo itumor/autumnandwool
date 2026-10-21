@@ -2,6 +2,10 @@ DRAFT — for owner approval. One form for every Customer Experience question st
 
 # Customer Experience: owner inputs (wave 2, 2026-10-21)
 
+Wave 3 note (21 Oct, ASSUMPTION MODE): rows 3, 4, 7, 9, 12 and 16 now have assumed answers so drafts could be
+finished (`assumptions-wave3.md`; GM A-GM-02/04/14/16/22/28, Ops A-OPS-16..22). Your answer still replaces each
+assumption; nothing has been sent or published. Rows 1, 2, 5, 6, 8, 10, 11, 13, 14, 15, 17 have no assumption.
+
 Fill in the "Your answer" column and give the file back, or answer by number in one email. Decision numbers are
 from the master plan. Where another department asks the same thing, the row says so: one answer covers both.
 Rows are sorted by due date.

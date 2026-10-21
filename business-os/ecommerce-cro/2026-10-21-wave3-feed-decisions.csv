@@ -1,0 +1,15 @@
+decision,id,column,current,proposed,effective,assumption_ids
+D1,SQ9035687;SQ6470056;SQ0376525;SQ5958509;SQ1481398;SQ0199503;SQ8005265;SQ8421560;SQ2134916;SQ9790760;SQ7638948;SQ0831840;SQ2914675;SQ8708276;SQ8111036;SQ8096733;SQ5264360;SQ9486312;SQ9044699;SQ7358699;SQ2898392;SQ6384123;SQ1480313;SQ4599687;SQ5869324;SQ0111040;SQ4784604;SQ5989399;SQ1919240;SQ4155762;SQ1526199;SQ1652750;SQ2272298,row,present (turtleneck colour rows with Black image),TRIM unless per-colour photo bound,2026-10-31,A-GM-24
+D2,SQ2239941;SQ7476378,row,present (set Gray/Brown with Black image),TRIM unless photo bound,2026-11-14,A-GM-24;A-GM-02
+D3,SQ6735209;SQ6830651;SQ5766994;SQ1398008;SQ9891810;SQ6240622;SQ2122502;SQ3845006;SQ3314835;SQ1599152,row,present (beanie non-Black with Black image),TRIM unless photo bound,2026-11-14,A-GM-24
+D4,SQ1988154,row,present (cardigan Blue with Black image),TRIM unless photo bound,2026-11-14,A-GM-24
+D5,SQ7601591,availability,in_stock,backorder + availability_date = upload date + 14 days,next upload,A-CRO-01;A-CRO-08
+D5,SQ1988154,availability,in_stock,backorder + availability_date = upload date + 14 days (if not trimmed),next upload,A-CRO-01;A-CRO-08
+D6,group:69105690dc1bc40ece1f4561,availability,in_stock,in_stock (MTO 5 wd within handling time),next upload,A-PRD-12;A-PRD-14;A-CRO-08
+D7,SQ9956956;SQ6945548;SQ3600486,color,Pink,Dusty Pink,next upload,A-GM-19
+D7,SQ9956956;SQ6945548,title,Merino Wool Raglan Sweater — Dusty Pink Oversized Jumper (size),Oversized Merino Wool Raglan Sweater — Dusty Pink (size),only if owner applies PDP title,A-GM-19
+D8,SQ2078364,row,present (color blank),EXCLUDE until owner names colour,next upload,none (never assumed)
+D9,lambswool crew rows (4),color,Grey,Grey (keep),—,A-CRO-02
+D10,group:69105690dc1bc40ece1f4561;group:69105624c6bfa9183a014d2a;SQ2078364,description,"100% extra-fine merino wool, Italian-spun yarn","merino wool",next upload,A-GM-10
+D10,all rows containing HAND line (79),description,Knitted on a manually operated knitting machine and hand-sewn in Latvia.,Knitted on manual machines and finished by hand in Riga.,next upload,A-GM-10
+D11,all 98 rows,availability,in_stock (hard-coded),"per A-PRD-12: listed 0 -> out_of_stock; 1-16 -> in_stock; 220/360 -> D5/D6 rule; duplicates share pool",next upload,A-PRD-12;A-PRD-13
