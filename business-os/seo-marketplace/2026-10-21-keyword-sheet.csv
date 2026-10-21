@@ -1,0 +1,35 @@
+keyword,channel,cluster,intent,gsc_pos_19oct,gsc_impr,target,status,verify
+oversized merino wool sweater,site,oversized sweaters,buy,27,TODO,/shop/p/p/hand-knitted-merino-wool-striped-sweater-oversized-jumper,target,GSC export
+timeless knitwear,site,brand/style,browse,5.9,TODO,/,protect,GSC Pages tab: which URL ranks
+wool size chart,site,sizing,info,44,TODO,/size-guide,target,GSC export
+merino wool cardigan,site,cardigans,buy,TODO,TODO,/shop/p/p/black-merino-wool-cardigan-100-merino-wool-raglan-sweater-minimalist-knitwear-sustainable-handmade-womens-cardigan-1,target,Google autocomplete
+long wool cardigan women,site,cardigans,buy,TODO,TODO,/shop/p/p/wool-cardigan-warm-cardigan-organic-wool-wrap-winter-sweater-cardigan-women-cardigan-sweater-minimalist-style-sweater,target,Google autocomplete
+wool shawl collar cardigan,site,cardigans,buy,TODO,TODO,/shop/p/p/hand-knitted-wool-cardigan-minimalist-open-front-sweater-1,target,confirm product differs from long cardigan
+open front wool cardigan,site,cardigans,buy,TODO,TODO,/shop/p/p/hand-knitted-wool-cardigan-open-front-winter-sweater-679428,target,Google autocomplete
+oversized sweater vest women,site,vests,buy,TODO,TODO,/shop/p/oversized-merino-wool-v-neck-sweater-vest,target,Google autocomplete
+beige wool sweater vest,site,vests,buy,TODO,TODO,/shop/p/p/wool-sweater-vest-knitted-wool-vest-oversized-vest-womens-woolen-pullover-vest-top-sleeveless-wool-knit-vest-soft-v-neck-vest,target,dedupe decision 20
+merino beanie,site,accessories,buy/gift,TODO,TODO,/shop/p/p/merino-beanie-100-wool-soft-warm-breathable-rib-knit-hat-for-men-women-1,target,Google autocomplete
+merino hat and scarf set,site,accessories,gift,TODO,TODO,/shop/p/p/merino-wool-hat-scarf-set-extra-fine-rib-knit-soft-on-skin-warm-not-bulky-unisex-gift,target,Google autocomplete
+oversized wool sweater women,site,oversized sweaters,buy,TODO,TODO,/shop/p/p/wool-sweater-sweater-for-women-knit-cozy-pullover-sweater-sustainable-knitwear-oversized-wool-jumper-relaxed-fit-wool-pullover-1,target,Google autocomplete
+merino turtleneck women,site,sweaters,buy,TODO,TODO,/shop/p/p/merino-wool-turtleneck-sweater-womens-knit-pullover-soft-warm-lightweight-minimalist-sustainable-knitwear-sizes-sl-12-679428,target,photos C7
+dusty pink sweater,site,sweaters,buy,TODO,TODO,/shop/p/p/hand-knitted-merino-wool-raglan-sweater-dusty-pink-oversized-jumper,target,Google autocomplete
+pink turtleneck sweater,site,sweaters,buy,TODO,TODO,/shop/p/p/merino-wool-sweater-oversize-sweater-knitted-wool-jumper-stand-up-collar-jumper-relaxed-fit-wool-pullover-warm-pink-jumper-679519,target,Google autocomplete
+lambswool sweater women,site,sweaters,buy,TODO,TODO,/shop/p/p/hand-knitted-lambswool-sweater-womens-grey-knit-jumper,target,dedupe decision 20
+wool sweaters for women,site,category,browse,TODO,TODO,/shop/sweaters or /shop,target,category canonical check
+wool gifts for her,site,gifts,gift,TODO,TODO,gift guide page (proposal),seasonal,owner decides page
+how to wash merino wool,site,care,info,TODO,TODO,/faq#care then Q1 guide,later,Q1 2027
+merino vs lambswool,site,materials,info,TODO,TODO,Q1 guide,later,Q1 2027
+oversized wool sweater,pinterest,board: Oversized wool sweaters,inspire/buy,n/a,n/a,board 1,seed,Pinterest search bar + Trends
+merino cardigan outfit,pinterest,board: Merino and wool cardigans,inspire,n/a,n/a,board 2,seed,Pinterest search bar + Trends
+sweater vest outfit,pinterest,board: Sweater vest outfits,inspire,n/a,n/a,board 3,seed,Pinterest search bar + Trends
+wool beanie,pinterest,board: Wool beanies and winter accessories,gift,n/a,n/a,board 4,seed,Pinterest search bar + Trends
+wool gifts for her,pinterest,board: Wool gift ideas for her,gift,n/a,n/a,board 5,seed,Pinterest search bar + Trends
+minimalist knitwear,pinterest,boards 1-3 descriptions,inspire,n/a,n/a,board descriptions,seed,Pinterest Trends
+merino cardigan,etsy,tag candidate (15 chars),buy,n/a,n/a,Etsy listing matching site cardigan,prep only (C14),Etsy autocomplete
+oversized sweater,etsy,tag candidate (17 chars),buy,n/a,n/a,Etsy sweater listings,prep only (C14),Etsy autocomplete
+wool sweater women,etsy,tag candidate (18 chars),buy,n/a,n/a,Etsy sweater listings,prep only (C14),Etsy autocomplete
+merino beanie,etsy,tag candidate (13 chars),gift,n/a,n/a,Etsy beanie listing,prep only (C14),Etsy autocomplete
+sweater vest women,etsy,tag candidate (18 chars),buy,n/a,n/a,Etsy vest listing,prep only (C14),Etsy autocomplete
+wool gift for her,etsy,tag candidate (17 chars),gift,n/a,n/a,all listings,prep only (C14),Etsy autocomplete
+minimalist knitwear,etsy,tag candidate (19 chars),style,n/a,n/a,all listings,prep only (C14),Etsy autocomplete
+layering knit,etsy,tag candidate (13 chars),use,n/a,n/a,vest and turtleneck,prep only (C14),Etsy autocomplete

@@ -1,0 +1,60 @@
+id,column,current,proposed,reason
+SQ2078364,color,(blank),[OWNER: exact colour name of the V-neck vest],Required apparel attribute missing
+SQ7601591,availability,in_stock,in_stock if a finished piece exists; else backorder + availability_date [OWNER],PDP says Brown is made to order; export stock 2
+SQ1988154,availability,in_stock,in_stock if a finished piece exists; else backorder + availability_date [OWNER],PDP says Blue is made to order; export stock 2
+SQ1988154,image_link,.../image_1.jpg (Black),[Blue variant photo] or TRIM row on 14 Nov,Variant image mismatch
+SQ6735209,image_link,beanie image_1 (Black),[Brown photo] or TRIM,Variant image mismatch
+SQ6830651,image_link,beanie image_1 (Black),[Navy photo] or TRIM,Variant image mismatch
+SQ5766994,image_link,beanie image_1 (Black),[Blue photo] or TRIM,Variant image mismatch
+SQ1398008,image_link,beanie image_1 (Black),[Gray photo] or TRIM,Variant image mismatch
+SQ9891810,image_link,beanie image_1 (Black),[Light grey photo] or TRIM,Variant image mismatch
+SQ6240622,image_link,beanie image_1 (Black),[Beige photo] or TRIM,Variant image mismatch
+SQ2122502,image_link,beanie image_1 (Black),[Camel photo] or TRIM,Variant image mismatch
+SQ3845006,image_link,beanie image_1 (Black),[Bordeaux photo] or TRIM,Variant image mismatch
+SQ3314835,image_link,beanie image_1 (Black),[Pink photo] or TRIM,Variant image mismatch
+SQ1599152,image_link,beanie image_1 (Black),[Melange grey photo] or TRIM,Variant image mismatch
+SQ2239941,image_link,set image_1 (Black),[Gray photo] or TRIM,Variant image mismatch
+SQ7476378,image_link,set image_1 (Black),[Brown photo] or TRIM,Variant image mismatch
+SQ9035687,image_link,turtleneck image_1,[Classic Grey photo] or TRIM,Variant image mismatch (XS)
+SQ6470056,image_link,turtleneck image_1,[Classic Grey photo] or TRIM,Variant image mismatch (S)
+SQ0376525,image_link,turtleneck image_1,[Classic Grey photo] or TRIM,Variant image mismatch (M)
+SQ5958509,image_link,turtleneck image_1,[Chestnut Brown photo] or TRIM,Variant image mismatch (XS)
+SQ1481398,image_link,turtleneck image_1,[Chestnut Brown photo] or TRIM,Variant image mismatch (S)
+SQ0199503,image_link,turtleneck image_1,[Chestnut Brown photo] or TRIM,Variant image mismatch (M)
+SQ8005265,image_link,turtleneck image_1,[Melange Brown photo] or TRIM,Variant image mismatch (XS)
+SQ8421560,image_link,turtleneck image_1,[Melange Brown photo] or TRIM,Variant image mismatch (S)
+SQ2134916,image_link,turtleneck image_1,[Melange Brown photo] or TRIM,Variant image mismatch (M)
+SQ9790760,image_link,turtleneck image_1,[Melange Taupe photo] or TRIM,Variant image mismatch (XS)
+SQ7638948,image_link,turtleneck image_1,[Melange Taupe photo] or TRIM,Variant image mismatch (S)
+SQ0831840,image_link,turtleneck image_1,[Melange Taupe photo] or TRIM,Variant image mismatch (M)
+SQ2914675,image_link,turtleneck image_1,[Melange Beige photo] or TRIM,Variant image mismatch (XS)
+SQ8708276,image_link,turtleneck image_1,[Melange Beige photo] or TRIM,Variant image mismatch (S)
+SQ8111036,image_link,turtleneck image_1,[Melange Beige photo] or TRIM,Variant image mismatch (M)
+SQ8096733,image_link,turtleneck image_1,[Dusty Rose photo] or TRIM,Variant image mismatch (XS)
+SQ5264360,image_link,turtleneck image_1,[Dusty Rose photo] or TRIM,Variant image mismatch (S)
+SQ9486312,image_link,turtleneck image_1,[Dusty Rose photo] or TRIM,Variant image mismatch (M)
+SQ9044699,image_link,turtleneck image_1,[Rose Pink photo] or TRIM,Variant image mismatch (XS)
+SQ7358699,image_link,turtleneck image_1,[Rose Pink photo] or TRIM,Variant image mismatch (S)
+SQ2898392,image_link,turtleneck image_1,[Rose Pink photo] or TRIM,Variant image mismatch (M)
+SQ6384123,image_link,turtleneck image_1,[Berry Purple photo] or TRIM,Variant image mismatch (XS)
+SQ1480313,image_link,turtleneck image_1,[Berry Purple photo] or TRIM,Variant image mismatch (S)
+SQ4599687,image_link,turtleneck image_1,[Berry Purple photo] or TRIM,Variant image mismatch (M)
+SQ5869324,image_link,turtleneck image_1,[Purple Brown photo] or TRIM,Variant image mismatch (XS)
+SQ0111040,image_link,turtleneck image_1,[Purple Brown photo] or TRIM,Variant image mismatch (S)
+SQ4784604,image_link,turtleneck image_1,[Purple Brown photo] or TRIM,Variant image mismatch (M)
+SQ5989399,image_link,turtleneck image_1,[Royal Blue photo] or TRIM,Variant image mismatch (XS)
+SQ1919240,image_link,turtleneck image_1,[Royal Blue photo] or TRIM,Variant image mismatch (S)
+SQ4155762,image_link,turtleneck image_1,[Royal Blue photo] or TRIM,Variant image mismatch (M)
+SQ1526199,image_link,turtleneck image_1,[Sky Blue photo] or TRIM,Variant image mismatch (XS)
+SQ1652750,image_link,turtleneck image_1,[Sky Blue photo] or TRIM,Variant image mismatch (S)
+SQ2272298,image_link,turtleneck image_1,[Sky Blue photo] or TRIM,Variant image mismatch (M)
+SQ9956956,title,Merino Wool Raglan Sweater — Dusty Pink Oversized Jumper (S/M),Oversized Merino Wool Raglan Sweater — Dusty Pink (S/M),Only if PDP title change is approved (same pass)
+SQ6945548,title,Merino Wool Raglan Sweater — Dusty Pink Oversized Jumper (L/XL),Oversized Merino Wool Raglan Sweater — Dusty Pink (L/XL),Only if PDP title change is approved (same pass)
+SQ9956956,color,Pink,Dusty Pink,Colour name = product name
+SQ6945548,color,Pink,Dusty Pink,Colour name = product name
+SQ3600486,color,Pink,Dusty Pink,Colour name = product name
+group:69105690dc1bc40ece1f4561 (11 rows),description,"... 100% extra-fine merino wool, Italian-spun yarn. ...","... 100% merino wool. ... (only if no supplier evidence by 31 Oct)",CLAIM-CHECK extra-fine / Italian-spun
+group:69105624c6bfa9183a014d2a (3 rows),description,"... 100% extra-fine merino wool, Italian-spun yarn. ...","... 100% merino wool. ... (only if no supplier evidence by 31 Oct)",CLAIM-CHECK extra-fine / Italian-spun
+SQ2078364,description,... 100% extra-fine merino wool. ...,... 100% merino wool. ... (only if no evidence by 31 Oct),CLAIM-CHECK extra-fine
+all rows containing HAND line (79),description,Knitted on a manually operated knitting machine and hand-sewn in Latvia.,[keep if owner provides origin evidence; else owner-approved origin line],CLAIM-CHECK origin (G8)
+all 98 rows,availability,in_stock (hard-coded),from owner-confirmed stock per SKU; 0 = out_of_stock,Generator hard-code; placeholder stock values
