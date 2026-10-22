@@ -1,11 +1,23 @@
 # Squarespace plan upgrade memo (decision 24, due 4 Nov): PREPARED DRAFT, not final
 
-Author: GM (agent), 2026-10-21. Task GM-13. **Status: BLOCKED on owner.** The current plan name and billing term
+Author: GM (agent), 2026-10-21. Task GM-13. **Status wave 3: ASSUMED verdict below (Case A); wave 2 note follows.** The current plan name and billing term
 are unknown. The memo is pre-written for both cases and is finished the day the owner's Billing and Discounts
 screenshots arrive (unblock pack row 17, due 28 Oct). No purchase, no store change.
 
 **One line (provisional):** on Basic with zero orders, the upgrade only pays for itself as measurement. Buy it the
 week a paid test is approved, not before.
+
+## Wave 3 verdict on assumptions (2026-10-21), owner to confirm
+**Recommendation: Case A. Stay on the current plan, assumed Basic, through Q4 2026. Do not upgrade on 4 Nov.**
+ASSUMPTION: A-GM-05, A-GM-06, A-GM-08; register: `business-os/head-of-ecommerce/assumptions-wave3.md`.
+- Evidence: 0 real orders. The upgrade breaks even only above EUR 300/month (annual) or 450/month (monthly) of store
+  sales. The December paid test is assumed EUR 0 (A-GM-08), so we need no purchase-event signal before Q1.
+- KPI effect: none on revenue. Operating profit saves EUR 6.00-9.00/month (72-108/year) vs Core.
+- Triggers that flip it to Case B (upgrade the week before): the owner approves any paid test, **or** store sales reach
+  EUR 300+/month for 2 months running.
+- If the Billing screenshot shows Core/Advanced: Case D, no purchase. If Discounts show per-code reports on Basic:
+  PAR switches to codes (A-GM-06), and the verdict does not change.
+- Cost EUR 0. Reversible: yes (upgrade possible any time). Owner: decision 24. Billing screenshot by 28 Oct, decision 4 Nov.
 
 ## Facts available now
 | Fact | Value | Source |

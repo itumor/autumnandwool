@@ -45,6 +45,26 @@ tracking to see whether the Squarespace shipping-confirmation email shows tracki
 | T3 | | | | | | | | | | | | none | | | |
 | T4 | | | | | | | | | | | | 7-20 | | | |
 
+## Wave 3 prefill on ASSUMPTIONS (ready to run once the owner confirms)
+
+**ASSUMPTION** values from `assumptions-wave3.md`; the owner replaces any of them before 6 Nov. Execution (buying
+labels, packing, handing over) stays with the owner: OPS-11 is BLOCKED until then.
+
+| Test | Assumed carrier + service (A-ID) | Locker size | Expected label EUR (list price) | Expected pack materials EUR (A-OPS-10) | Expected weight (A-OPS-11) | Promise to test (A-OPS-14) | Christmas row it validates |
+|---|---|---|---|---|---|---|---|
+| T1 LV | Parcel locker-to-locker (A-OPS-01) | M (cardigan) or S | 3.90 (M) / 2.90 (S) Smartposti; Omniva/LP via calculator | 1.50 | 0.8-1.2 kg | 1-3 wd | LV, A-OPS-16 |
+| T2 EU (DE) | Locker/pickup road service (A-OPS-04) | S | 21.90 (S) / 13.99 (XS beanie) | 1.50 | 0.5-0.8 kg | 3-8 wd | EU, A-OPS-18 |
+| T3 EE or LT (optional) | Parcel locker (A-OPS-03) | XS | 4.79 | 1.50 | 0.15-0.25 kg | 2-4 wd | EE/LT, A-OPS-17 |
+| T4 US (optional) | Postal tracked via mans.pasts.lv (A-OPS-06) | — | about 22-28 + provisional duty + fee (A-OPS-08) | 1.50 | 0.15-0.25 kg | 7-20 wd | US, A-OPS-19; tests duty charge at label purchase |
+
+Budget the owner can approve against (ASSUMPTION): T1 + T2 about EUR 29; with T3 about EUR 35; with T4 about
+EUR 60-70 incl. duty on a low declared value. Proposed dispatch-log rows (agent pre-fills on the day, `channel=dryrun`):
+`DRY-01..04`, order_date Fri 6 Nov, promised_dispatch_by Fri 6 Nov (same-day test), carrier per table above.
+
+Timing: hand over Fri 6 Nov before the locker's last pickup; agent checks tracking every working day; results by
+Fri 13 Nov (LV, EE/LT, EU) feed the carrier-backed Christmas table on 14 Nov; US by about 4 Dec (too late for 14 Nov;
+the US row stays "not guaranteed").
+
 ## Go / no-go for the first real order
 
 Go when: T1 and T2 delivered inside the promise, undamaged; label + packaging cost recorded; SOP steps done without

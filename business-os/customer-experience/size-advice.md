@@ -105,6 +105,11 @@ If it does not fit as hoped, you can [approved returns/exchange line: VERIFY cur
 Kristine, Autumn & Wool
 ```
 
+DRAFT-ASSUMPTION fill for the returns line (A-GM-16, A-OPS-22; owner confirms decision 13, adviser G9): "If it
+does not fit as hoped, you can return it within 14 days of delivery; return postage for a size change is paid by
+you, and the quickest swap is to order the other size and send the first one back." Garment numbers in this macro
+are never assumed: CX-08 stays BLOCKED, quote the live PDP only.
+
 ### SIZE_HELP_ONE_SIZE (vests, some cardigans, oversized)
 ```
 Hello [first name],

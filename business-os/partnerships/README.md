@@ -17,7 +17,8 @@ agent. Plan: `plans/2026-2027/partnerships.md`. GM rulings in `plans/2026-2027/m
 | `usage-rights-template.md` | PAR-12 | Written usage-rights request and terms table |
 | `creator-report-template.md` | PAR-16 | Monthly report, Q4 readout, day-90 verdict |
 | `owner-inputs-wave2.md` | all BLOCKED | **One form for every owner answer Partnerships needs** (O1-O15) + lead check sheet |
-| `gift-budget-worksheet.md` | PAR-11, PAR-15 | Gift cost, BE_CAC, max CAC, programme cap (all TODO until costs) |
+| `gift-budget-worksheet.md` | PAR-11, PAR-15 | Gift cost, BE_CAC, max CAC, programme cap (wave 3: filled on ASSUMED values) |
+| `assumptions-wave3.md` | PAR-11, PAR-14, PAR-15 | A-PAR-01..10 register (gift cost, mix, cap, payback, ship window, case B) + conflict W3-PAR-1 (resolved by GM ruling W3-5) + rulings W3-6/7/8 applied to drafts |
 | `per-creator-launch-pack.md` | PAR-14 | Copy-per-creator block: gift spec, code, UTM, row for Growth, approvals |
 | `weekly-ops-kit.md` | PAR-17 (18, 19) | Weekly file shell: follow-ups, disclosure check, readout |
 | `ideas-65-71-prep.md` | PAR-20, PAR-21 | Etsy-buyer photo permission route, cafe shoot/giveaway frame |
@@ -38,7 +39,7 @@ If the owner's list overflows, the GM drops Partnerships gifts first (ruling C11
 | Plan | Master # | Decision | Proposal | Due |
 |---|---|---|---|---|
 | D1 | G4 | Gifts wait for a buyable store? | GM roadmap already says gifts ship **after G4** (PayPal 31 Oct; delivery/size info 14 Nov). Agree. DMs can start once G8 is clear, with gift dates set after G4 | 28 Oct |
-| D2 | 12 | Q4 gifting cap: number of gifts and max EUR per gift | Up to 5-8 gifts. Max per gift <= that SKU's break-even CAC (`unit_economics.py`). Cap EUR = gifts x gift cost: **TODO** until costs are filled (G1, 22 SKUs by 11 Nov) | 28 Oct (number), 15 Nov (EUR) |
+| D2 | 12 | Q4 gifting cap: number of gifts and max EUR per gift | Up to 5-8 gifts. Cap EUR = gifts x gift cost. Wave-3 ASSUMPTION: 5 beanies, cap EUR 110, max EUR 22 per gift, payback judged per programme over 60 days (A-PAR-05/06/08; adopted by GM ruling W3-5, verdict 31 Jan, each gift owner-approved, none before G4) | 28 Oct (number), 15 Nov (EUR) |
 | D3 | 4, 12 | Which SKUs to gift; confirm beanie/turtleneck physical stock | Beanie first, then hat & scarf set, only if GREEN/AMBER in the capacity file | 28 Oct |
 | D4 | 12 | Approve shortlist, each DM and every gift; which account sends | Send from `@autumnandwool` [VERIFY account ownership, master #18] | Weekly |
 | D5 | 11, 23 | Code yes/no and %, commission, usage-rights terms and length | Check discounts on the plan first (#11). % only after min contribution (#23). No commission in Q4. Usage rights: 3 months organic by default, ads only on a separate yes | 28 Oct / 4 Nov |

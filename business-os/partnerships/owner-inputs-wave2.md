@@ -47,6 +47,33 @@ real. Followers are from a third-party directory and are [VERIFY].
 Only 4 leads sit in the 2-10k gifting tier. The 20-creator target needs more sourcing (hashtag search), which also
 needs a live view.
 
+## 2b. Wave 3 (2026-10-21): what is assumed until you answer
+
+The agent now works on these assumed answers (registers: `business-os/head-of-ecommerce/assumptions-wave3.md`,
+`business-os/partnerships/assumptions-wave3.md`). Your answer replaces them. Nothing is sent or shipped on them.
+
+| # | Assumed answer | A-ID |
+|---|---|---|
+| O1 | "knitted on manual machines and finished by hand in Riga"; fibre = live-PDP name only, `[CLAIM-CHECK]` | A-GM-10 |
+| O2 | "4.9 stars, 1,400+ reviews on Etsy (Mareshop)" | A-GM-11 |
+| O3 | No usable per-code report: UTM + manual Orders check (case B) | A-GM-06, A-PAR-10 |
+| O4 | No code, no discount, no commission in Q4 | A-GM-06, A-GM-17 |
+| O5 | 3 months, organic only; ads only on a separate written yes | A-GM-17 |
+| O6 | 5 gifts | A-GM-17 |
+| O7 | Cap EUR 110 total, EUR 22 per gift (beanie, LV/EE/LT) | A-PAR-05 |
+| O8 | 5 x beanie (photographed colour); hat & scarf set Black only as a per-creator swap | A-PAR-03 |
+| O9 | Production's assumed costs: beanie 13.33, hat set 55.51 | A-PRD-20/21 |
+| O11 | `@autumnandwool` sends (scenario A) | A-GM-12 |
+| O12 | Yes: gifts ship only after G4; make W47, ship by 27 Nov | A-GM-17, A-PAR-09 |
+| O15 | Owner films; no giveaway in Q4 | A-GM-26 |
+| O10, O13, O14 | **Not assumable**: live-profile check, native speaker, Etsy status/permission | still needed |
+
+**Decision for the GM/owner (W3-PAR-1):** a beanie gift (EUR 19.83) costs more than one beanie order earns (CM2 13.09),
+so the A-GM-17 rule "gift cap <= beanie break-even CAC" blocks every gift. Proposal: apply it to the whole programme
+over 60 days (about 6 attributed orders for 5 gifts). **Resolved 2026-10-21 by GM ruling W3-5:** fixed EUR 110 for 5
+beanies, LV/EE/LT, max EUR 22 per gift, 60-day payback, verdict by 31 Jan. Owner still confirms the count (28 Oct) and
+EUR 110 (15 Nov), approves each gift, and nothing ships before G4.
+
 ## 3. What happens after each answer
 
 - O1 + O2 + O10 + O11 -> agent writes the first 5 personalised DMs (PAR-06) for approval.

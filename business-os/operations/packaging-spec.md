@@ -26,7 +26,7 @@ order); `.claude/skills/aw-fulfilment-sop` stage 4; `.claude/skills/aw-brand-voi
 | P1 small | Rib-knit beanie, single accessories | Padded or plain mailer bag, size TODO | Tissue wrap, care card, packing slip | Weigh in dry run (TODO) |
 | P2 standard | Sweaters, vests, raglan cardigans | Mailer bag or slim box, size TODO | Tissue wrap, care card, packing slip, optional thank-you card | Weigh in dry run (TODO) |
 | P3 large | Long shawl cardigan, hat + scarf set, multi-item orders | Box (or large mailer), size TODO | As P2; second tissue wrap per item | Weigh in dry run (TODO) |
-| Gift card | Digital gift card | None (no shipping) | — | — |
+| Gift card | Not offered: no gift card exists (A-GM-22, GM ruling W3-6). Gift orders get a handwritten gift note instead | None | — | — |
 
 Rule: if a P2 garment does not fit the smallest locker class of the chosen carrier when folded, test the next
 fold (roll vs flat) in the dry run before upsizing. Record the result per SKU in the table in section 5.

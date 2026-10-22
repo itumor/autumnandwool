@@ -9,9 +9,11 @@ from product fit and the 3 GSC queries on file, not from volume.
 |---|---|---|---|---|
 | 21 Oct – 15 Nov | Cold-weather layers, self-purchase | Sweaters/cardigans/vests titles + metas live; size guide title; category intros | Boards 1–3 (oversized sweaters, cardigans, vest outfits) | Batch 1 titles/tags for sweaters and cardigan |
 | 16 Nov – cut-off | Gifts | Gift guide page or "Winter Wool Gifts" category refresh; beanie + set metas lead with gift | Boards 4–5 (beanies, gifts for her) weighted 60% of new pins | Gift attributes (Occasion: Christmas, Holiday) on beanie and set listings |
-| Cut-off – 31 Dec | Gift cards, late self-purchase, after-Christmas | Gift card page text `[gift card PDP not reviewed yet]`; "free shipping" line only | Gift card pin; turn back to sweaters after 24 Dec | Leave listings unchanged in the freeze (from 12 Dec, master plan) |
+| Cut-off – 31 Dec | Late self-purchase, after-Christmas (no gift card exists: A-GM-22, W3-6) | CX A-CX-03 line "may arrive after Christmas"; "free shipping" line only | No gift-card pin; archive or edit cut-off pins; turn back to sweaters after 24 Dec | Leave listings unchanged in the freeze (from 12 Dec, master plan) |
 
-Cut-off dates per zone come from Operations (G5: provisional 31 Oct, published 20 Nov). Until then no copy says "arrives
+Cut-off dates per zone come from Operations (G5: provisional 31 Oct, published 20 Nov). Assumed Baltic second stop
+(W3-11): MTO garments LV 4 Dec / EE-LT 3 Dec, accessories LV 11 Dec / EE-LT 10 Dec, Baltic addresses only; see
+`2026-10-21-christmas-cutoff-pins-wave3.md`. Until then no copy says "arrives
 before Christmas". US/CA/AU: "Christmas delivery not guaranteed" unless paid express exists (ruling C3).
 
 ## Seeds by cluster (verify each before use)

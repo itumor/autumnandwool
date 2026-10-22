@@ -92,3 +92,32 @@ Rules met: sent to every buyer in "Customers", whatever happened with their orde
 suggested rating; we never edit, seed or write reviews. "Reply first" is an offer of help, not a filter: it
 must not stop anyone reviewing (the adviser checks this wording against Omnibus / unfair-practice rules).
 BLOCKED: review platform (decision 30); adviser (G9).
+
+### P3 wave 3: DRAFT-ASSUMPTION version (reply by email, no platform)
+
+ASSUMPTION: no review platform in Q4, P3 asks for a reply by email (A-GM-14, A-CX-06); only buyers with a recorded
+consent basis are in "Customers" (A-GM-14: in Q4 that means newsletter sign-ups who bought). Register:
+`business-os/customer-experience/assumptions-wave3.md`. Activation goes with CX-22 (MailerLite) and the adviser's
+answer on review requests (G9).
+
+Subject (<=45): How is your [piece] after two weeks?
+Preheader (<=90): A few honest words by reply help me, and help the next person choose a size.
+
+Body (about 100 words):
+> Hello [first name],
+>
+> You have had your [piece] for a couple of weeks now, and I would really like to know how you find it.
+>
+> If you have a moment, just reply to this email with a few honest words: how the size fitted, how the wool feels,
+> and anything you would change. Good or not so good, both help me make the next pieces better.
+>
+> If something is not right, tell me that too, and I will help.
+>
+> Kristine
+
+CTA: "Reply to Kristine" (reply-to `autumnandwool@gmail.com`, A-GM-14). No link, no incentive, no rating scale.
+Rules: sent to every buyer in "Customers" (no gating); replies are never published, quoted or turned into a review
+without the customer's written yes and the owner's yes (decision 17; HARD RULE 5). Replies go to triage as
+REVIEW/PRAISE or, if a problem, P1 (RETURN_START / DAMAGED). When the owner picks a platform, the link version above
+returns.
+[ADVISER G9]: confirm this email may go to buyers on the assumed consent basis, and whether it counts as marketing.

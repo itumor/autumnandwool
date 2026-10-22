@@ -25,6 +25,24 @@ only the owner decides.
 | Return address | none published | Live `/shipping-returns` ("contact us for instructions") | Owner decision 13 (30 Oct) |
 | Christmas order-by dates | none published | OPS plan: provisional only | OPS carrier-backed 14 Nov, publish 20 Nov |
 
+### Wave 3 assumed values (DRAFT-ASSUMPTION, 21 Oct)
+Register: `business-os/customer-experience/assumptions-wave3.md` (A-CX) and the shared GM / OPS / PRD registers it
+cites. These fill the gaps above so macros 2, 7, 12, 13 and 14 read as finished drafts. **They are assumptions, not
+facts.** A reply that uses one keeps the line `[ASSUMPTION A-xx: owner confirms before sending]` in the case file
+until the owner has answered.
+
+| Gap | Assumed value | A-ID |
+|---|---|---|
+| Reply time | "within 1-2 business days" | A-GM-04 |
+| Dispatch | in stock 2-5 working days; made to order 10 working days (sweaters, cardigans), 5 (beanie, hat & scarf set) | A-GM-03, A-CX-07 |
+| Delivery after dispatch | LV 1-3, EE/LT 2-4, other EU 3-8, US/CA/AU 7-20 working days (estimates) | A-OPS-14 |
+| Return postage | change of mind: customer pays; faulty, damaged or wrong item: we pay | A-GM-16, A-OPS-22 |
+| Return address | `[RETURN_ADDRESS]` stays a placeholder (owner fact) | A-OPS-21 |
+| Gift perks | handwritten gift note yes; prices off the packing slip yes [VERIFY OPS: Squarespace slip setting]; gift wrap no; no extended Christmas exchange; no gift card | A-GM-22, A-CX-03 |
+| Christmas order-by | per zone, Ops wave-3 table (macro 13) | A-CX-01, A-CX-02 |
+| December chase threshold | transit upper bound + 3 working days | A-CX-04 |
+| Review platform | none in Q4; ask for a reply by email | A-GM-14, A-CX-06 |
+
 Signature: "Kristine, Autumn & Wool" for personal replies, "Autumn & Wool" otherwise. Email length 50-150 words.
 DM/comment 1-3 sentences. Answer the customer's question in the first sentence. Reply in the customer's language.
 If it is translated, mark it `[translated, human check]`.
@@ -52,6 +70,16 @@ If you need it by a particular date, tell me the date and the country and I will
 whether we can make it.
 
 Kristine, Autumn & Wool
+```
+
+DRAFT-ASSUMPTION fill (A-GM-03, A-CX-07, A-OPS-14), replaces the bracketed middle lines once the owner confirms
+decision 3:
+```
+[Product] is [in stock / made to order: VERIFY on the product page today]. Pieces in stock are
+dispatched from Riga within 2-5 working days. Made-to-order [sweaters and cardigans are dispatched
+within 10 working days / beanies and hat & scarf sets within 5 working days]. Delivery then takes
+about [Latvia 1-3 / Estonia and Lithuania 2-4 / other EU countries 3-8 / USA, Canada and Australia
+7-20] working days. These are estimates, not guarantees.
 ```
 
 ## 3. ORDER_STATUS (P2; P1 if late)
@@ -159,6 +187,27 @@ measurement and the fit you like.
 
 Kristine, Autumn & Wool
 ```
+DRAFT-ASSUMPTION version (A-GM-16, A-OPS-21..23; same text as OPS `returns-wording-draft-wave3.md` R1). Use it
+only after the owner confirms decision 13; the return outcome itself is always `[OWNER DECISION]`:
+```
+Subject: Your return for order [#]
+
+Hello [first name],
+
+Thank you for letting me know. Your return for [item] is noted.
+Please send it back by [notice date + 14 days] to: [RETURN_ADDRESS]. Return postage for a
+change-of-mind return is paid by you; a tracked parcel-locker service is usually the easiest
+option. Please put your order number in the parcel.
+When it reaches us, or when you send proof of posting, I will refund [OWNER DECISION: item price +
+standard delivery paid] to your original payment method, at the latest by [notice date + 14 days].
+
+If the size was the problem, I am happy to help you choose another one. Just send me your chest
+measurement and the fit you like.
+
+Kristine, Autumn & Wool
+```
+Faulty, damaged or wrong item: macro 8, "we cover the return postage" (A-GM-16). Never "free returns".
+
 Exchange (live FAQ flow; owner confirms it is still current): "To swap, place a new order for the size or colour
 you want and send the original back. We refund the first order once the return arrives [OWNER DECISION: timing]."
 Outside the window: do not refuse in the draft. Send the case to the owner with the dates.
@@ -213,8 +262,37 @@ together. — Kristine
 Rules: no argument, no order details in public, no admission of legal liability, never ask for the review to be
 changed or removed in exchange for anything. Draft the private follow-up with DAMAGED or RETURN_START.
 
-## 12. GIFT (pre-sale, P2) — BLOCKED until OPS dates and owner decision 31
+## 12. GIFT (pre-sale, P2) — DRAFT-ASSUMPTION (wave 3)
 
+ASSUMPTION: gift note yes, prices off the slip yes, no gift wrap, no extended exchange, no gift card (A-GM-22,
+A-CX-03); dates per macro 13 (A-CX-01/02). Owner confirms decision 31 (14 Nov) and the Christmas table (20 Nov)
+before any of this is sent.
+
+```
+Subject: A gift from Autumn & Wool
+
+Hello [first name],
+
+How lovely that it is a gift. I can add a short handwritten note: just write the message in the
+order notes at checkout, or reply to this email with it. [ASSUMPTION A-GM-22; VERIFY CRO: does the
+checkout have a notes field?] The packing slip goes in without prices.
+[VERIFY OPS: Squarespace packing-slip setting]
+
+For Christmas delivery to [country], please order by [date from the macro 13 table for that zone
+and for this piece: in stock / made to order]. [US/CA/AU: "I cannot promise delivery before
+Christmas to [country], sorry."]
+
+If the size is a guess, send me what you know: their usual size, or a sweater of theirs measured
+flat from armpit to armpit. I will suggest the safest choice. The [hat and scarf set / beanie] is
+one size, so it is the easiest gift to get right.
+
+Kristine, Autumn & Wool
+```
+Not offered (A-GM-22): gift wrap, an extended Christmas exchange window, gift cards. If the customer asks about
+returns for a gift: standard withdrawal wording only, `[ADVISER: does the 14 days run from delivery to the
+recipient?]`. No legal conclusion in the reply.
+
+### Earlier skeleton (wave 1, kept for reference)
 ```
 Hello [first name],
 
@@ -227,8 +305,44 @@ laid flat), and I will suggest the safest choice. [Exchange after Christmas: OWN
 Kristine, Autumn & Wool
 ```
 
-## 13. CHRISTMAS_DEADLINE (Dec) — BLOCKED until OPS dates
+## 13. CHRISTMAS_DEADLINE (Nov-Dec) — DRAFT-ASSUMPTION (wave 3)
 
+ASSUMPTION: Ops wave-3 order-by table, recomputed after GM ruling W3-1 (A-OPS-16..19, A-CX-01/02); register:
+`business-os/customer-experience/assumptions-wave3.md`. **Internal only.** No date goes to a customer before the owner
+approves the carrier-backed table (A-GM-28, decision 33, 20 Nov). Orders placed before 12:00 Riga time (A-OPS-13).
+Delivery target Wed 23 Dec.
+
+| Zone | In stock (owner-confirmed units only) | Made to order: sweaters, cardigans (10 wd) | Made to order: beanie, hat & scarf set (5 wd) | Guaranteed? |
+|---|---|---|---|---|
+| Latvia | Wed 16 Dec | Fri 4 Dec | Fri 11 Dec | if the carrier confirms |
+| Estonia, Lithuania | Tue 15 Dec | Thu 3 Dec | Thu 10 Dec | if the carrier confirms |
+| Other EU, main zones | Mon 7 Dec | Thu 19 Nov | Thu 26 Nov | if the carrier confirms |
+| USA, Canada, Australia | Thu 26 Nov | Fri 13 Nov | Mon 23 Nov | **No: "Christmas delivery not guaranteed"** (C3) |
+| Rest of world, remote EU zones | no date | no date | no date | no promise (A-OPS-07, A-OPS-20) |
+
+Note: US/CA/AU made-to-order garments (13 Nov) close before the 20 Nov publication date, and LV/EE-LT made-to-order
+dates depend on the owner accepting a local second stop (Ops). If she does not, LV and EE/LT use 19 Nov / 26 Nov.
+
+```
+Subject: Christmas delivery to [country]
+
+Hello [first name],
+
+For delivery before Christmas to [country], the last order date is [date] for [piece]
+([in stock / made to order in our Riga studio]), for orders placed before noon Riga time.
+[Inside the date:] You are in time, so it should arrive before Christmas. I will send the
+tracking link the day it leaves the studio.
+[Past the date:] I am sorry, I cannot promise it before Christmas any more. If you would still
+like it, I can add a handwritten note saying it is on its way.
+[US/CA/AU:] Delivery to [country] takes 7-20 working days after dispatch, so I cannot promise
+it before Christmas.
+
+Kristine, Autumn & Wool
+```
+No gift card line (A-CX-03: none assumed to exist). If the owner confirms a gift card exists, add: "A digital
+gift card arrives by email straight away."
+
+### Earlier skeleton (wave 1, kept for reference)
 ```
 Hello [first name],
 
@@ -253,6 +367,20 @@ guaranteed" unless paid express exists. Still BLOCKED: carrier-backed table (OPS
 
 ORDER_STATUS A or B, plus: "December post is busy, so carriers may need [VERIFY OPS] extra days. If it has
 not arrived by [date], reply and I will chase it straight away."
+
+DRAFT-ASSUMPTION (wave 3; A-CX-04, A-OPS-14). Chase date = dispatch date + upper transit bound (LV 3, EE/LT 4,
+other EU 8, US/CA/AU 20 working days) + 3 working days. Customer copy has no delay number:
+```
+Hello [first name],
+
+Your order [#] left Riga on [dispatch date] with [carrier]. You can follow it here: [tracking
+link]. December post is busy, so it can take a few extra days. If it has not arrived by
+[chase date], reply to this email and I will chase it with the carrier straight away.
+
+Kristine, Autumn & Wool
+```
+Past the chase date: P1, CX drafts the carrier enquiry for the owner; any replacement or refund is
+`[OWNER DECISION]`.
 
 ## 15. OUT_OF_OFFICE (markets, holidays)
 
@@ -290,3 +418,6 @@ Case files hold the first name and case number only. No addresses, no payment de
 - 2026-10-21 v1 drafted (16 macros incl. escalation). Owner review requested by 14 Nov (plan target).
 - 2026-10-21 wave 2: macro 13 checked against OPS provisional table; macro 7 placeholders match OPS
   `returns-handling.md` R1 (same owner decision 13). Open owner questions moved to `owner-inputs-wave2.md`.
+- 2026-10-21 wave 3 (ASSUMPTION MODE): assumed-values table added; macros 2, 7, 12, 13, 14 completed as
+  DRAFT-ASSUMPTION from A-GM-03/04/14/16/22, A-OPS-13/14/16..24, A-CX-01..07. Macro 13 uses Ops' recomputed per-zone
+  dates (W3-1). Nothing sent; each assumption is replaced when the owner answers.

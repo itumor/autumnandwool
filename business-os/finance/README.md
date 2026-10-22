@@ -1,4 +1,4 @@
-# business-os/finance — Finance drafts (aw-finance), waves 1-2, 2026-10-21
+# business-os/finance — Finance drafts (aw-finance), waves 1-3, 2026-10-21
 
 All files are DRAFTS for owner approval. Nothing sent, paid, booked or written to shared CSVs.
 Not accounting, tax or investment advice; the accountant has the final word.
@@ -24,5 +24,8 @@ Not accounting, tax or investment advice; the accountant has the final word.
 | Wave 2: FIN-24 prepared | `accountant-pack-2026-11.md` |
 | Wave 2: FIN-25 prepared | `year-end-pack-2026.md` |
 | Wave 2: FIN-26..29 prepared | `plan-2027-quarters-draft.md` |
+| Wave 3 (ASSUMPTION MODE): Finance assumptions register A-FIN-01..06 | `assumptions-wave3.md` |
+| Wave 3: FIN-03, FIN-18, FIN-19 consolidated per-SKU margins, 22 SKUs x 4 zones (ASSUMED) | `sku-margins-assumed-wave3.md`, `sku-margins-assumed-wave3.csv` |
+| Wave 3: FIN-05, FIN-07 (ASSUMED), FIN-17 conditional verdict (BLOCKED) | `cash-buffer-and-verdicts-assumed-wave3.md` |
 
 Status: `plans/2026-2027/status/finance.md`.

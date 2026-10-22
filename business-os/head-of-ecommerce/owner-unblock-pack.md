@@ -5,6 +5,41 @@ Author: Head of E-commerce / GM (agent), 2026-10-21 (wave 2). Sources: `plans/20
 several departments asked for it. Nothing here is spend, a live change or a message. You send, apply and pay.
 Time estimates are GM estimates, not measured.
 
+## Wave 3: confirm these assumptions (added 2026-10-21, about 15 minutes)
+You approved assumption mode on 21 Oct, so the teams now build on three registers of **assumed** answers:
+decisions `head-of-ecommerce/assumptions-wave3.md` (A-GM), costs/stock/capacity `knitwear-making/assumptions-wave3.md`
+(A-PRD), carriers/shipping/cutoffs `operations/assumptions-wave3.md` (A-OPS). None of these is a fact or your answer.
+They permit no spend, live change or message. Below are the 15 that move the most work and money, plus 4 from the phase-B rulings W3-5..W3-14 (rows 16-19). Tick each one, or
+write the correct value. One correction = one line, and GM re-runs the dependent tasks. Due **Wed 28 Oct** (the
+rows marked 24 Oct first).
+
+| # | A-ID | Assumed (not a fact) | Why it matters | By | OK? / your value |
+|---|---|---|---|---|---|
+| 1 | A-GM-02 | Priority 5 = Raglan Cardigan, Dusty Pink Raglan, Lambswool Crew, Hat & Scarf Set (Black only), Beanie. No swap | Every team's PDP, cost, pin, email and gift work is scoped to these 5 | 24 Oct | [ ] OK  change: __ |
+| 2 | A-PRD-01 | Your labour rate **EUR 12.00/hour** | Labour is 55-65% of every garment's cost | 28 Oct | [ ] OK  EUR __/h |
+| 3 | A-PRD-21 | Minutes per unit: cardigan 260, Dusty Pink 210, crew 200, hat set 130, beanie 35 | The cardigan's CM2 swings about EUR 16 if it is really 180 min. Timing 3 units replaces this | 25-28 Oct | [ ] OK  real: __ |
+| 4 | A-PRD-12 | Stock: listed 1-8 = real; listed 12/16 = half on the shelf; beanie 220 and turtleneck 360 = **0 on shelf, made to order** | Feed availability, sell-through, gift and stall planning | 24 Oct | [ ] OK  counts: __ |
+| 5 | A-GM-03 / A-PRD-14 | "In-stock items dispatched in 2-5 working days"; made-to-order garments within **10** working days, beanie/hat set **5** | The public promise on every PDP. Ops assumed 5 days for MTO garments; GM ruled 10 (W3-1) | 24 Oct | [ ] OK  other: __ |
+| 6 | A-OPS-01..06 | Parcel lockers (Smartposti-type) in the Baltics, tracked road parcel in the EU, national post for US. Cost per parcel LV 5, EE/LT 6, EU 22, US/CA/AU 28 (+ US duty about 15% + EUR 3) | Shipping is the second-largest cost and it is free to customers today | 28 Oct | [ ] OK  carrier used: __ |
+| 7 | A-GM-18 / W3-13 | Free shipping to US/CA/AU loses money on 20 of 22 SKUs. Assumed policy: **LV/EE/LT free; EU-other free from EUR 150, otherwise EUR 12; US/CA/AU flat EUR 15** (not promoted). Rest of World: no promise. You change the store settings | Stops loss-making orders before the gift season | 31 Oct (final 11 Nov) | [ ] OK  [ ] other: __ |
+| 8 | A-GM-20 | Minimum contribution **EUR 10 per order**. Result: paid traffic is viable only for Dusty Pink and Lambswool Crew in LV + EE/LT | Bid ceiling for any ad or creator spend | 4 Nov | [ ] OK  EUR __ |
+| 9 | A-GM-09 | Cash buffer = 8 weeks of fixed costs. Planning case EUR 460 (from EUR 250/month, the illustrative upper end). **No bank balance assumed** | Every spend verdict is "affordable only if balance >= buffer + spend" until you give the balance | 28 Oct | [ ] OK  fixed costs EUR __/mo |
+| 10 | A-GM-05 | Stay on the current plan (assumed **Basic**) through Q4. No upgrade on 4 Nov | Saves EUR 72-108/yr. Upgrade only when a paid test is approved or sales reach EUR 300+/month | 28 Oct screenshot | [ ] OK  plan is: __ |
+| 11 | A-GM-08 | December paid test **EUR 0** (no-go) unless 6/6 Growth gates pass by 20 Nov | Default spend in the forecast | 20 Nov | [ ] OK  ceiling EUR __ |
+| 12 | A-GM-10 | Wording allowed: "knitted on manual machines and finished by hand in Riga". No "hand-knitted", "Italian-spun", "extra-fine", "RWS", "sustainable". Fibre % only after an invoice | Gate G8 for DMs, ads, PDP copy, feed | 31 Oct | [ ] OK  corrections: __ |
+| 13 | A-OPS-16..19 | Christmas order-by (internal only): in-stock LV 16 Dec, EE/LT 15 Dec, EU 7 Dec. US/CA/AU "not guaranteed" | Banner, gift copy, Production's MTO stop. Published only after your 20 Nov approval | 14 Nov | [ ] OK |
+| 14 | A-GM-16 / A-OPS-22 | Change-of-mind returns: **customer pays return postage** (told before purchase). Faulty or wrong item: we pay. Pending the adviser | Returns page, CX macros, returns allowance (5% of net, A-GM-21) | 30 Oct | [ ] OK  [ ] we pay all |
+| 15 | A-GM-12 | Instagram `@autumnandwool` is the brand account. `@mare.knitwear` gets no new posts. Pinterest `mmareshop` is renamed. No Facebook/TikTok in Q4 | Every caption, bio link, pin and creator DM uses this handle | 31 Oct | [ ] OK  accounts: __ |
+| 16 | W3-5 | Creator gifts: fixed test budget **EUR 110** for 5 beanies, Baltic creators only, max EUR 22 per gift. Judged on payback within 60 days. You approve each gift | Without it the per-gift rule allows zero gifts | 28 Oct / 15 Nov | [ ] OK  EUR __ |
+| 17 | W3-11 | Made-to-order Christmas: put the order-by line on the cardigan/beanie/hat set PDPs by **9 Nov** (EU garments order by 19 Nov), **plus** later Baltic-only stops (garments LV 4 Dec / EE-LT 3 Dec) | Otherwise the EU made-to-order date passes before any customer is told | 4 Nov | [ ] OK both  [ ] PDP line only  [ ] neither |
+| 18 | W3-12 | Returns: 14-day withdrawal, **no made-to-order exclusion** for standard designs. PDP line and policy page change together, after the adviser | Today's live page conflicts with the new copy | 3 Nov (adviser pack) | [ ] OK  [ ] keep exclusion (adviser) |
+| 19 | W3-6 / W3-7 / W3-10 | No gift card. No "gift packaging" wording (gift note only). Cardigan Brown/Blue sold as **made to order** (10 working days) unless you count 2 of each on the shelf | Removes promises we cannot keep from Christmas copy | 24 Oct / 14 Nov | [ ] OK  gift card exists: Y/N  Brown/Blue on shelf: __ |
+
+Also in the registers, lower impact (tick if you have time): A-GM-06 UTM-only creator attribution (no codes), A-GM-11
+Etsy line "4.9 stars, 1,400+ reviews on Etsy (Mareshop)", A-GM-14 MailerLite free plan, A-GM-15 KuKu stall only and
+conditional, A-GM-17 5 gifts (beanie first), A-GM-19 proposals only (product data stays frozen), A-GM-23 let the backup copy
+lapse on 1 Nov (**not reversible**). Cross-register conflicts W3-1..W3-4: `head-of-ecommerce/assumptions-wave3.md`.
+
 **One line:** 86 of 87 blocked tasks wait on at least one owner action. Five actions (about 4.5-6.5 hours of your time
 in total, most of it unit timing and the stock count) unblock 40 distinct blocked tasks across 9 departments. Do them first.
 
