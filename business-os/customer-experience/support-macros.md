@@ -11,7 +11,7 @@ only the owner decides.
 
 | Fact | Wording to use | Source (read 2026-10-21) | Status |
 |---|---|---|---|
-| Reply time | "We usually reply within 1-2 business days" | Live `/faq` and `/shipping-returns`; master plan ruling C2 | Contact page still says "within 24 hours". Owner confirms C2 by 7 Nov (decision 26) |
+| Reply time | "We usually reply within 1-2 business days" | Live `/faq` and `/shipping-returns`; master plan ruling C2 | Contact page still says "within 24 hours". Owner confirms C2 by 7 Nov (decision 26). Internal draft target: same-day draft |
 | Dispatch | "In-stock pieces leave Riga in 2-5 working days. Made-to-order pieces follow the time on their product page" | Live `/faq`, `/shipping-returns` | Owner decision 3 (24 Oct) may change it |
 | Delivery | "Europe about 5-10 working days; USA, Canada, Australia 7-20 working days. Estimates, not guarantees" | Live `/shipping-returns` | Carrier-backed ranges from OPS after 6 Nov (ruling C8) |
 | Shipping cost | "Free to Latvia, the US and the destinations shown at checkout" | Live `/faq` | OK |
@@ -268,6 +268,20 @@ ASSUMPTION: gift note yes, prices off the slip yes, no gift wrap, no extended ex
 A-CX-03); dates per macro 13 (A-CX-01/02). Owner confirms decision 31 (14 Nov) and the Christmas table (20 Nov)
 before any of this is sent.
 
+INTERNAL ONLY: use the per-zone dates only after the owner approves the carrier-backed table (A-GM-28, 20 Nov). Do
+not give a single Christmas stop: copy the date that matches the buyer's country and piece (garments = made to order
+10 wd; beanie / hat & scarf set = 5 wd; in stock = 2 wd; orders before 12:00 Riga). US/CA/AU must read "Christmas
+delivery not guaranteed".
+
+Per-zone last order dates (lifted from macro 13):
+| Zone | MTO garments (10 wd) | MTO beanie / hat set (5 wd) | In stock (2 wd, confirmed units only) |
+|---|---|---|---|
+| Latvia | Fri 4 Dec | Fri 11 Dec | Wed 16 Dec |
+| Estonia, Lithuania | Thu 3 Dec | Thu 10 Dec | Tue 15 Dec |
+| Other EU, main zones | Thu 19 Nov | Thu 26 Nov | Mon 7 Dec |
+| US, Canada, Australia | Fri 13 Nov | Mon 23 Nov | Thu 26 Nov (best chance, not guaranteed) |
+| Rest of world, remote EU zones | no date | no date | no date |
+
 ```
 Subject: A gift from Autumn & Wool
 
@@ -364,6 +378,9 @@ guaranteed" unless paid express exists. Still BLOCKED: carrier-backed table (OPS
 (owner-inputs-wave2 #16).
 
 ## 14. GIFT_SEASON_WISMO ("where is my order", Dec)
+
+INTERNAL ONLY: uses the unapproved Christmas order-by + transit table (A-CX-01..04, A-OPS-16..19). No per-order chase
+date or delivery promise goes to a customer before the owner approves the carrier-backed table, 20 Nov (A-GM-28).
 
 ORDER_STATUS A or B, plus: "December post is busy, so carriers may need [VERIFY OPS] extra days. If it has
 not arrived by [date], reply and I will chase it straight away."

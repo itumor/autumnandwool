@@ -54,7 +54,7 @@ Recorded for planning only, from A-GM-14 (strictest reading until the adviser an
 | Live Contact page | "within 24 hours" | **no: CRO proposal to change; the owner applies it** |
 | `campaign-assets/welcome-email-draft.md` (original) | 1-2 business days | yes (file not edited by CX) |
 
-Internal target unchanged: CX drafts the same business day, owner sends within 24 h where possible.
+Internal target unchanged: CX drafts the same business day (internal same-day draft), owner sends within 24 h where possible.
 
 ## Conflicts found (for GM / Ops)
 

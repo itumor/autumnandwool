@@ -47,6 +47,20 @@ W44 mix after this: Making 2, Story 0, Product truth 4, Gift 1 (product posts ar
 Links (Growth taxonomy): `<landing>?utm_source=pinterest&utm_medium=social&utm_campaign=autumn-2026&utm_content=<pin id>`;
 carousel via bio link `utm_source=instagram&utm_medium=social&utm_campaign=autumn-2026&utm_content=car-raglan-dusty-pink`.
 
+### "Every colour" carousel reuse on W44 pins (CRE-19)
+
+Colour-pins reuse the "every colour"carousel line ("Every colour of the ..., photographed in daylight so the colour is true")
+when a colour has a real photo. Only the GREEN/PDP colours ship pins today; TBD colours get no pin until their flat lay
+arrives (do not assert any colour photo is shot).
+
+- `pin-beanie-1` (and `pin-beanie-2` in W45): Title "Rib-Knit Merino Beanie, [VERIFY colour name]". Description reuse:
+  "One size, fits 54–58 cm heads. Every colour of the rib-knit beanie, photographed in daylight so the colour is true. Shown
+  in [VERIFY colour name]. Made to order, dispatched in about 5 working days (A-PRD-14)." No colour name invented.
+- `pin-raglan-dusty-pink-1/2`, `pin-lambswool-crew-grey-1`, `pin-hat-scarf-set-black-1`: single-colour product pins,
+  per-colour titles, no carousel line.
+- Pin IDs and colour counts must match the C-1/C-2 tables in `w45-batch-prep-2026-10-21.md` Part 4; any colour without a
+  real flat lay is not pinned (TBD).
+
 ## W45 (Mon 2 – Sun 8 Nov): full calendar
 
 Scripts, captions and shot list: `w45-batch-assumed.md` (same folder).
@@ -69,6 +83,16 @@ Scripts, captions and shot list: `w45-batch-assumed.md` (same folder).
 Volume: 4 videos posted (target 3-5), 8 pins (target 6-8), 1 Q&A. Pillar mix: Making 2 / Product truth 6 / Styling 1 /
 Question 2 / Story 0 (VS-D blocked) / Gift 0 + banked. Product truth runs above the 30% target this week to cover the
 Story gap. Rebalance once Kristine's words arrive.
+
+### "Every colour" carousel reuse on W45 pins (CRE-19)
+
+W45 colour-pins (`pin-beanie-2`, plus `pin-raglan-dusty-pink-2`) inherit the C-1/C-2 "every colour" description line for any
+colour with a real photo; colours without a flat lay carry no pin (TBD). Beanie and raglan pins that ship from PDP/GREEN
+images only use the photographed colour; no colour name invented.
+
+- `pin-beanie-2`: reuse "Every colour of the rib-knit beanie, photographed in daylight so the colour is true." in the
+  description (GREEN/PDP beanie colour only).
+- `pin-raglan-dusty-pink-2`: single-colour product pin (Dusty Pink raglan GREEN), per-colour title, no carousel line.
 
 ## Measurement
 
