@@ -16,6 +16,12 @@ agent. Plan: `plans/2026-2027/partnerships.md`. GM rulings in `plans/2026-2027/m
 | `attribution-scheme.md` | PAR-09 | Codes (if plan allows), UTM pattern, rows for Growth, weekly readout |
 | `usage-rights-template.md` | PAR-12 | Written usage-rights request and terms table |
 | `creator-report-template.md` | PAR-16 | Monthly report, Q4 readout, day-90 verdict |
+| `owner-inputs-wave2.md` | all BLOCKED | **One form for every owner answer Partnerships needs** (O1-O15) + lead check sheet |
+| `gift-budget-worksheet.md` | PAR-11, PAR-15 | Gift cost, BE_CAC, max CAC, programme cap (all TODO until costs) |
+| `per-creator-launch-pack.md` | PAR-14 | Copy-per-creator block: gift spec, code, UTM, row for Growth, approvals |
+| `weekly-ops-kit.md` | PAR-17 (18, 19) | Weekly file shell: follow-ups, disclosure check, readout |
+| `ideas-65-71-prep.md` | PAR-20, PAR-21 | Etsy-buyer photo permission route, cafe shoot/giveaway frame |
+| `close-out-and-2027-prep.md` | PAR-23 to 26 | Close/repeat rule, thank-you note, affiliate pilot and ambassador frames |
 
 ## 2. Weekly cycle (from the week the gates clear)
 

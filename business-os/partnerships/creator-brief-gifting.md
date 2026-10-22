@@ -67,3 +67,8 @@ Autumn & Wool, autumnandwool.com, Instagram @autumnandwool
 
 Prices and stock from `business-os/sku-economics.csv`; ex VAT = price / 1.21. Gift cost per SKU is unknown until
 costs are filled. Proposed choice: beanie first, **only if** its cost is confirmed and it is GREEN/AMBER.
+
+Wave-2 update (2026-10-21): the GM decision pack (#12) says gift only from the priority 5, G8-cleared
+(`head-of-ecommerce/priority-5-sku-proposal-2026-10-21.md`). So the candidates are the beanie and the hat & scarf
+set (Black only until Brown/Gray have real photos). The turtleneck is an alternate, not a gift candidate unless the GM
+swaps it in on 4 Nov. Costing: `gift-budget-worksheet.md`.

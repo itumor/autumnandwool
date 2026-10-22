@@ -4,8 +4,9 @@ valid consent basis exists (Q3 2027 at the earliest; the adviser confirms the ba
 # A3 Win-back flow: 3 emails (CX-16)
 
 Segment: group "Lapsed" = customers with no order for [OWNER DECISION: 180 days proposed, because knitwear buying
-is seasonal]. Exit: buys, picks a preference, unsubscribes. UTMs `utm_campaign=win-back-<n>` [VERIFY GRO
-taxonomy]. Same footer. Features come from the GREEN list on the send date only.
+is seasonal]. Exit: buys, picks a preference, unsubscribes. UTMs (aligned 21 Oct with Growth
+`utm-taxonomy.md` s3): `utm_campaign=win-back-<yyyy-mm of first send>&utm_content=b<n>-<sku-slug or position>`.
+Same footer. Features come from the GREEN list on the send date only.
 
 ---
 
@@ -27,7 +28,7 @@ Body (about 150 words):
 >
 > Kristine
 
-CTA: "See [piece]" -> [PDP URL]?utm_source=mailerlite&utm_medium=email&utm_campaign=win-back-1
+CTA: "See [piece]" -> [PDP URL]?utm_source=mailerlite&utm_medium=email&utm_campaign=win-back-[yyyy-mm]&utm_content=b1-[sku-slug]
 
 ---
 
@@ -48,7 +49,7 @@ Body (about 140 words):
 >
 > Kristine
 
-CTA: "See [piece]" -> [PDP]?utm_source=mailerlite&utm_medium=email&utm_campaign=win-back-2
+CTA: "See [piece]" -> [PDP]?utm_source=mailerlite&utm_medium=email&utm_campaign=win-back-[yyyy-mm]&utm_content=b2-[sku-slug]
 Do not call anything a "bestseller" without order data (brand voice: no invented proof).
 
 ---

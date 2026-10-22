@@ -8,6 +8,9 @@ Gates: costed FAIL / safe-to-promote MISSING / PDP FAIL / orders countable PASS 
 (detail and owners: `paid-test-gates.md`)
 
 SKU(s): ONE SKU, owner's pick from the 5 priority SKUs (master decision 2, re-confirmed 4 Nov). TODO.
+Candidates (wave 2, from `../head-of-ecommerce/priority-5-sku-proposal-2026-10-21.md`): raglan cardigan, Dusty Pink
+sweater, lambswool crew, hat & scarf set (Black only until photos), beanie. Net prices and BE_CAC cells:
+`be-cac-worksheet-priority-skus.md`.
 BE_CAC: MISSING (no `contrib` in `unit_economics.py`). Target CAC: `target_cac_eur` or 0.6 x BE_CAC = MISSING.
 Capacity this week: MISSING (no `capacity-YYYY-Www.md`). Never promote more than its "Max units to promote".
 The README s9 EUR 33.10 example is illustrative and is **not** used.
@@ -24,6 +27,10 @@ launch, re-brief as Sales. Placements: Advantage+ placements (default). No edits
 Audience: broad, women 25-45 is the creative's job, not a targeting layer. Countries: only those inside OPS's
 Christmas order-by date on launch day (G5; master C3: EU about 3 Dec, LV about 10 Dec, provisional). TODO from OPS table
 (31 Oct provisional, 14 Nov carrier-backed). Exclusions: none possible yet (no customer list).
+Provisional window (wave 2, from `../operations/christmas-cutoffs-2026.md`, worst-case, [VERIFY], not for publication):
+go 20 Nov -> launch at the earliest Mon 23 Nov. EU-18 made-to-order order-by Thu 3 Dec (in-stock Wed 9 Dec, only
+for owner-confirmed units); Latvia MTO Thu 10 Dec (in-stock Wed 16 Dec). US/CA/AU order-by 19 Nov is before go, so
+they are excluded. So the EU window is about 9 working days for MTO: too short to scale, enough only for a first read.
 
 Concepts (copy passes `aw-brand-voice` s3; bracketed items filled from the live PDP on the day):
 - A, making-of (**parked until G8**, claims evidence 31 Oct): Kristine at the manual machine, then hand finishing.

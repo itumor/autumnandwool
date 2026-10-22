@@ -242,6 +242,12 @@ Kristine, Autumn & Wool
 ```
 The OPS provisional dates (about 10 Dec Latvia, about 3 Dec EU, about 18-19 Nov US/CA/AU) are worst-case
 arithmetic. Do not quote them before the owner approves the table.
+Wave 2 check (21 Oct) against `business-os/operations/christmas-cutoffs-2026.md`: made-to-order, delivery by
+24 Dec = Latvia Thu 10 Dec, EU-18 Thu 3 Dec (Estonia/Lithuania use the EU row), US/CA/AU Thu 19 Nov; conservative
+(23 Dec) is one working day earlier. In-stock dates only for units the owner has physically confirmed. US/CA/AU
+falls before the 20 Nov publish date, so per ruling C3 the US/CA/AU line reads "Christmas delivery cannot be
+guaranteed" unless paid express exists. Still BLOCKED: carrier-backed table (OPS-09, 14 Nov) + owner approval
+(owner-inputs-wave2 #16).
 
 ## 14. GIFT_SEASON_WISMO ("where is my order", Dec)
 
@@ -282,3 +288,5 @@ Case files hold the first name and case number only. No addresses, no payment de
 
 ## Change log
 - 2026-10-21 v1 drafted (16 macros incl. escalation). Owner review requested by 14 Nov (plan target).
+- 2026-10-21 wave 2: macro 13 checked against OPS provisional table; macro 7 placeholders match OPS
+  `returns-handling.md` R1 (same owner decision 13). Open owner questions moved to `owner-inputs-wave2.md`.

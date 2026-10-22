@@ -4,7 +4,9 @@ DRAFT — for owner approval. Not uploaded, not scheduled, not sent.
 
 Segment: group "Customers". The owner adds the buyer at dispatch (see `flow-plan.md`), only with a recorded
 consent basis. P2 and P3 wait for the adviser's answer on soft opt-in and review requests (gate G9).
-UTMs: `utm_campaign=post-purchase-<n>` [VERIFY against GRO taxonomy]. Same footer as the welcome flow.
+UTMs (aligned 21 Oct with Growth `utm-taxonomy.md` s3): `utm_source=mailerlite&utm_medium=email&
+utm_campaign=post-purchase-<yyyy-mm of activation>&utm_content=p<n>-<link-position>`, e.g.
+`post-purchase-2026-11` + `p1-care-link`. Growth registers the rows in `utm-links.csv`. Same footer as the welcome flow.
 Timing assumes Europe delivery of about 5-10 working days after dispatch. For US/CA/AU buyers (7-20 days), the
 owner adds them about 7 days after dispatch instead [OWNER DECISION: or use a separate group].
 
@@ -33,7 +35,7 @@ Body (transactional length, about 110 words):
 >
 > Kristine
 
-CTA: none (service email); a text link "Care guide" -> /faq?utm_source=mailerlite&utm_medium=email&utm_campaign=post-purchase-1
+CTA: none (service email); a text link "Care guide" -> /faq?utm_source=mailerlite&utm_medium=email&utm_campaign=post-purchase-2026-11&utm_content=p1-care-link
 Facts used: care (live FAQ); tracking (live Shipping page "sent with tracking").
 [VERIFY]: the "relax the folds" tip; care card; tracking email.
 Compliance: the adviser says whether this counts as service (transactional) or marketing.
@@ -76,7 +78,8 @@ Body (about 110 words):
 > You have had your [piece] for a couple of weeks now. If you have a moment, would you write a short, honest
 > review? Other people find it most useful when it mentions how the size fitted and how the wool feels.
 >
-> [Leave a review]([REVIEW PLATFORM LINK: OWNER DECISION 30]?utm_source=mailerlite&utm_medium=email&utm_campaign=post-purchase-3)
+> [Leave a review]([REVIEW PLATFORM LINK: OWNER DECISION 30]?utm_source=mailerlite&utm_medium=email&utm_campaign=post-purchase-2026-11&utm_content=p3-review-link)
+(If the review platform is external, e.g. Etsy or Google, the UTM has no effect there; keep the link plain.)
 >
 > If something is not right, please reply to me first so I can help. You are of course free to review it either
 > way.
