@@ -1,0 +1,38 @@
+{
+  "_note": "Exact string replacements inside existing content. Each 'old' must occur exactly 'count' times in the block's current source; if not, skip that pair and report.",
+  "home_code_block": [
+    {"old": "from 1,400+ customers", "new": "from 1,400+ <a href=\"https://www.etsy.com/shop/mareshop\" target=\"_blank\" rel=\"noopener\">reviews on Etsy</a>", "count": 1},
+    {"old": "<b>Handmade in Riga</b><span>Manual machine knit, hand-sewn</span>", "new": "<b>Machine-knitted, hand-finished</b><span>Manual machine knit, hand-sewn in Riga</span>", "count": 1},
+    {"old": "4.9★ by 1,400+ buyers", "new": "4.9 from 1,400+ reviews on Etsy", "count": 1},
+    {"old": "more than 8,000 orders and a 4.9-star rating from 1,400+ reviews", "new": "8,000+ orders and 4.9 from 1,400+ reviews <a href=\"https://www.etsy.com/shop/mareshop\" target=\"_blank\" rel=\"noopener\">on Etsy</a>", "count": 1},
+    {"old": "href=\"/shop/sweaters\"", "new": "href=\"/wool-sweaters\"", "count": 1},
+    {"old": "href=\"/shop/cardigans\"", "new": "href=\"/wool-cardigans\"", "count": 1},
+    {"old": "href=\"/shop/vests\"", "new": "href=\"/wool-sweater-vests\"", "count": 1},
+    {"old": "href=\"/shop/beanies--hats\"", "new": "href=\"/wool-hats-and-scarves\"", "count": 1}
+  ],
+  "home_code_block_alts": {
+    "rule": "Inside each <a class=\"aw-cat\" ...> tile the <img> has alt=\"\". Set it by the tile's (new) href.",
+    "/wool-sweaters": "Wool sweaters",
+    "/wool-cardigans": "Wool cardigans",
+    "/wool-sweater-vests": "Merino and wool sweater vests",
+    "/wool-hats-and-scarves": "Wool hats and scarves"
+  },
+  "about_code_block": [
+    {"old": "orders shipped worldwide", "new": "orders on Etsy", "count": 1},
+    {"old": "from 1,400+ reviews", "new": "from 1,400+ <a href=\"https://www.etsy.com/shop/mareshop\" target=\"_blank\" rel=\"noopener\">reviews on Etsy</a>", "count": 1},
+    {"old": "by hand or on a manually operated machine", "new": "on a manual knitting machine", "count": 1}
+  ],
+  "faq_code_block": [
+    {"old": "It is knitted by hand or on a manually operated machine in Latvia", "new": "It is knitted on a manual knitting machine in Latvia", "count": 1}
+  ],
+  "shipping_returns_code_block": [
+    {"old": "Each piece is handmade, so slight variations", "new": "Each piece is machine-knitted and hand-finished, so slight variations", "count": 1}
+  ],
+  "footer_text_block": [
+    {"old": "Handmade knitwear by Kristine in Riga, Latvia.", "new": "Machine-knitted, hand-finished knitwear by Kristine in Riga, Latvia.", "count": 1}
+  ],
+  "custom_css": [
+    {"old": "Free shipping  ·  14-day returns  ·  Handmade in Riga, Latvia", "new": "Free shipping  ·  14-day returns  ·  Made in Riga, Latvia", "count": 1},
+    {"old": "Free shipping  ·  14-day returns  ·  Handmade in Riga\"", "new": "Free shipping  ·  14-day returns  ·  Made in Riga\"", "count": 1}
+  ]
+}
