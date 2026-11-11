@@ -36,3 +36,11 @@ Local Lighthouse, main-thread time by source: Squarespace 574 ms (118 ms blockin
 
 ## Phase 4: what 90 would take
 First paint under about 1.8 s on simulated slow 4G. Squarespace ships about 160 KiB of render-blocking CSS and 1.1 MB of scripts on every page; first paint is 2.6 s on PageSpeed in every run today. Reaching 90 means a storefront where the page code is ours (replatform). Not started; owner decision.
+
+## Addendum 14:25 EET: exact mechanism (read-only, nothing changed)
+Home HTML as served to a phone (171 KB): `<header>` ends with Squarespace's inline script `reserveSpaceForHeader.js` (byte 104,950), immediately before `<main>`; the hero Code block starts at byte 116,472. It is the only script in `<body>` before the hero.
+- That script is parser-blocking and measures the header, so the browser must wait for all page CSS before running it. While it waits, only the header exists in the page.
+- When the CSS arrives the browser paints what it has (header: first paint), runs the script, then parses `<main>` and paints the hero in a later frame.
+- By then the page's deferred Squarespace bundles (about 1.1 MB, listed in `<head>` with `defer`) and Google Tag are downloaded or running. Lighthouse counts everything finished before the hero frame as "needed for LCP". How many bundles make it in varies per run: LCP 4-5 s or 10-11 s.
+- The script is part of every Squarespace 7.1 header. It cannot be removed, moved or deferred from Custom CSS or a Code block, and the hero cannot be placed before it.
+Conclusion: the hero cannot be in the first painted frame on this platform, so mobile LCP cannot be brought down to first paint. Mobile 90 is not achievable here by page-level changes.
