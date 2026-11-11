@@ -193,3 +193,19 @@ The site did not get worse between 65 and 63. Every category was scored again by
 | `/privacy-policy` says "sustainable garments" with no evidence | Content | Owner: keep with proof, or drop |
 | Smaller grid images on `/shop` | Performance | Design choice (fewer products per page or smaller thumbnails) |
 | Add To Cart still under the cookie banner on first phone visit | Conversion, not score | Banner layout choice, or a shorter product photo on phones |
+
+## Update 2026-11-11, 11:50 EET: PageSpeed fixes on the home page (batch 14)
+
+Asked for: fix Performance and Agentic browsing in PageSpeed Insights, mobile and desktop.
+
+| Item | Before (10:45) | After | Status |
+|---|---|---|---|
+| Agentic browsing | 2/3 | 3/3 (mobile and desktop, 3 runs) | fixed |
+| Accessibility | 96 | 100 | fixed (same cause) |
+| Desktop Performance | 74 | 89, 72, 91 (3 runs) | better on 2 of 3 runs; home image bytes 601 KB to 289 KB |
+| Mobile Performance | 59 | 54, 50, 47 (3 runs) | not improved; lab noise (48 at 08:22 before any change today) |
+
+What changed: logo image is hidden visually instead of with `display:none`, so the logo link has a name; home images got `srcset` and `sizes`. Details and measurements: `evidence/seo-reaudit-2026-11-10/live-changes/batch14-pagespeed-logo-images.md`.
+
+What is left for mobile: Squarespace's own CSS and scripts (not editable on this plan) and reCAPTCHA from the footer newsletter form. Moving that form to its own page is the one remaining lever and is the owner's call.
+
