@@ -1,0 +1,300 @@
+/* ===== Autumn & Wool – UI & conversion polish (Oct 2026) ===== */
+
+/* 1. Site-wide trust bar above the header (Basic plan has no announcement bar) */
+#header::before {
+  content: "Free shipping  ·  14-day returns  ·  Made in Riga, Latvia";
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  background: #1f1d1a;
+  color: #f5efe6;
+  font-size: 12px;
+  line-height: 1.4;
+  letter-spacing: .06em;
+  text-align: center;
+  padding: 9px 12px;
+}
+@media (max-width: 640px) {
+  #header::before {
+    content: "Free shipping  ·  14-day returns  ·  Made in Riga";
+    font-size: 11px;
+    letter-spacing: .03em;
+    padding: 8px 10px;
+  }
+}
+
+/* 2. Cleaner header: logo already links home, no customer accounts in use */
+.header-nav-item--homepage,
+.header .user-accounts-link { display: none !important; }
+
+/* 3. Hero: make "Find Your Size" a secondary (outline) button */
+a.sqs-block-button-element[href="/size-guide"] {
+  background: transparent !important;
+  color: #000 !important;
+  border: 1px solid #000 !important;
+}
+a.sqs-block-button-element[href="/size-guide"]:hover { background: #000 !important; color: #fff !important; }
+
+/* 4. Shop grid: 2 columns and portrait images on phones */
+.product-list-layout-container {
+  --product-list-num-columns-mobile: 2 !important;
+  --product-list-image-aspect-ratio-mobile: 3 / 4 !important;
+}
+@media (max-width: 767px) {
+  .product-list-layout-container { column-gap: 12px !important; row-gap: 22px !important; }
+  .product-list-item .product-list-item-title { font-size: 14px !important; line-height: 1.3 !important; }
+  .product-list-item .product-list-item-price { font-size: 13px !important; }
+}
+
+/* 5. Product page: reassurance box under Add to Cart */
+.product-detail:not(.tag-digital-gift-card) .product-add-to-cart::after {
+  content: "★ 4.9 from 1,400+ reviews on Etsy (as Mareshop)\A✓  Free shipping\A✓  Dispatched from Riga in 2–5 working days\A✓  14-day returns";
+  white-space: pre-line;
+  display: block;
+  margin-top: 16px;
+  padding: 14px 16px;
+  background: #f6f2ec;
+  color: #1f1d1a;
+  font-size: 13px;
+  line-height: 1.9;
+}
+
+/* 6. Product page: price and buy button stand out more */
+.product-detail .product-price { font-size: 1.25rem; }
+.product-detail .sqs-add-to-cart-button { min-height: 52px; letter-spacing: .04em; }
+
+/* 7. Cookie Preferences pill: sit under the footer instead of covering the email line */
+.cookie-banner-manager { background: #000; }
+.cookie-banner-manager .manage-cookies-bar {
+  position: relative !important;
+  bottom: auto !important;
+  left: auto !important;
+  display: inline-flex;
+  margin: 0 0 16px 24px;
+}
+
+/* 8. Phones: no half-empty rows */
+/* Home hero buttons, home "A love of wool" photo + vest, About knit photo: full width */
+@media (max-width: 767px) {
+  .fe-block-2ae071f9ae8a00d9b17b,
+  .fe-block-12b4d51a08fc3a366a05,
+  .fe-block-97122a678f244f55a67a,
+  .fe-block-25aed0ddefb6447ae070,
+  .fe-block-ffeac2c72275c4946af3 { grid-column-start: 2 !important; grid-column-end: 10 !important; }
+
+  /* Fill the width instead of leaving side gaps */
+  .fe-block-97122a678f244f55a67a .fluid-image-container,
+  .fe-block-97122a678f244f55a67a .js-content-mode-element-wrapper,
+  .fe-block-97122a678f244f55a67a img,
+  .fe-block-41321e656877b1c98558 .fluid-image-container,
+  .fe-block-41321e656877b1c98558 .js-content-mode-element-wrapper,
+  .fe-block-41321e656877b1c98558 img,
+  .fe-block-ffeac2c72275c4946af3 .fluid-image-container,
+  .fe-block-ffeac2c72275c4946af3 .js-content-mode-element-wrapper,
+  .fe-block-ffeac2c72275c4946af3 img {
+    width: 100% !important; height: 100% !important; object-fit: cover !important;
+  }
+}
+
+/* 9. Shop: gift card last, so the knitwear leads */
+.product-list-item:has(a[href*="digital-gift-card"]) { order: 99; }
+
+/* 10. Phones: tighter "Autumn Picks" and "Gift Ideas" sections */
+@media (max-width: 767px) {
+  section[data-section-id="6ad3fd4ae3be3d48cfb8fa56"] .content-wrapper,
+  section[data-section-id="6ad3fe30b01d4a480312eedb"] .content-wrapper {
+    padding-top: 24px !important;
+    padding-bottom: 24px !important;
+  }
+  .fe-block-6d8ea6c12b4891525d36,
+  .fe-block-af9039513f46be9551a1 { grid-row-start: 31 !important; grid-row-end: 33 !important; }
+
+  /* 11. Phones: "Follow us | Autumn and Wool | on Instagram" on one compact row */
+  .fe-block-619518b13363cf6481c8 {
+    grid-column-start: 4 !important; grid-column-end: 8 !important;
+    grid-row-start: 1 !important; grid-row-end: 3 !important;
+  }
+  .fe-block-619518b13363cf6481c8 h1,
+  .fe-block-619518b13363cf6481c8 h2,
+  .fe-block-619518b13363cf6481c8 h3,
+  .fe-block-619518b13363cf6481c8 p { font-size: 18px !important; line-height: 1.15 !important; }
+  section[data-section-id="690875624a17f81b7629f760"] .fluid-engine { grid-template-rows: repeat(2, 24px) !important; }
+}
+
+/* 12. Size Guide link in product descriptions: make it look like a link */
+.product-description a[href="/size-guide"] { text-decoration: underline !important; text-underline-offset: 3px; font-weight: 600; }
+
+/* 13. Phones: stack homepage product sections tightly (no empty grid rows) */
+@media (max-width: 767px) {
+  section[data-section-id="6ad3fd4ae3be3d48cfb8fa56"] .fluid-engine,
+  section[data-section-id="6ad3fe30b01d4a480312eedb"] .fluid-engine,
+  section[data-section-id="690875624a17f81b7629f75c"] .fluid-engine {
+    display: flex !important; flex-wrap: wrap !important; align-items: flex-start !important;
+    column-gap: 12px !important; row-gap: 20px !important; padding: 0 6vw !important;
+  }
+  section[data-section-id="6ad3fd4ae3be3d48cfb8fa56"] .fluid-engine > .fe-block,
+  section[data-section-id="6ad3fe30b01d4a480312eedb"] .fluid-engine > .fe-block,
+  section[data-section-id="690875624a17f81b7629f75c"] .fluid-engine > .fe-block { width: 100% !important; height: auto !important; }
+  /* two products side by side */
+  section[data-section-id] .fluid-engine > .fe-block.fe-block-d2d6854224436afe7bf1,
+  section[data-section-id] .fluid-engine > .fe-block.fe-block-2117ebd8e4f9dfc14f43,
+  section[data-section-id] .fluid-engine > .fe-block.fe-block-cfc0d2d30198a2defcec,
+  section[data-section-id] .fluid-engine > .fe-block.fe-block-9dfec0e02351b6ba815e { flex: 1 1 40% !important; width: auto !important; }
+  /* Shop All buttons keep their height */
+  section[data-section-id] .fluid-engine > .fe-block.fe-block-6d8ea6c12b4891525d36,
+  section[data-section-id] .fluid-engine > .fe-block.fe-block-af9039513f46be9551a1 { height: 56px !important; }
+  /* cardigan close-up photo keeps its shape */
+  section[data-section-id] .fluid-engine > .fe-block.fe-block-97122a678f244f55a67a { height: auto !important; aspect-ratio: 1.08; }
+  section[data-section-id="6ad3fd4ae3be3d48cfb8fa56"] .content-wrapper,
+  section[data-section-id="6ad3fe30b01d4a480312eedb"] .content-wrapper,
+  section[data-section-id="690875624a17f81b7629f75c"] .content-wrapper { padding-top: 32px !important; padding-bottom: 32px !important; }
+  section[data-section-id="6ad3fd4ae3be3d48cfb8fa56"],
+  section[data-section-id="6ad3fe30b01d4a480312eedb"],
+  section[data-section-id="690875624a17f81b7629f75c"] { min-height: 0 !important; }
+}
+
+/* 14. Phones: info pages (About, FAQ, Privacy, Contact, Size Guide, Shipping) stack tightly, images full width */
+@media (max-width: 767px) {
+  section[data-section-id="690875624a17f81b7629f717"] .fluid-engine,
+  section[data-section-id="690875634a17f81b7629f783"] .fluid-engine,
+  section[data-section-id="690875624a17f81b7629f735"] .fluid-engine,
+  section[data-section-id="690875634a17f81b7629f772"] .fluid-engine,
+  section[data-section-id="690875634a17f81b7629f77c"] .fluid-engine,
+  section[data-section-id="690875634a17f81b7629f767"] .fluid-engine {
+    display: flex !important; flex-direction: column !important; row-gap: 24px !important; padding: 0 6vw !important;
+  }
+  section[data-section-id="690875624a17f81b7629f717"] .fluid-engine > .fe-block,
+  section[data-section-id="690875634a17f81b7629f783"] .fluid-engine > .fe-block,
+  section[data-section-id="690875624a17f81b7629f735"] .fluid-engine > .fe-block,
+  section[data-section-id="690875634a17f81b7629f772"] .fluid-engine > .fe-block,
+  section[data-section-id="690875634a17f81b7629f77c"] .fluid-engine > .fe-block,
+  section[data-section-id="690875634a17f81b7629f767"] .fluid-engine > .fe-block { width: 100% !important; height: auto !important; }
+  section[data-section-id="690875624a17f81b7629f717"] .fe-block .sqs-block,
+  section[data-section-id="690875634a17f81b7629f783"] .fe-block .sqs-block,
+  section[data-section-id="690875624a17f81b7629f735"] .fe-block .sqs-block,
+  section[data-section-id="690875634a17f81b7629f772"] .fe-block .sqs-block,
+  section[data-section-id="690875634a17f81b7629f77c"] .fe-block .sqs-block,
+  section[data-section-id="690875634a17f81b7629f767"] .fe-block .sqs-block { height: auto !important; }
+  section[data-section-id="690875624a17f81b7629f717"] .fluid-image-component-root,
+  section[data-section-id="690875634a17f81b7629f783"] .fluid-image-component-root,
+  section[data-section-id="690875624a17f81b7629f735"] .fluid-image-component-root,
+  section[data-section-id="690875634a17f81b7629f772"] .fluid-image-component-root,
+  section[data-section-id="690875634a17f81b7629f77c"] .fluid-image-component-root,
+  section[data-section-id="690875634a17f81b7629f767"] .fluid-image-component-root { aspect-ratio: var(--image-component-native-aspect-ratio); height: auto !important; }
+  section[data-section-id="690875624a17f81b7629f717"] .content-wrapper,
+  section[data-section-id="690875634a17f81b7629f783"] .content-wrapper,
+  section[data-section-id="690875624a17f81b7629f735"] .content-wrapper,
+  section[data-section-id="690875634a17f81b7629f772"] .content-wrapper,
+  section[data-section-id="690875634a17f81b7629f77c"] .content-wrapper,
+  section[data-section-id="690875634a17f81b7629f767"] .content-wrapper { padding-top: 32px !important; padding-bottom: 32px !important; }
+  section[data-section-id="690875624a17f81b7629f717"],
+  section[data-section-id="690875634a17f81b7629f783"],
+  section[data-section-id="690875624a17f81b7629f735"],
+  section[data-section-id="690875634a17f81b7629f772"],
+  section[data-section-id="690875634a17f81b7629f77c"],
+  section[data-section-id="690875634a17f81b7629f767"] { min-height: 0 !important; }
+}
+
+/* buttons keep their height; About knit close-up not too tall */
+@media (max-width: 767px) {
+  #page section[data-section-id] .fluid-engine > .fe-block:has(.sqs-block-button-element) { height: 56px !important; }
+  #page section[data-section-id] .fluid-engine > .fe-block:has(.sqs-block-button-element) .sqs-block { height: 100% !important; }
+  section[data-section-id="690875624a17f81b7629f717"] .fe-block-ffeac2c72275c4946af3 .fluid-image-component-root { aspect-ratio: 1.2; }
+}
+
+/* 15. Phones: footer text keeps its right margin */
+@media (max-width: 767px) {
+  footer .fe-block-yui_3_17_2_1_1763819110574_2672 { grid-column-end: 10 !important; }
+}
+
+/* 16. Mobile menu: hide the duplicate Home link (logo goes home) */
+.header-menu-nav-item--homepage { display: none !important; }
+
+/* 17. Very narrow phones (320px): smaller mobile logo so the menu button is not pushed off screen */
+@media (max-width: 359px) {
+  .header-display-mobile .header-mobile-logo img { width: 160px !important; height: auto !important; max-height: none !important; }
+}
+
+/* 18. Size/colour buttons: tighter spacing so many colours fit */
+.product-variants .variant-radiobtn-wrapper { gap: 8px 8px !important; }
+
+
+/* ===== Autumn & Wool redesign pass (Oct 2026) ===== */
+
+/* A. Hide duplicate bar from home code block (Squarespace bar stays) */
+.aw-bar{display:none!important}
+
+/* B. Headings/text inside dark boxes must stay light */
+.aw .aw-dark h1,.aw .aw-dark h2,.aw .aw-dark h3,.aw .aw-dark b,.aw .aw-dark strong,.aw .aw-dark em{color:#F2EDE6!important}
+.aw .aw-dark p,.aw .aw-dark li{color:#CFC6BA!important}
+
+/* C. Shop grid */
+.product-list-item .product-list-item-title{font-family:'DM Sans',sans-serif;font-size:15px;font-weight:500;line-height:1.35;letter-spacing:0;color:#24201C}
+.product-list-item .product-list-item-price{font-family:'DM Sans',sans-serif;font-size:14px;font-weight:400;color:#5E554D;margin-top:2px}
+.product-list-item .grid-item-image{transition:opacity .35s ease}
+.product-list-item .product-list-item-link:hover .grid-item-image{opacity:.94}
+
+/* D. Product page */
+.product-detail h1.product-title{font-family:'Instrument Serif',serif;font-size:56px;font-weight:400;line-height:1;letter-spacing:-.02em;color:#24201C}
+.product-detail .product-price{font-size:26px;line-height:1.2;color:#24201C}
+.product-detail .variant-radiobtn-wrapper .radio-label{border:1px solid #A89D90;border-radius:4px;background:transparent;color:#24201C}
+.product-detail .variant-radiobtn-wrapper .radio-button-input:checked + .radio-label{background:#24201C;border-color:#24201C;color:#F2EDE6}
+.product-detail .sqs-add-to-cart-button{background:#24201C;color:#F2EDE6;min-height:56px;border-radius:999px;font-weight:600;font-family:'DM Sans',sans-serif}
+@media (max-width:767px){.product-detail h1.product-title{font-size:40px}}
+
+/* E. Cart */
+h2.cart-title{font-family:'Instrument Serif',serif;font-size:44px;font-weight:400;line-height:1.05;letter-spacing:-.02em;color:#24201C}
+.cart-summary .cart-checkout a{background:#24201C;color:#F2EDE6;min-height:56px;border-radius:999px;font-weight:600}
+
+/* F. Specificity fixes: Squarespace theme rules outrank the above */
+.product-detail h1.product-title{font-family:'Instrument Serif',serif!important;font-size:56px!important;line-height:1!important;letter-spacing:-.02em!important}
+.product-detail .product-price{font-size:26px!important}
+.product-detail .variant-radiobtn-wrapper .radio-label{border:1px solid #A89D90!important;border-radius:4px!important;background:transparent!important;color:#24201C!important}
+.product-detail .variant-radiobtn-wrapper .radio-button-input:checked + .radio-label{background:#24201C!important;border-color:#24201C!important;color:#F2EDE6!important}
+.product-detail .sqs-add-to-cart-button{font-weight:600!important}
+.cart-summary .cart-checkout a{font-weight:600!important}
+.product-list-item .product-list-item-price{color:#5E554D!important}
+@media (max-width:767px){.product-detail h1.product-title{font-size:40px!important}}
+
+/* ===== A&W Critical Fix (19-Oct-2026) =====
+Squarespace leaves an invisible full-screen overlay (.sqs-widgets-confirmation-overlay)
+after a failed Add To Cart (variant not selected). It swallows every later click.
+Neutralize its pointer traps: */
+.sqs-widgets-confirmation-overlay{pointer-events:none !important;}
+.sqs-widgets-confirmation{pointer-events:none !important;}
+
+
+/* A&W contact form: disable insecure mailto POST (Oct 2026) */
+/* 2026-10-19: Send message button re-enabled (was display:none) */
+form.aw-f::after{content:"Questions? Email us at autumnandwool@gmail.com — we reply within 1–2 business days.";display:block;margin-top:14px;font-size:15px;color:#3B3631;}
+
+
+/* === Wordmark logo per design (2026-10-19): replaces the logo image with 'Autumn & Wool' in Instrument Serif === */
+.header-title a{display:inline-flex!important;align-items:baseline;white-space:nowrap;height:auto!important;max-width:none!important;text-decoration:none}
+.header-title a picture{display:inline-flex!important}
+.header-title a picture source{display:none !important}
+/* PageSpeed 2026-11-11: logo image visually hidden, not display:none, so the logo link keeps its alt text as a name */
+.header-title a picture img:not(#_){position:absolute !important;width:1px !important;height:1px !important;max-height:1px !important;opacity:0 !important;clip-path:inset(50%) !important;pointer-events:none}
+/* decorative wordmark text gets empty alt (second declaration; older browsers keep the first) so the link is read once */
+.header-title a::before{content:~"'Autumn' / ''"}
+.header-title a picture::before{content:~"'&' / ''"}
+.header-title a picture::after{content:~"'Wool' / ''"}
+.header-title a::before,.header-title a picture::before,.header-title a picture::after{font-family:'Instrument Serif',serif;font-size:34px;line-height:1;letter-spacing:-.01em;font-weight:400;color:#24201C}
+.header-title a::before{content:'Autumn';margin-right:.28em}
+.header-title a picture::before{content:'&';font-style:italic;color:#8E3B1F;margin-right:.28em}
+.header-title a picture::after{content:'Wool'}
+@media (max-width:799px){.header-title a::before,.header-title a picture::before,.header-title a picture::after{font-size:26px}}
+
+
+/* === 2026-10-19 fixes: footer Sign Up button visible + contact Send button === */
+footer .newsletter-form-button,footer .newsletter-form-button.sqs-system-button{background:#F2EDE6!important;color:#24201C!important;border:1px solid #F2EDE6!important;border-radius:999px!important;font-family:'DM Sans',sans-serif!important;font-weight:600!important}
+footer .newsletter-form-button:hover{background:#E7E0D6!important;border-color:#E7E0D6!important}
+form.aw-f>button[type="submit"]{display:block!important;width:100%}
+
+/* SEO audit 2026-11-10: compact cookie bar on phones so it does not cover price / Add To Cart */
+@media (max-width: 767px) {
+  .gdpr-cookie-banner { padding: 8px 12px !important; gap: 4px !important; }
+  .gdpr-cookie-banner p, .gdpr-cookie-banner .sqs-cookie-banner-v2-text { font-size: 11px !important; line-height: 1.3 !important; margin: 0 0 4px !important; padding: 0 !important; }
+  .gdpr-cookie-banner .button-group { margin: 0 !important; padding: 0 !important; gap: 6px !important; }
+  .gdpr-cookie-banner button, .gdpr-cookie-banner .sqs-cookie-banner-v2-cta-container .sqs-button-element { padding: 0 10px !important; height: 36px !important; min-height: 36px !important; line-height: 1 !important; margin: 0 !important; font-size: 12px !important; }
+}

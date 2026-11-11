@@ -1,0 +1,10 @@
+# Regenerable bulk, kept on disk only: raw crawls, raw PageSpeed JSON, full-page screenshots, scratch page dumps
+crawl/
+crawl-after/
+crawl-1111/
+pagespeed/
+pagespeed-1111/
+screenshots/*-full.png
+live-changes/b10/
+backup/*-check-*.html
+.claude/
