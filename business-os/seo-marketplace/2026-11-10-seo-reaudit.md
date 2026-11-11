@@ -235,3 +235,14 @@ Open cosmetic items: `/newsletter` says nearly the same sentence twice; the foot
 
 Details: `evidence/seo-reaudit-2026-11-10/live-changes/batch15-newsletter-page.md`, `batch16-hero-and-results.md`, `batch17-misc-font.md`.
 
+## Update 2026-11-11, 13:25 EET: mobile 90 attempt (batches 18-19)
+
+Asked for: mobile Performance 90. Not reached.
+
+- Change made: on phones the hero text block fills the first screen so the heading, not the photo, is the largest element. PageSpeed confirms the heading is now the LCP element.
+- Result: mobile 73, 76, 75, 70 then 60, 59, 78 across seven runs; before it was 55, 78, 60, 77. No measurable gain.
+- Why 90 is out of reach: first paint is 2.6 s in every run, from Squarespace's own CSS; blocking time is Squarespace scripts plus Google Analytics. Best case with those fixed is about 89.
+- Desktop: 84 to 96 across six runs.
+
+Details: `evidence/seo-reaudit-2026-11-10/live-changes/batch18-19-phone-hero-lcp.md`.
+
