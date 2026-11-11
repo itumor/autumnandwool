@@ -1,0 +1,12 @@
+{
+  "_note": "Home code block, applied to its CURRENT source in this order. Step 1 is a global replace; the rest are exact single replacements checked by count.",
+  "home_code_block_ordered": [
+    {"old": "?format=1000w\"", "new": "?format=750w\"", "count": 15},
+    {"old": "?format=1500w\" alt=\"Model wearing an oversized Autumn &amp; Wool knit sweater\"", "new": "?format=1000w\" fetchpriority=\"high\" alt=\"Model wearing an oversized Autumn &amp; Wool knit sweater\"", "count": 1},
+    {"old": "IMG_2369.JPEG?format=750w\" alt=\"Autumn &amp; Wool on Instagram\"", "new": "IMG_2369.JPEG?format=750w\" alt=\"Autumn &amp; Wool knitwear, Instagram photo 1\"", "count": 1},
+    {"old": "IMG_3022.JPEG?format=750w\" alt=\"Autumn &amp; Wool on Instagram\"", "new": "IMG_3022.JPEG?format=750w\" alt=\"Autumn &amp; Wool knitwear, Instagram photo 2\"", "count": 1},
+    {"old": "IMG_2929.JPEG?format=750w\" alt=\"Autumn &amp; Wool on Instagram\"", "new": "IMG_2929.JPEG?format=750w\" alt=\"Autumn &amp; Wool knitwear, Instagram photo 3\"", "count": 1},
+    {"old": "IMG_2166.JPEG?format=750w\" alt=\"Autumn &amp; Wool on Instagram\"", "new": "IMG_2166.JPEG?format=750w\" alt=\"Autumn &amp; Wool knitwear, Instagram photo 4\"", "count": 1},
+    {"old": "IMG_2373.JPEG?format=750w\" alt=\"Autumn &amp; Wool on Instagram\"", "new": "IMG_2373.JPEG?format=750w\" alt=\"Autumn &amp; Wool knitwear, Instagram photo 5\"", "count": 1}
+  ]
+}

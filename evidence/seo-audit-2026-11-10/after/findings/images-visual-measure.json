@@ -1,0 +1,1975 @@
+{
+ "home-desktop-1440": {
+  "url": "https://www.autumnandwool.com/",
+  "file": "/Users/eramadan/autumnandwool/.claude/worktrees/seo-audit-optimization-9ba6ac/evidence/seo-audit-2026-11-10/after/screenshots/audit-home-desktop-1440.png",
+  "measure": {
+   "viewport": [
+    1440,
+    900
+   ],
+   "scrollWidth": 1440,
+   "horizontal_overflow": false,
+   "h1": [
+    {
+     "text": "Wool knitwear\nfor cooler days",
+     "rect": {
+      "x": 72,
+      "y": 251,
+      "w": 578,
+      "h": 192
+     },
+     "top_in_fold": true
+    }
+   ],
+   "ctas": [],
+   "price_text": [],
+   "tap_small_in_first_viewport": 17,
+   "tap_small_sample": [
+    {
+     "tag": "A",
+     "text": "Privacy Policy",
+     "w": 60,
+     "h": 12
+    },
+    {
+     "tag": "A",
+     "text": "Cookie Policy",
+     "w": 59,
+     "h": 12
+    },
+    {
+     "tag": "A",
+     "text": "Imprint",
+     "w": 32,
+     "h": 12
+    },
+    {
+     "tag": "BUTTON",
+     "text": "Manage cookies",
+     "w": 133,
+     "h": 42
+    },
+    {
+     "tag": "BUTTON",
+     "text": "Decline all",
+     "w": 101,
+     "h": 42
+    },
+    {
+     "tag": "BUTTON",
+     "text": "Accept all",
+     "w": 95,
+     "h": 42
+    },
+    {
+     "tag": "A",
+     "text": "Shop",
+     "w": 31,
+     "h": 23
+    },
+    {
+     "tag": "A",
+     "text": "About",
+     "w": 37,
+     "h": 23
+    }
+   ],
+   "text_nodes": 53,
+   "font_min": 9.544,
+   "font_p10": 11.272,
+   "font_below_12px": 7,
+   "font_below_16_count": 39,
+   "overlays": [
+    {
+     "tag": "SECTION",
+     "id": "",
+     "cls": "gdpr-cookie-banner BOTTOM bar full-styling",
+     "rect": {
+      "x": 0,
+      "y": 830,
+      "w": 1440,
+      "h": 70
+     },
+     "text": "We use essential cookies to operate our store. With your permission, we also use analytics"
+    },
+    {
+     "tag": "P",
+     "id": "",
+     "cls": "disclaimer-text sqs-cookie-banner-v2-text",
+     "rect": {
+      "x": 20,
+      "y": 850,
+      "w": 1023,
+      "h": 31
+     },
+     "text": "We use essential cookies to operate our store. With your permission, we also use analytics"
+    },
+    {
+     "tag": "DIV",
+     "id": "",
+     "cls": "button-group sqs-cookie-banner-v2-cta-container",
+     "rect": {
+      "x": 1063,
+      "y": 844,
+      "w": 357,
+      "h": 42
+     },
+     "text": "Manage cookies\nDecline all\nAccept all"
+    },
+    {
+     "tag": "BUTTON",
+     "id": "",
+     "cls": "decline sqs-button-element--secondary sqs-cookie-banner-v2-deny sqs-cookie-banne",
+     "rect": {
+      "x": 1210,
+      "y": 844,
+      "w": 101,
+      "h": 42
+     },
+     "text": "Decline all"
+    },
+    {
+     "tag": "BUTTON",
+     "id": "",
+     "cls": "accept sqs-button-element--primary sqs-cookie-banner-v2-accept sqs-cookie-banner",
+     "rect": {
+      "x": 1325,
+      "y": 844,
+      "w": 95,
+      "h": 42
+     },
+     "text": "Accept all"
+    }
+   ],
+   "fixed_or_sticky": [
+    {
+     "tag": "SECTION",
+     "id": "",
+     "cls": "gdpr-cookie-banner BOTTOM bar full-styling",
+     "rect": {
+      "x": 0,
+      "y": 830,
+      "w": 1440,
+      "h": 70
+     },
+     "z": "300000"
+    }
+   ],
+   "img_visible": 16,
+   "img_broken_count": 0,
+   "img_broken_sample": [],
+   "img_top_in_first_2_screens": 9,
+   "img_sample": [
+    {
+     "cur": "…/WhatsApp%2BImage%2B2025-11-07%2Bat%2B08.48.42%2B%282%29+%281%29.webp?format=1000w",
+     "natW": 1000,
+     "renderW": 686,
+     "loading": "auto",
+     "fetchpriority": "high"
+    }
+   ],
+   "lcp": []
+  }
+ },
+ "home-mobile-390": {
+  "url": "https://www.autumnandwool.com/",
+  "file": "/Users/eramadan/autumnandwool/.claude/worktrees/seo-audit-optimization-9ba6ac/evidence/seo-audit-2026-11-10/after/screenshots/audit-home-mobile-390.png",
+  "measure": {
+   "viewport": [
+    390,
+    844
+   ],
+   "scrollWidth": 390,
+   "horizontal_overflow": false,
+   "h1": [
+    {
+     "text": "Wool knitwear\nfor cooler days",
+     "rect": {
+      "x": 32,
+      "y": 219,
+      "w": 326,
+      "h": 106
+     },
+     "top_in_fold": true
+    }
+   ],
+   "ctas": [],
+   "price_text": [],
+   "tap_small_in_first_viewport": 9,
+   "tap_small_sample": [
+    {
+     "tag": "A",
+     "text": "Privacy Policy",
+     "w": 69,
+     "h": 14
+    },
+    {
+     "tag": "A",
+     "text": "Cookie Policy",
+     "w": 68,
+     "h": 14
+    },
+    {
+     "tag": "A",
+     "text": "Imprint",
+     "w": 37,
+     "h": 14
+    },
+    {
+     "tag": "BUTTON",
+     "text": "Accept all",
+     "w": 95,
+     "h": 42
+    },
+    {
+     "tag": "BUTTON",
+     "text": "Decline all",
+     "w": 101,
+     "h": 42
+    },
+    {
+     "tag": "BUTTON",
+     "text": "Manage cookies",
+     "w": 133,
+     "h": 42
+    },
+    {
+     "tag": "A",
+     "text": "/",
+     "w": 140,
+     "h": 26
+    },
+    {
+     "tag": "A",
+     "text": "0",
+     "w": 39,
+     "h": 25
+    }
+   ],
+   "text_nodes": 50,
+   "font_min": 11,
+   "font_p10": 11.9872,
+   "font_below_12px": 7,
+   "font_below_16_count": 36,
+   "overlays": [
+    {
+     "tag": "SECTION",
+     "id": "",
+     "cls": "gdpr-cookie-banner BOTTOM bar full-styling",
+     "rect": {
+      "x": 0,
+      "y": 699,
+      "w": 390,
+      "h": 145
+     },
+     "text": "We use essential cookies to operate our store. With your permission, we also use analytics"
+    },
+    {
+     "tag": "P",
+     "id": "",
+     "cls": "disclaimer-text sqs-cookie-banner-v2-text",
+     "rect": {
+      "x": 12,
+      "y": 709,
+      "w": 366,
+      "h": 77
+     },
+     "text": "We use essential cookies to operate our store. With your permission, we also use analytics"
+    },
+    {
+     "tag": "DIV",
+     "id": "",
+     "cls": "button-group sqs-cookie-banner-v2-cta-container",
+     "rect": {
+      "x": 12,
+      "y": 792,
+      "w": 357,
+      "h": 42
+     },
+     "text": "Accept all\nDecline all\nManage cookies"
+    },
+    {
+     "tag": "BUTTON",
+     "id": "",
+     "cls": "accept sqs-button-element--primary sqs-cookie-banner-v2-accept sqs-cookie-banner",
+     "rect": {
+      "x": 12,
+      "y": 792,
+      "w": 95,
+      "h": 42
+     },
+     "text": "Accept all"
+    },
+    {
+     "tag": "BUTTON",
+     "id": "",
+     "cls": "decline sqs-button-element--secondary sqs-cookie-banner-v2-deny sqs-cookie-banne",
+     "rect": {
+      "x": 121,
+      "y": 792,
+      "w": 101,
+      "h": 42
+     },
+     "text": "Decline all"
+    }
+   ],
+   "fixed_or_sticky": [
+    {
+     "tag": "SECTION",
+     "id": "",
+     "cls": "gdpr-cookie-banner BOTTOM bar full-styling",
+     "rect": {
+      "x": 0,
+      "y": 699,
+      "w": 390,
+      "h": 145
+     },
+     "z": "300000"
+    }
+   ],
+   "img_visible": 16,
+   "img_broken_count": 0,
+   "img_broken_sample": [],
+   "img_top_in_first_2_screens": 1,
+   "img_sample": [
+    {
+     "cur": "…/WhatsApp%2BImage%2B2025-11-07%2Bat%2B08.48.42%2B%282%29+%281%29.webp?format=1000w",
+     "natW": 1000,
+     "renderW": 326,
+     "loading": "auto",
+     "fetchpriority": "high"
+    }
+   ],
+   "lcp": []
+  }
+ },
+ "shop-desktop-1440": {
+  "url": "https://www.autumnandwool.com/shop",
+  "file": "/Users/eramadan/autumnandwool/.claude/worktrees/seo-audit-optimization-9ba6ac/evidence/seo-audit-2026-11-10/after/screenshots/audit-shop-desktop-1440.png",
+  "measure": {
+   "viewport": [
+    1440,
+    900
+   ],
+   "scrollWidth": 1440,
+   "horizontal_overflow": false,
+   "h1": [],
+   "ctas": [],
+   "price_text": [
+    {
+     "text": "Oversized Merino Wool V-Neck Sweater Ves",
+     "rect": {
+      "x": 43,
+      "y": 785,
+      "w": 311,
+      "h": 41
+     },
+     "in_fold": true
+    },
+    {
+     "text": "€126.00",
+     "rect": {
+      "x": 43,
+      "y": 812,
+      "w": 311,
+      "h": 14
+     },
+     "in_fold": true
+    },
+    {
+     "text": "Digital Gift Card for Wool Knitwear\nFROM",
+     "rect": {
+      "x": 43,
+      "y": 5465,
+      "w": 237,
+      "h": 41
+     },
+     "in_fold": false
+    },
+    {
+     "text": "FROM €25.00",
+     "rect": {
+      "x": 43,
+      "y": 5492,
+      "w": 237,
+      "h": 14
+     },
+     "in_fold": false
+    }
+   ],
+   "tap_small_in_first_viewport": 23,
+   "tap_small_sample": [
+    {
+     "tag": "A",
+     "text": "Privacy Policy",
+     "w": 60,
+     "h": 12
+    },
+    {
+     "tag": "A",
+     "text": "Cookie Policy",
+     "w": 59,
+     "h": 12
+    },
+    {
+     "tag": "A",
+     "text": "Imprint",
+     "w": 32,
+     "h": 12
+    },
+    {
+     "tag": "BUTTON",
+     "text": "Manage cookies",
+     "w": 133,
+     "h": 42
+    },
+    {
+     "tag": "BUTTON",
+     "text": "Decline all",
+     "w": 101,
+     "h": 42
+    },
+    {
+     "tag": "BUTTON",
+     "text": "Accept all",
+     "w": 95,
+     "h": 42
+    },
+    {
+     "tag": "A",
+     "text": "Shop",
+     "w": 31,
+     "h": 23
+    },
+    {
+     "tag": "A",
+     "text": "About",
+     "w": 37,
+     "h": 23
+    }
+   ],
+   "text_nodes": 60,
+   "font_min": 9.544,
+   "font_p10": 12,
+   "font_below_12px": 5,
+   "font_below_16_count": 60,
+   "overlays": [
+    {
+     "tag": "SECTION",
+     "id": "",
+     "cls": "gdpr-cookie-banner BOTTOM bar full-styling",
+     "rect": {
+      "x": 0,
+      "y": 830,
+      "w": 1440,
+      "h": 70
+     },
+     "text": "We use essential cookies to operate our store. With your permission, we also use analytics"
+    },
+    {
+     "tag": "P",
+     "id": "",
+     "cls": "disclaimer-text sqs-cookie-banner-v2-text",
+     "rect": {
+      "x": 20,
+      "y": 850,
+      "w": 1023,
+      "h": 31
+     },
+     "text": "We use essential cookies to operate our store. With your permission, we also use analytics"
+    },
+    {
+     "tag": "DIV",
+     "id": "",
+     "cls": "button-group sqs-cookie-banner-v2-cta-container",
+     "rect": {
+      "x": 1063,
+      "y": 844,
+      "w": 357,
+      "h": 42
+     },
+     "text": "Manage cookies\nDecline all\nAccept all"
+    },
+    {
+     "tag": "BUTTON",
+     "id": "",
+     "cls": "decline sqs-button-element--secondary sqs-cookie-banner-v2-deny sqs-cookie-banne",
+     "rect": {
+      "x": 1210,
+      "y": 844,
+      "w": 101,
+      "h": 42
+     },
+     "text": "Decline all"
+    },
+    {
+     "tag": "BUTTON",
+     "id": "",
+     "cls": "accept sqs-button-element--primary sqs-cookie-banner-v2-accept sqs-cookie-banner",
+     "rect": {
+      "x": 1325,
+      "y": 844,
+      "w": 95,
+      "h": 42
+     },
+     "text": "Accept all"
+    }
+   ],
+   "fixed_or_sticky": [
+    {
+     "tag": "SECTION",
+     "id": "",
+     "cls": "gdpr-cookie-banner BOTTOM bar full-styling",
+     "rect": {
+      "x": 0,
+      "y": 830,
+      "w": 1440,
+      "h": 70
+     },
+     "z": "300000"
+    }
+   ],
+   "img_visible": 23,
+   "img_broken_count": 0,
+   "img_broken_sample": [],
+   "img_top_in_first_2_screens": 9,
+   "img_sample": [
+    {
+     "cur": "…/IMG_3336.JPEG?format=500w",
+     "natW": 432,
+     "renderW": 432,
+     "loading": "lazy",
+     "fetchpriority": "low"
+    },
+    {
+     "cur": "…/image_1.jpg?format=500w",
+     "natW": 432,
+     "renderW": 432,
+     "loading": "lazy",
+     "fetchpriority": "low"
+    },
+    {
+     "cur": "…/image_2.jpg?format=500w",
+     "natW": 432,
+     "renderW": 432,
+     "loading": "lazy",
+     "fetchpriority": "low"
+    },
+    {
+     "cur": "…/image_1.jpg?format=500w",
+     "natW": 432,
+     "renderW": 432,
+     "loading": "lazy",
+     "fetchpriority": "low"
+    },
+    {
+     "cur": "…/image_1.jpg?format=500w",
+     "natW": 432,
+     "renderW": 432,
+     "loading": "lazy",
+     "fetchpriority": "low"
+    },
+    {
+     "cur": "…/image_2.jpg?format=500w",
+     "natW": 432,
+     "renderW": 432,
+     "loading": "lazy",
+     "fetchpriority": "low"
+    }
+   ],
+   "lcp": []
+  }
+ },
+ "shop-mobile-390": {
+  "url": "https://www.autumnandwool.com/shop",
+  "file": "/Users/eramadan/autumnandwool/.claude/worktrees/seo-audit-optimization-9ba6ac/evidence/seo-audit-2026-11-10/after/screenshots/audit-shop-mobile-390.png",
+  "measure": {
+   "viewport": [
+    390,
+    844
+   ],
+   "scrollWidth": 390,
+   "horizontal_overflow": false,
+   "h1": [],
+   "ctas": [],
+   "price_text": [
+    {
+     "text": "Oversized Merino Wool V-Neck Sweater Ves",
+     "rect": {
+      "x": 23,
+      "y": 489,
+      "w": 166,
+      "h": 56
+     },
+     "in_fold": true
+    },
+    {
+     "text": "€126.00",
+     "rect": {
+      "x": 23,
+      "y": 532,
+      "w": 166,
+      "h": 13
+     },
+     "in_fold": true
+    },
+    {
+     "text": "Digital Gift Card for Wool Knitwear\nFROM",
+     "rect": {
+      "x": 201,
+      "y": 3634,
+      "w": 166,
+      "h": 56
+     },
+     "in_fold": false
+    },
+    {
+     "text": "FROM €25.00",
+     "rect": {
+      "x": 201,
+      "y": 3677,
+      "w": 166,
+      "h": 13
+     },
+     "in_fold": false
+    }
+   ],
+   "tap_small_in_first_viewport": 9,
+   "tap_small_sample": [
+    {
+     "tag": "A",
+     "text": "Privacy Policy",
+     "w": 69,
+     "h": 14
+    },
+    {
+     "tag": "A",
+     "text": "Cookie Policy",
+     "w": 68,
+     "h": 14
+    },
+    {
+     "tag": "A",
+     "text": "Imprint",
+     "w": 37,
+     "h": 14
+    },
+    {
+     "tag": "BUTTON",
+     "text": "Accept all",
+     "w": 95,
+     "h": 42
+    },
+    {
+     "tag": "BUTTON",
+     "text": "Decline all",
+     "w": 101,
+     "h": 42
+    },
+    {
+     "tag": "BUTTON",
+     "text": "Manage cookies",
+     "w": 133,
+     "h": 42
+    },
+    {
+     "tag": "A",
+     "text": "/",
+     "w": 140,
+     "h": 26
+    },
+    {
+     "tag": "A",
+     "text": "0",
+     "w": 39,
+     "h": 25
+    }
+   ],
+   "text_nodes": 29,
+   "font_min": 11,
+   "font_p10": 11,
+   "font_below_12px": 5,
+   "font_below_16_count": 28,
+   "overlays": [
+    {
+     "tag": "SECTION",
+     "id": "",
+     "cls": "gdpr-cookie-banner BOTTOM bar full-styling",
+     "rect": {
+      "x": 0,
+      "y": 699,
+      "w": 390,
+      "h": 145
+     },
+     "text": "We use essential cookies to operate our store. With your permission, we also use analytics"
+    },
+    {
+     "tag": "P",
+     "id": "",
+     "cls": "disclaimer-text sqs-cookie-banner-v2-text",
+     "rect": {
+      "x": 12,
+      "y": 709,
+      "w": 366,
+      "h": 77
+     },
+     "text": "We use essential cookies to operate our store. With your permission, we also use analytics"
+    },
+    {
+     "tag": "DIV",
+     "id": "",
+     "cls": "button-group sqs-cookie-banner-v2-cta-container",
+     "rect": {
+      "x": 12,
+      "y": 792,
+      "w": 357,
+      "h": 42
+     },
+     "text": "Accept all\nDecline all\nManage cookies"
+    },
+    {
+     "tag": "BUTTON",
+     "id": "",
+     "cls": "accept sqs-button-element--primary sqs-cookie-banner-v2-accept sqs-cookie-banner",
+     "rect": {
+      "x": 12,
+      "y": 792,
+      "w": 95,
+      "h": 42
+     },
+     "text": "Accept all"
+    },
+    {
+     "tag": "BUTTON",
+     "id": "",
+     "cls": "decline sqs-button-element--secondary sqs-cookie-banner-v2-deny sqs-cookie-banne",
+     "rect": {
+      "x": 121,
+      "y": 792,
+      "w": 101,
+      "h": 42
+     },
+     "text": "Decline all"
+    }
+   ],
+   "fixed_or_sticky": [
+    {
+     "tag": "SECTION",
+     "id": "",
+     "cls": "gdpr-cookie-banner BOTTOM bar full-styling",
+     "rect": {
+      "x": 0,
+      "y": 699,
+      "w": 390,
+      "h": 145
+     },
+     "z": "300000"
+    },
+    {
+     "tag": "DIV",
+     "id": "",
+     "cls": "product-list-category-select-container product-list-sticky-top-element",
+     "rect": {
+      "x": 23,
+      "y": 184,
+      "w": 343,
+      "h": 64
+     },
+     "z": "998"
+    }
+   ],
+   "img_visible": 23,
+   "img_broken_count": 0,
+   "img_broken_sample": [],
+   "img_top_in_first_2_screens": 10,
+   "img_sample": [
+    {
+     "cur": "…/IMG_3336.JPEG?format=500w",
+     "natW": 343,
+     "renderW": 166,
+     "loading": "lazy",
+     "fetchpriority": "low"
+    },
+    {
+     "cur": "…/image_1.jpg?format=500w",
+     "natW": 343,
+     "renderW": 166,
+     "loading": "lazy",
+     "fetchpriority": "low"
+    },
+    {
+     "cur": "…/image_2.jpg?format=500w",
+     "natW": 343,
+     "renderW": 166,
+     "loading": "lazy",
+     "fetchpriority": "low"
+    },
+    {
+     "cur": "…/image_1.jpg?format=500w",
+     "natW": 343,
+     "renderW": 166,
+     "loading": "lazy",
+     "fetchpriority": "low"
+    },
+    {
+     "cur": "…/image_1.jpg?format=500w",
+     "natW": 343,
+     "renderW": 166,
+     "loading": "lazy",
+     "fetchpriority": "low"
+    },
+    {
+     "cur": "…/image_2.jpg?format=500w",
+     "natW": 343,
+     "renderW": 166,
+     "loading": "lazy",
+     "fetchpriority": "low"
+    }
+   ],
+   "lcp": []
+  }
+ },
+ "wool-sweaters-desktop-1440": {
+  "url": "https://www.autumnandwool.com/wool-sweaters",
+  "file": "/Users/eramadan/autumnandwool/.claude/worktrees/seo-audit-optimization-9ba6ac/evidence/seo-audit-2026-11-10/after/screenshots/audit-wool-sweaters-desktop-1440.png",
+  "measure": {
+   "viewport": [
+    1440,
+    900
+   ],
+   "scrollWidth": 1440,
+   "horizontal_overflow": false,
+   "h1": [
+    {
+     "text": "Wool sweaters for layering and everyday wear",
+     "rect": {
+      "x": 180,
+      "y": 140,
+      "w": 760,
+      "h": 55
+     },
+     "top_in_fold": true
+    }
+   ],
+   "ctas": [],
+   "price_text": [],
+   "tap_small_in_first_viewport": 17,
+   "tap_small_sample": [
+    {
+     "tag": "A",
+     "text": "Privacy Policy",
+     "w": 60,
+     "h": 12
+    },
+    {
+     "tag": "A",
+     "text": "Cookie Policy",
+     "w": 59,
+     "h": 12
+    },
+    {
+     "tag": "A",
+     "text": "Imprint",
+     "w": 32,
+     "h": 12
+    },
+    {
+     "tag": "BUTTON",
+     "text": "Manage cookies",
+     "w": 133,
+     "h": 42
+    },
+    {
+     "tag": "BUTTON",
+     "text": "Decline all",
+     "w": 101,
+     "h": 42
+    },
+    {
+     "tag": "BUTTON",
+     "text": "Accept all",
+     "w": 95,
+     "h": 42
+    },
+    {
+     "tag": "A",
+     "text": "Shop",
+     "w": 31,
+     "h": 23
+    },
+    {
+     "tag": "A",
+     "text": "About",
+     "w": 37,
+     "h": 23
+    }
+   ],
+   "text_nodes": 56,
+   "font_min": 9.544,
+   "font_p10": 12,
+   "font_below_12px": 5,
+   "font_below_16_count": 41,
+   "overlays": [
+    {
+     "tag": "SECTION",
+     "id": "",
+     "cls": "gdpr-cookie-banner BOTTOM bar full-styling",
+     "rect": {
+      "x": 0,
+      "y": 830,
+      "w": 1440,
+      "h": 70
+     },
+     "text": "We use essential cookies to operate our store. With your permission, we also use analytics"
+    },
+    {
+     "tag": "P",
+     "id": "",
+     "cls": "disclaimer-text sqs-cookie-banner-v2-text",
+     "rect": {
+      "x": 20,
+      "y": 850,
+      "w": 1023,
+      "h": 31
+     },
+     "text": "We use essential cookies to operate our store. With your permission, we also use analytics"
+    },
+    {
+     "tag": "DIV",
+     "id": "",
+     "cls": "button-group sqs-cookie-banner-v2-cta-container",
+     "rect": {
+      "x": 1063,
+      "y": 844,
+      "w": 357,
+      "h": 42
+     },
+     "text": "Manage cookies\nDecline all\nAccept all"
+    },
+    {
+     "tag": "BUTTON",
+     "id": "",
+     "cls": "decline sqs-button-element--secondary sqs-cookie-banner-v2-deny sqs-cookie-banne",
+     "rect": {
+      "x": 1210,
+      "y": 844,
+      "w": 101,
+      "h": 42
+     },
+     "text": "Decline all"
+    },
+    {
+     "tag": "BUTTON",
+     "id": "",
+     "cls": "accept sqs-button-element--primary sqs-cookie-banner-v2-accept sqs-cookie-banner",
+     "rect": {
+      "x": 1325,
+      "y": 844,
+      "w": 95,
+      "h": 42
+     },
+     "text": "Accept all"
+    }
+   ],
+   "fixed_or_sticky": [
+    {
+     "tag": "SECTION",
+     "id": "",
+     "cls": "gdpr-cookie-banner BOTTOM bar full-styling",
+     "rect": {
+      "x": 0,
+      "y": 830,
+      "w": 1440,
+      "h": 70
+     },
+     "z": "300000"
+    }
+   ],
+   "img_visible": 13,
+   "img_broken_count": 12,
+   "img_broken_sample": [
+    "http://static1.squarespace.com/static/6908755e4a17f81b7629f4bc/6908755f4a17f81b7629f4db/691055dcdc1bc40ece1f451d/1762678",
+    "http://static1.squarespace.com/static/6908755e4a17f81b7629f4bc/6908755f4a17f81b7629f4db/69105a2503d8727c4c7e8df8/1762679",
+    "http://static1.squarespace.com/static/6908755e4a17f81b7629f4bc/6908755f4a17f81b7629f4db/69105bd9b0c4a7226c5359f0/1794036",
+    "http://static1.squarespace.com/static/6908755e4a17f81b7629f4bc/6908755f4a17f81b7629f4db/69105a2a03d8727c4c7e8dfb/1762679"
+   ],
+   "img_top_in_first_2_screens": 8,
+   "img_sample": [
+    {
+     "cur": "https://static1.squarespace.com/static/6908755e4a17f81b7629f4bc/6908755f4a17f81b7629f4db/6",
+     "natW": 0,
+     "renderW": 500,
+     "loading": "lazy",
+     "fetchpriority": "auto"
+    },
+    {
+     "cur": "https://static1.squarespace.com/static/6908755e4a17f81b7629f4bc/6908755f4a17f81b7629f4db/6",
+     "natW": 0,
+     "renderW": 500,
+     "loading": "lazy",
+     "fetchpriority": "auto"
+    },
+    {
+     "cur": "https://static1.squarespace.com/static/6908755e4a17f81b7629f4bc/6908755f4a17f81b7629f4db/6",
+     "natW": 0,
+     "renderW": 500,
+     "loading": "lazy",
+     "fetchpriority": "auto"
+    },
+    {
+     "cur": "https://static1.squarespace.com/static/6908755e4a17f81b7629f4bc/6908755f4a17f81b7629f4db/6",
+     "natW": 0,
+     "renderW": 500,
+     "loading": "lazy",
+     "fetchpriority": "auto"
+    }
+   ],
+   "lcp": []
+  }
+ },
+ "wool-sweaters-mobile-390": {
+  "url": "https://www.autumnandwool.com/wool-sweaters",
+  "file": "/Users/eramadan/autumnandwool/.claude/worktrees/seo-audit-optimization-9ba6ac/evidence/seo-audit-2026-11-10/after/screenshots/audit-wool-sweaters-mobile-390.png",
+  "measure": {
+   "viewport": [
+    390,
+    844
+   ],
+   "scrollWidth": 390,
+   "horizontal_overflow": false,
+   "h1": [
+    {
+     "text": "Wool sweaters for layering and everyday wear",
+     "rect": {
+      "x": 16,
+      "y": 147,
+      "w": 358,
+      "h": 80
+     },
+     "top_in_fold": true
+    }
+   ],
+   "ctas": [],
+   "price_text": [],
+   "tap_small_in_first_viewport": 10,
+   "tap_small_sample": [
+    {
+     "tag": "A",
+     "text": "Privacy Policy",
+     "w": 69,
+     "h": 14
+    },
+    {
+     "tag": "A",
+     "text": "Cookie Policy",
+     "w": 68,
+     "h": 14
+    },
+    {
+     "tag": "A",
+     "text": "Imprint",
+     "w": 37,
+     "h": 14
+    },
+    {
+     "tag": "BUTTON",
+     "text": "Accept all",
+     "w": 95,
+     "h": 42
+    },
+    {
+     "tag": "BUTTON",
+     "text": "Decline all",
+     "w": 101,
+     "h": 42
+    },
+    {
+     "tag": "BUTTON",
+     "text": "Manage cookies",
+     "w": 133,
+     "h": 42
+    },
+    {
+     "tag": "A",
+     "text": "/",
+     "w": 140,
+     "h": 26
+    },
+    {
+     "tag": "A",
+     "text": "0",
+     "w": 39,
+     "h": 25
+    }
+   ],
+   "text_nodes": 53,
+   "font_min": 11,
+   "font_p10": 12,
+   "font_below_12px": 5,
+   "font_below_16_count": 38,
+   "overlays": [
+    {
+     "tag": "SECTION",
+     "id": "",
+     "cls": "gdpr-cookie-banner BOTTOM bar full-styling",
+     "rect": {
+      "x": 0,
+      "y": 699,
+      "w": 390,
+      "h": 145
+     },
+     "text": "We use essential cookies to operate our store. With your permission, we also use analytics"
+    },
+    {
+     "tag": "P",
+     "id": "",
+     "cls": "disclaimer-text sqs-cookie-banner-v2-text",
+     "rect": {
+      "x": 12,
+      "y": 709,
+      "w": 366,
+      "h": 77
+     },
+     "text": "We use essential cookies to operate our store. With your permission, we also use analytics"
+    },
+    {
+     "tag": "DIV",
+     "id": "",
+     "cls": "button-group sqs-cookie-banner-v2-cta-container",
+     "rect": {
+      "x": 12,
+      "y": 792,
+      "w": 357,
+      "h": 42
+     },
+     "text": "Accept all\nDecline all\nManage cookies"
+    },
+    {
+     "tag": "BUTTON",
+     "id": "",
+     "cls": "accept sqs-button-element--primary sqs-cookie-banner-v2-accept sqs-cookie-banner",
+     "rect": {
+      "x": 12,
+      "y": 792,
+      "w": 95,
+      "h": 42
+     },
+     "text": "Accept all"
+    },
+    {
+     "tag": "BUTTON",
+     "id": "",
+     "cls": "decline sqs-button-element--secondary sqs-cookie-banner-v2-deny sqs-cookie-banne",
+     "rect": {
+      "x": 121,
+      "y": 792,
+      "w": 101,
+      "h": 42
+     },
+     "text": "Decline all"
+    }
+   ],
+   "fixed_or_sticky": [
+    {
+     "tag": "SECTION",
+     "id": "",
+     "cls": "gdpr-cookie-banner BOTTOM bar full-styling",
+     "rect": {
+      "x": 0,
+      "y": 699,
+      "w": 390,
+      "h": 145
+     },
+     "z": "300000"
+    }
+   ],
+   "img_visible": 13,
+   "img_broken_count": 4,
+   "img_broken_sample": [
+    "http://static1.squarespace.com/static/6908755e4a17f81b7629f4bc/6908755f4a17f81b7629f4db/691055dcdc1bc40ece1f451d/1762678",
+    "http://static1.squarespace.com/static/6908755e4a17f81b7629f4bc/6908755f4a17f81b7629f4db/69105a2503d8727c4c7e8df8/1762679",
+    "http://static1.squarespace.com/static/6908755e4a17f81b7629f4bc/6908755f4a17f81b7629f4db/69105bd9b0c4a7226c5359f0/1794036",
+    "http://static1.squarespace.com/static/6908755e4a17f81b7629f4bc/6908755f4a17f81b7629f4db/69105a2a03d8727c4c7e8dfb/1762679"
+   ],
+   "img_top_in_first_2_screens": 4,
+   "img_sample": [
+    {
+     "cur": "https://static1.squarespace.com/static/6908755e4a17f81b7629f4bc/6908755f4a17f81b7629f4db/6",
+     "natW": 0,
+     "renderW": 500,
+     "loading": "lazy",
+     "fetchpriority": "auto"
+    },
+    {
+     "cur": "https://static1.squarespace.com/static/6908755e4a17f81b7629f4bc/6908755f4a17f81b7629f4db/6",
+     "natW": 0,
+     "renderW": 500,
+     "loading": "lazy",
+     "fetchpriority": "auto"
+    }
+   ],
+   "lcp": []
+  }
+ },
+ "wool-gifts-desktop-1440": {
+  "url": "https://www.autumnandwool.com/wool-gifts",
+  "file": "/Users/eramadan/autumnandwool/.claude/worktrees/seo-audit-optimization-9ba6ac/evidence/seo-audit-2026-11-10/after/screenshots/audit-wool-gifts-desktop-1440.png",
+  "measure": {
+   "viewport": [
+    1440,
+    900
+   ],
+   "scrollWidth": 1440,
+   "horizontal_overflow": false,
+   "h1": [
+    {
+     "text": "Wool gifts for her",
+     "rect": {
+      "x": 180,
+      "y": 140,
+      "w": 760,
+      "h": 55
+     },
+     "top_in_fold": true
+    }
+   ],
+   "ctas": [],
+   "price_text": [],
+   "tap_small_in_first_viewport": 22,
+   "tap_small_sample": [
+    {
+     "tag": "A",
+     "text": "Privacy Policy",
+     "w": 60,
+     "h": 12
+    },
+    {
+     "tag": "A",
+     "text": "Cookie Policy",
+     "w": 59,
+     "h": 12
+    },
+    {
+     "tag": "A",
+     "text": "Imprint",
+     "w": 32,
+     "h": 12
+    },
+    {
+     "tag": "BUTTON",
+     "text": "Manage cookies",
+     "w": 133,
+     "h": 42
+    },
+    {
+     "tag": "BUTTON",
+     "text": "Decline all",
+     "w": 101,
+     "h": 42
+    },
+    {
+     "tag": "BUTTON",
+     "text": "Accept all",
+     "w": 95,
+     "h": 42
+    },
+    {
+     "tag": "A",
+     "text": "Shop",
+     "w": 31,
+     "h": 23
+    },
+    {
+     "tag": "A",
+     "text": "About",
+     "w": 37,
+     "h": 23
+    }
+   ],
+   "text_nodes": 60,
+   "font_min": 9.544,
+   "font_p10": 12,
+   "font_below_12px": 5,
+   "font_below_16_count": 28,
+   "overlays": [
+    {
+     "tag": "SECTION",
+     "id": "",
+     "cls": "gdpr-cookie-banner BOTTOM bar full-styling",
+     "rect": {
+      "x": 0,
+      "y": 830,
+      "w": 1440,
+      "h": 70
+     },
+     "text": "We use essential cookies to operate our store. With your permission, we also use analytics"
+    },
+    {
+     "tag": "P",
+     "id": "",
+     "cls": "disclaimer-text sqs-cookie-banner-v2-text",
+     "rect": {
+      "x": 20,
+      "y": 850,
+      "w": 1023,
+      "h": 31
+     },
+     "text": "We use essential cookies to operate our store. With your permission, we also use analytics"
+    },
+    {
+     "tag": "DIV",
+     "id": "",
+     "cls": "button-group sqs-cookie-banner-v2-cta-container",
+     "rect": {
+      "x": 1063,
+      "y": 844,
+      "w": 357,
+      "h": 42
+     },
+     "text": "Manage cookies\nDecline all\nAccept all"
+    },
+    {
+     "tag": "BUTTON",
+     "id": "",
+     "cls": "decline sqs-button-element--secondary sqs-cookie-banner-v2-deny sqs-cookie-banne",
+     "rect": {
+      "x": 1210,
+      "y": 844,
+      "w": 101,
+      "h": 42
+     },
+     "text": "Decline all"
+    },
+    {
+     "tag": "BUTTON",
+     "id": "",
+     "cls": "accept sqs-button-element--primary sqs-cookie-banner-v2-accept sqs-cookie-banner",
+     "rect": {
+      "x": 1325,
+      "y": 844,
+      "w": 95,
+      "h": 42
+     },
+     "text": "Accept all"
+    }
+   ],
+   "fixed_or_sticky": [
+    {
+     "tag": "SECTION",
+     "id": "",
+     "cls": "gdpr-cookie-banner BOTTOM bar full-styling",
+     "rect": {
+      "x": 0,
+      "y": 830,
+      "w": 1440,
+      "h": 70
+     },
+     "z": "300000"
+    }
+   ],
+   "img_visible": 0,
+   "img_broken_count": 0,
+   "img_broken_sample": [],
+   "img_top_in_first_2_screens": 0,
+   "img_sample": [],
+   "lcp": []
+  }
+ },
+ "wool-gifts-mobile-390": {
+  "url": "https://www.autumnandwool.com/wool-gifts",
+  "file": "/Users/eramadan/autumnandwool/.claude/worktrees/seo-audit-optimization-9ba6ac/evidence/seo-audit-2026-11-10/after/screenshots/audit-wool-gifts-mobile-390.png",
+  "measure": {
+   "viewport": [
+    390,
+    844
+   ],
+   "scrollWidth": 390,
+   "horizontal_overflow": false,
+   "h1": [
+    {
+     "text": "Wool gifts for her",
+     "rect": {
+      "x": 16,
+      "y": 147,
+      "w": 358,
+      "h": 40
+     },
+     "top_in_fold": true
+    }
+   ],
+   "ctas": [],
+   "price_text": [],
+   "tap_small_in_first_viewport": 12,
+   "tap_small_sample": [
+    {
+     "tag": "A",
+     "text": "Privacy Policy",
+     "w": 69,
+     "h": 14
+    },
+    {
+     "tag": "A",
+     "text": "Cookie Policy",
+     "w": 68,
+     "h": 14
+    },
+    {
+     "tag": "A",
+     "text": "Imprint",
+     "w": 37,
+     "h": 14
+    },
+    {
+     "tag": "BUTTON",
+     "text": "Accept all",
+     "w": 95,
+     "h": 42
+    },
+    {
+     "tag": "BUTTON",
+     "text": "Decline all",
+     "w": 101,
+     "h": 42
+    },
+    {
+     "tag": "BUTTON",
+     "text": "Manage cookies",
+     "w": 133,
+     "h": 42
+    },
+    {
+     "tag": "A",
+     "text": "/",
+     "w": 140,
+     "h": 26
+    },
+    {
+     "tag": "A",
+     "text": "0",
+     "w": 39,
+     "h": 25
+    }
+   ],
+   "text_nodes": 57,
+   "font_min": 11,
+   "font_p10": 12,
+   "font_below_12px": 5,
+   "font_below_16_count": 25,
+   "overlays": [
+    {
+     "tag": "SECTION",
+     "id": "",
+     "cls": "gdpr-cookie-banner BOTTOM bar full-styling",
+     "rect": {
+      "x": 0,
+      "y": 699,
+      "w": 390,
+      "h": 145
+     },
+     "text": "We use essential cookies to operate our store. With your permission, we also use analytics"
+    },
+    {
+     "tag": "P",
+     "id": "",
+     "cls": "disclaimer-text sqs-cookie-banner-v2-text",
+     "rect": {
+      "x": 12,
+      "y": 709,
+      "w": 366,
+      "h": 77
+     },
+     "text": "We use essential cookies to operate our store. With your permission, we also use analytics"
+    },
+    {
+     "tag": "DIV",
+     "id": "",
+     "cls": "button-group sqs-cookie-banner-v2-cta-container",
+     "rect": {
+      "x": 12,
+      "y": 792,
+      "w": 357,
+      "h": 42
+     },
+     "text": "Accept all\nDecline all\nManage cookies"
+    },
+    {
+     "tag": "BUTTON",
+     "id": "",
+     "cls": "accept sqs-button-element--primary sqs-cookie-banner-v2-accept sqs-cookie-banner",
+     "rect": {
+      "x": 12,
+      "y": 792,
+      "w": 95,
+      "h": 42
+     },
+     "text": "Accept all"
+    },
+    {
+     "tag": "BUTTON",
+     "id": "",
+     "cls": "decline sqs-button-element--secondary sqs-cookie-banner-v2-deny sqs-cookie-banne",
+     "rect": {
+      "x": 121,
+      "y": 792,
+      "w": 101,
+      "h": 42
+     },
+     "text": "Decline all"
+    }
+   ],
+   "fixed_or_sticky": [
+    {
+     "tag": "SECTION",
+     "id": "",
+     "cls": "gdpr-cookie-banner BOTTOM bar full-styling",
+     "rect": {
+      "x": 0,
+      "y": 699,
+      "w": 390,
+      "h": 145
+     },
+     "z": "300000"
+    }
+   ],
+   "img_visible": 0,
+   "img_broken_count": 0,
+   "img_broken_sample": [],
+   "img_top_in_first_2_screens": 0,
+   "img_sample": [],
+   "lcp": []
+  }
+ },
+ "product-vest-desktop-1440": {
+  "url": "https://www.autumnandwool.com/shop/p/oversized-merino-wool-v-neck-sweater-vest",
+  "file": "/Users/eramadan/autumnandwool/.claude/worktrees/seo-audit-optimization-9ba6ac/evidence/seo-audit-2026-11-10/after/screenshots/audit-product-vest-desktop-1440.png",
+  "measure": {
+   "viewport": [
+    1440,
+    900
+   ],
+   "scrollWidth": 1440,
+   "horizontal_overflow": false,
+   "h1": [
+    {
+     "text": "Oversized Merino Wool V-Neck Sweater Vest",
+     "rect": {
+      "x": 860,
+      "y": 180,
+      "w": 537,
+      "h": 112
+     },
+     "top_in_fold": true
+    }
+   ],
+   "ctas": [
+    {
+     "text": "Add To Cart",
+     "tag": "BUTTON",
+     "rect": {
+      "x": 860,
+      "y": 351,
+      "w": 537,
+      "h": 55
+     },
+     "in_fold": true,
+     "disabled": false
+    }
+   ],
+   "price_text": [
+    {
+     "text": "€126.00",
+     "rect": {
+      "x": 860,
+      "y": 303,
+      "w": 537,
+      "h": 31
+     },
+     "in_fold": true
+    },
+    {
+     "text": "€126.00",
+     "rect": {
+      "x": 860,
+      "y": 303,
+      "w": 537,
+      "h": 31
+     },
+     "in_fold": true
+    }
+   ],
+   "tap_small_in_first_viewport": 18,
+   "tap_small_sample": [
+    {
+     "tag": "A",
+     "text": "Privacy Policy",
+     "w": 60,
+     "h": 12
+    },
+    {
+     "tag": "A",
+     "text": "Cookie Policy",
+     "w": 59,
+     "h": 12
+    },
+    {
+     "tag": "A",
+     "text": "Imprint",
+     "w": 32,
+     "h": 12
+    },
+    {
+     "tag": "BUTTON",
+     "text": "Manage cookies",
+     "w": 133,
+     "h": 42
+    },
+    {
+     "tag": "BUTTON",
+     "text": "Decline all",
+     "w": 101,
+     "h": 42
+    },
+    {
+     "tag": "BUTTON",
+     "text": "Accept all",
+     "w": 95,
+     "h": 42
+    },
+    {
+     "tag": "A",
+     "text": "Shop",
+     "w": 31,
+     "h": 23
+    },
+    {
+     "tag": "A",
+     "text": "About",
+     "w": 37,
+     "h": 23
+    }
+   ],
+   "text_nodes": 55,
+   "font_min": 9.544,
+   "font_p10": 12,
+   "font_below_12px": 5,
+   "font_below_16_count": 54,
+   "overlays": [
+    {
+     "tag": "SECTION",
+     "id": "",
+     "cls": "gdpr-cookie-banner BOTTOM bar full-styling",
+     "rect": {
+      "x": 0,
+      "y": 830,
+      "w": 1440,
+      "h": 70
+     },
+     "text": "We use essential cookies to operate our store. With your permission, we also use analytics"
+    },
+    {
+     "tag": "P",
+     "id": "",
+     "cls": "disclaimer-text sqs-cookie-banner-v2-text",
+     "rect": {
+      "x": 20,
+      "y": 850,
+      "w": 1023,
+      "h": 31
+     },
+     "text": "We use essential cookies to operate our store. With your permission, we also use analytics"
+    },
+    {
+     "tag": "DIV",
+     "id": "",
+     "cls": "button-group sqs-cookie-banner-v2-cta-container",
+     "rect": {
+      "x": 1063,
+      "y": 844,
+      "w": 357,
+      "h": 42
+     },
+     "text": "Manage cookies\nDecline all\nAccept all"
+    },
+    {
+     "tag": "BUTTON",
+     "id": "",
+     "cls": "decline sqs-button-element--secondary sqs-cookie-banner-v2-deny sqs-cookie-banne",
+     "rect": {
+      "x": 1210,
+      "y": 844,
+      "w": 101,
+      "h": 42
+     },
+     "text": "Decline all"
+    },
+    {
+     "tag": "BUTTON",
+     "id": "",
+     "cls": "accept sqs-button-element--primary sqs-cookie-banner-v2-accept sqs-cookie-banner",
+     "rect": {
+      "x": 1325,
+      "y": 844,
+      "w": 95,
+      "h": 42
+     },
+     "text": "Accept all"
+    }
+   ],
+   "fixed_or_sticky": [
+    {
+     "tag": "SECTION",
+     "id": "",
+     "cls": "gdpr-cookie-banner BOTTOM bar full-styling",
+     "rect": {
+      "x": 0,
+      "y": 830,
+      "w": 1440,
+      "h": 70
+     },
+     "z": "300000"
+    }
+   ],
+   "img_visible": 3,
+   "img_broken_count": 0,
+   "img_broken_sample": [],
+   "img_top_in_first_2_screens": 3,
+   "img_sample": [
+    {
+     "cur": "…/IMG_3336.JPEG?format=750w",
+     "natW": 750,
+     "renderW": 744,
+     "loading": "auto",
+     "fetchpriority": "auto"
+    },
+    {
+     "cur": "…/IMG_3328.JPEG?format=750w",
+     "natW": 750,
+     "renderW": 744,
+     "loading": "auto",
+     "fetchpriority": "auto"
+    },
+    {
+     "cur": "…/IMG_3347.JPEG?format=750w",
+     "natW": 750,
+     "renderW": 744,
+     "loading": "auto",
+     "fetchpriority": "auto"
+    }
+   ],
+   "lcp": []
+  }
+ },
+ "product-vest-mobile-390": {
+  "url": "https://www.autumnandwool.com/shop/p/oversized-merino-wool-v-neck-sweater-vest",
+  "file": "/Users/eramadan/autumnandwool/.claude/worktrees/seo-audit-optimization-9ba6ac/evidence/seo-audit-2026-11-10/after/screenshots/audit-product-vest-mobile-390.png",
+  "measure": {
+   "viewport": [
+    390,
+    844
+   ],
+   "scrollWidth": 390,
+   "horizontal_overflow": false,
+   "h1": [
+    {
+     "text": "Oversized Merino Wool V-Neck Sweater Vest",
+     "rect": {
+      "x": 23,
+      "y": 619,
+      "w": 343,
+      "h": 80
+     },
+     "top_in_fold": true
+    }
+   ],
+   "ctas": [
+    {
+     "text": "Add To Cart",
+     "tag": "BUTTON",
+     "rect": {
+      "x": 23,
+      "y": 757,
+      "w": 343,
+      "h": 48
+     },
+     "in_fold": true,
+     "disabled": false
+    }
+   ],
+   "price_text": [
+    {
+     "text": "€126.00",
+     "rect": {
+      "x": 23,
+      "y": 710,
+      "w": 343,
+      "h": 31
+     },
+     "in_fold": true
+    },
+    {
+     "text": "€126.00",
+     "rect": {
+      "x": 23,
+      "y": 710,
+      "w": 343,
+      "h": 31
+     },
+     "in_fold": true
+    }
+   ],
+   "tap_small_in_first_viewport": 9,
+   "tap_small_sample": [
+    {
+     "tag": "A",
+     "text": "Privacy Policy",
+     "w": 69,
+     "h": 14
+    },
+    {
+     "tag": "A",
+     "text": "Cookie Policy",
+     "w": 68,
+     "h": 14
+    },
+    {
+     "tag": "A",
+     "text": "Imprint",
+     "w": 37,
+     "h": 14
+    },
+    {
+     "tag": "BUTTON",
+     "text": "Accept all",
+     "w": 95,
+     "h": 42
+    },
+    {
+     "tag": "BUTTON",
+     "text": "Decline all",
+     "w": 101,
+     "h": 42
+    },
+    {
+     "tag": "BUTTON",
+     "text": "Manage cookies",
+     "w": 133,
+     "h": 42
+    },
+    {
+     "tag": "A",
+     "text": "/",
+     "w": 140,
+     "h": 26
+    },
+    {
+     "tag": "A",
+     "text": "0",
+     "w": 39,
+     "h": 25
+    }
+   ],
+   "text_nodes": 49,
+   "font_min": 11,
+   "font_p10": 11.9872,
+   "font_below_12px": 5,
+   "font_below_16_count": 48,
+   "overlays": [
+    {
+     "tag": "SECTION",
+     "id": "",
+     "cls": "gdpr-cookie-banner BOTTOM bar full-styling",
+     "rect": {
+      "x": 0,
+      "y": 699,
+      "w": 390,
+      "h": 145
+     },
+     "text": "We use essential cookies to operate our store. With your permission, we also use analytics"
+    },
+    {
+     "tag": "P",
+     "id": "",
+     "cls": "disclaimer-text sqs-cookie-banner-v2-text",
+     "rect": {
+      "x": 12,
+      "y": 709,
+      "w": 366,
+      "h": 77
+     },
+     "text": "We use essential cookies to operate our store. With your permission, we also use analytics"
+    },
+    {
+     "tag": "DIV",
+     "id": "",
+     "cls": "button-group sqs-cookie-banner-v2-cta-container",
+     "rect": {
+      "x": 12,
+      "y": 792,
+      "w": 357,
+      "h": 42
+     },
+     "text": "Accept all\nDecline all\nManage cookies"
+    },
+    {
+     "tag": "BUTTON",
+     "id": "",
+     "cls": "accept sqs-button-element--primary sqs-cookie-banner-v2-accept sqs-cookie-banner",
+     "rect": {
+      "x": 12,
+      "y": 792,
+      "w": 95,
+      "h": 42
+     },
+     "text": "Accept all"
+    },
+    {
+     "tag": "BUTTON",
+     "id": "",
+     "cls": "decline sqs-button-element--secondary sqs-cookie-banner-v2-deny sqs-cookie-banne",
+     "rect": {
+      "x": 121,
+      "y": 792,
+      "w": 101,
+      "h": 42
+     },
+     "text": "Decline all"
+    }
+   ],
+   "fixed_or_sticky": [
+    {
+     "tag": "SECTION",
+     "id": "",
+     "cls": "gdpr-cookie-banner BOTTOM bar full-styling",
+     "rect": {
+      "x": 0,
+      "y": 699,
+      "w": 390,
+      "h": 145
+     },
+     "z": "300000"
+    }
+   ],
+   "img_visible": 2,
+   "img_broken_count": 0,
+   "img_broken_sample": [],
+   "img_top_in_first_2_screens": 2,
+   "img_sample": [
+    {
+     "cur": "…/IMG_3336.JPEG?format=500w",
+     "natW": 500,
+     "renderW": 343,
+     "loading": "auto",
+     "fetchpriority": "auto"
+    },
+    {
+     "cur": "…/IMG_3347.JPEG?format=500w",
+     "natW": 500,
+     "renderW": 343,
+     "loading": "auto",
+     "fetchpriority": "auto"
+    }
+   ],
+   "lcp": []
+  }
+ }
+}

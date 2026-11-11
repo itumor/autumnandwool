@@ -1,0 +1,7 @@
+/sitemap.txt -> https://static1.squarespace.com/static/6908755e4a17f81b7629f4bc/t/6921aefa64e235315d526063/1763815162973/sitemap.txt 301
+/sitemap-alt.xml -> https://static1.squarespace.com/static/6908755e4a17f81b7629f4bc/t/6921adc943a7227189a1968e/1763814857084/sitemap.xml 301
+/llms.txt -> https://static1.squarespace.com/static/6908755e4a17f81b7629f4bc/t/6921c67743a7227189a3f46e/1763821175900/llms.txt 301
+/e410eec01fde483e97a124814d7d778a.txt -> https://static1.squarespace.com/static/6908755e4a17f81b7629f4bc/t/69231e06cbc652248dacb2f8/1763909126419/e410eec01fde483e97a124814d7d778a.txt 301
+/yandex_7685f89afd6f008a.html -> https://static1.squarespace.com/static/6908755e4a17f81b7629f4bc/t/692326f08da258289eddd34e/1763911408031/yandex_7685f89afd6f008a.html 302
+/shop/p/p/wool-sweater-vest-knitted-wool-vest-oversized-vest-womens-woolen-pullover-vest-top-sleeveless-wool-knit-vest-soft-v-neck-679427 -> /shop/p/p/wool-sweater-vest-knitted-wool-vest-oversized-vest-womens-woolen-pullover-vest-top-sleeveless-wool-knit-vest-soft-v-neck-vest 301
+/shop/p/hand-knitted-lambswool-sweater-womens-grey-knit-jumper -> /shop/p/p/hand-knitted-lambswool-sweater-womens-grey-knit-jumper 301
