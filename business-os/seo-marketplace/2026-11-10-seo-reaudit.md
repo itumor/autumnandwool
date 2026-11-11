@@ -209,3 +209,29 @@ What changed: logo image is hidden visually instead of with `display:none`, so t
 
 What is left for mobile: Squarespace's own CSS and scripts (not editable on this plan) and reCAPTCHA from the footer newsletter form. Moving that form to its own page is the one remaining lever and is the owner's call.
 
+## Update 2026-11-11, 12:40 EET: PageSpeed round 2 (batches 15-17)
+
+Owner approved three more steps. All live.
+
+| Step | Change | Result |
+|---|---|---|
+| Newsletter form | Moved from the footer of every page to its own page `/newsletter`; footer has a "Join our newsletter" link | reCAPTCHA no longer loads on home or product pages (0 requests) |
+| Font | Site Styles "Miscellaneous" font: Pragmatica Extended -> DM Sans bold | Adobe Typekit no longer loads (0 requests) |
+| Hero image | Smaller file on lower-density phones | 102 KB -> 40 KB on those phones |
+
+Home, PageSpeed Insights, three runs each:
+
+| | Before (10:45, one run) | After (3 runs) | Median |
+|---|---|---|---|
+| Mobile Performance | 59 | 55, 78, 60 | 60 |
+| Desktop Performance | 74 | 84, 91, 98 | 91 |
+| Best Practices | 96 | 100 | 100 |
+| Accessibility | 96 | 100 | 100 |
+| Agentic browsing | 2/3 | 3/3 | 3/3 |
+
+Mobile numbers swing run to run (55 to 78), so the mobile gain is not firm. What is left on mobile is Squarespace's own CSS and scripts, which cannot be changed on this plan.
+
+Open cosmetic items: `/newsletter` says nearly the same sentence twice; the footer has an empty area where the form was; small uppercase labels now use DM Sans. Not tested: a real signup on `/newsletter`.
+
+Details: `evidence/seo-reaudit-2026-11-10/live-changes/batch15-newsletter-page.md`, `batch16-hero-and-results.md`, `batch17-misc-font.md`.
+
