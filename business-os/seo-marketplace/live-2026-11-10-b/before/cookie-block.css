@@ -1,0 +1,6 @@
+/* SEO audit 2026-11-10: compact cookie bar on phones so it does not cover price / Add To Cart */
+@media (max-width: 767px) {
+  .gdpr-cookie-banner { padding: 10px 12px !important; }
+  .gdpr-cookie-banner p, .gdpr-cookie-banner .sqs-cookie-banner-v2-text { font-size: 11px !important; line-height: 1.3 !important; margin: 0 0 6px !important; }
+  .gdpr-cookie-banner button, .gdpr-cookie-banner .sqs-cookie-banner-v2-cta-container .sqs-button-element { padding: 6px 10px !important; min-height: 32px !important; font-size: 12px !important; }
+}

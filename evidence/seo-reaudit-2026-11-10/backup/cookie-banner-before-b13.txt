@@ -1,0 +1,121 @@
+# Cookies and Data Privacy panel BEFORE batch13 (2026-11-11)
+url: https://rose-tarpon-ld9w.squarespace.com/config/settings/website/cookies
+
+## controls (visible inputs/switches)
+{"tag":"INPUT","type":"checkbox","name":"","aria":"Toggle visibility","value":"","checked":true,"text":""}
+{"tag":"INPUT","type":"checkbox","name":"","aria":"Toggle visibility","value":"","checked":true,"text":""}
+{"tag":"DIV","type":"combobox","name":"","aria":"Analytics date range","value":null,"checked":null,"text":"Last 30 Days"}
+{"tag":"INPUT","type":"button","name":"","aria":"Website","value":"","checked":false,"text":"Website"}
+{"tag":"INPUT","type":"button","name":"","aria":"Domains & Email","value":"","checked":false,"text":"Domains & Email"}
+{"tag":"INPUT","type":"button","name":"","aria":"Customer Notifications","value":"","checked":false,"text":"Customer Notifications"}
+{"tag":"INPUT","type":"button","name":"","aria":"Selling","value":"","checked":false,"text":"Selling"}
+{"tag":"INPUT","type":"button","name":"","aria":"Brand","value":"","checked":false,"text":"Brand"}
+{"tag":"INPUT","type":"button","name":"","aria":"Marketing","value":"","checked":false,"text":"Marketing"}
+{"tag":"INPUT","type":"button","name":"","aria":"Extensions","value":"","checked":false,"text":"Extensions"}
+{"tag":"INPUT","type":"button","name":"","aria":"Third Party Tools","value":"","checked":false,"text":"Third Party Tools"}
+{"tag":"INPUT","type":"button","name":"","aria":"Permissions & Ownership","value":"","checked":false,"text":"Permissions & Ownership"}
+{"tag":"INPUT","type":"button","name":"","aria":"Billing","value":"","checked":false,"text":"Billing"}
+{"tag":"INPUT","type":"button","name":"","aria":"Developer Tools","value":"","checked":false,"text":"Developer Tools"}
+{"tag":"INPUT","type":"checkbox","name":"","aria":"","value":"","checked":true,"text":"Cookie banner"}
+{"tag":"INPUT","type":"text","name":"","aria":"","value":"Accept all","checked":false,"text":""}
+{"tag":"INPUT","type":"checkbox","name":"","aria":"","value":"","checked":true,"text":"Manage cookies button"}
+{"tag":"INPUT","type":"text","name":"","aria":"","value":"Manage cookies","checked":false,"text":""}
+{"tag":"INPUT","type":"checkbox","name":"","aria":"","value":"","checked":true,"text":"Decline all button"}
+{"tag":"INPUT","type":"text","name":"","aria":"","value":"Decline all","checked":false,"text":""}
+{"tag":"DIV","type":"combobox","name":"","aria":"","value":null,"checked":null,"text":"Pill"}
+{"tag":"INPUT","type":"text","name":"","aria":"","value":"Cookie Preferences","checked":false,"text":""}
+{"tag":"INPUT","type":"checkbox","name":"","aria":"","value":"","checked":true,"text":"Activity log"}
+
+## contenteditable html
+<p data-rte-preserve-empty="true" style="white-space:pre-wrap;">We use essential cookies to operate our store. With your permission, we also use analytics and other non-essential cookies. Choose “Accept all”, “Decline all” or “Manage cookies”. You can change your choice later using Cookie Preferences. Read our <a href="/privacy-policy">Privacy Policy</a>, <a href="/cookie-policy">Cookie Policy</a> and <a href="/imprint">Imprint</a>.</p>
+
+## panel text
+Settings
+
+Website
+
+Domains & Email
+
+Customer Notifications
+
+Selling
+
+Brand
+
+Marketing
+
+Extensions
+
+Third Party Tools
+
+Permissions & Ownership
+
+Billing
+
+Developer Tools
+
+Website
+/
+
+Cookies and Data Privacy
+
+Cookies and Data Privacy
+Add a cookie banner to allow your site visitors to choose their cookie preferences. Learn more
+
+Banner
+
+Cookie banner
+
+Display a cookie banner on your site
+
+PREVIEW
+
+We use essential cookies to operate our store. With your permission, we also use analytics and other non-essential cookies. Choose “Accept all”, “Decline all” or “Manage cookies”. You can change your choice later using Cookie Preferences. Read our Privacy Policy, Cookie Policy and Imprint.
+
+Manage cookies
+Decline all
+Accept all
+CUSTOMIZE BANNER STYLE
+
+Banner Text
+
+ACCEPT BUTTON LABEL
+
+Manage cookies button
+
+Add a button for visitors to manage which cookies they want to accept.
+
+MANAGE BUTTON LABEL
+
+Decline all button
+
+A button for visitors to decline non-essential cookies.
+
+DECLINE BUTTON LABEL
+DISCLAIMER TEXT
+
+We use essential cookies to operate our store. With your permission, we also use analytics and other non-essential cookies. Choose “Accept all”, “Decline all” or “Manage cookies”. You can change your choice later using Cookie Preferences. Read our Privacy Policy, Cookie Policy and Imprint.
+
+RESTORE DEFAULT MESSAGE
+Notice requirements vary and our default text is for illustration purposes only. Learn more
+
+Saved Preferences
+
+Allow site visitors to access and change their cookie preferences at any time.
+LAYOUT
+
+Pill
+
+PREFERENCES LABEL
+
+Advanced Privacy Settings
+
+Activity log
+
+Include activity log data in Analytics.
+
+Non-essential cookies
+
+Some regions require you to get consent before non-essential cookies are placed.
+
+Restricted

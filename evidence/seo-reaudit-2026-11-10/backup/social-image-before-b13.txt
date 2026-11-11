@@ -1,0 +1,6 @@
+# Site-wide social sharing image BEFORE batch13 (2026-11-11)
+panel: https://rose-tarpon-ld9w.squarespace.com/config/settings/website/social-sharing
+file name shown: a2ce269e-e44f-494d-81c1-2821f25a6e26.png
+image URL: IMG@src:https://images.squarespace-cdn.com/content/v1/6908755e4a17f81b7629f4bc/76dc89ac-bde3-4f9d-9f96-f4f9b90d7c87/a2ce269e-e44f-494d-81c1-2821f25a6e26.png?format=100w
+all matching:
+IMG@src:https://images.squarespace-cdn.com/content/v1/6908755e4a17f81b7629f4bc/76dc89ac-bde3-4f9d-9f96-f4f9b90d7c87/a2ce269e-e44f-494d-81c1-2821f25a6e26.png?format=100w
