@@ -246,3 +246,16 @@ Asked for: mobile Performance 90. Not reached.
 
 Details: `evidence/seo-reaudit-2026-11-10/live-changes/batch18-19-phone-hero-lcp.md`.
 
+## Update 2026-11-11, 14:10 EET: "mobile 71 to 90" plan, phases 0-3 (batches 20-21)
+
+Not reached. No net live change in this round.
+
+- Measured locally with Lighthouse (5 runs, median 76-82 depending on the hour).
+- Cause of the late "largest paint": the heading really paints 20-160 ms after first paint; the test's simulator inflates that to 1-8 s, differently each run. The hero sits late in Squarespace's HTML, so the header paints first. Not controllable.
+- Tried preloading the heading font: no measurable effect, reverted.
+- Blocking time: customer-account scripts about 10 ms (skipped); Google Analytics about 2 points on PageSpeed (kept, owner decision).
+- Final pagespeed.web.dev: mobile 56, 71, 61; desktop 92, 81, 85.
+- 90 on mobile needs first paint under about 1.8 s; Squarespace's own CSS gives 2.6 s. Only a replatform changes that.
+
+Details: `evidence/seo-reaudit-2026-11-10/live-changes/batch20-21-mobile-90-phases.md`.
+
