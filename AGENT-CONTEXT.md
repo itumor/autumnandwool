@@ -129,3 +129,29 @@ python3 plans/2026-2027/status/rollup.py                                        
 Gate sequence for money: G0 → G1 → min contribution → break-even CAC → G2 GREEN → G3 cash check →
 owner sets ceiling → capped test at 3× break-even CAC per concept. Traffic chain: G6 + G4 + G8 → free
 channels first.
+
+## 10. Late-session update, 2026-11-25 (feed work)
+
+- Two new evidence docs, both read-only/verified against **official** docs this session:
+  - `business-os/seo-marketplace/feed/2026-11-25-google-feed-conformance-audit.md`
+  - `business-os/seo-marketplace/geo-2026-11-25/03-openai-feed-spec-check.md`
+- Generator changes (commits `5877bb0`, `bcde499`, corrected in `0b56821`):
+  - `description` no longer carries `Free shipping / Ships from Riga / 14-day returns`. Google's spec
+    forbids promotional text in descriptions; shipping/returns belong in Merchant Center account
+    settings. Both feeds were regenerated.
+  - OpenAI draft now uses the spec field `product_category` (text path) instead of Google-only
+    `google_product_category` + `product_type`. Draft header is **25 columns**, not 26.
+  - Committed Google TSV was verified byte-identical after the category-only change.
+- The OpenAI draft is still **not uploadable**: `target_countries=LV,EE,LT` is a guess in a field the
+  spec says expects a JSON array, and standard uploads target US regardless of that column. Only the
+  owner can claim the business in Business Hub, verify identity and choose real markets/currencies.
+- Google feed still needs owner input before re-upload: claims evidence (G2/F3), variant photos
+  (G3/F4, only SQ7601591 fixed via `VIMG`), 12 colour names (F6) and account-level shipping (W4).
+  The `additional_image_link` comma-separated cell format was **verified valid** against Google's
+  repeated-fields guide — do not "fix" it again.
+- **Subagents are unavailable in this install**: every `subagent` call fails with "Free usage limit
+  reached … switch models", including on different free model IDs. Work that would be delegated
+  must be done inline in the main session. This is an account limit, not a task failure.
+- Another session is editing the multilingual/Weglot plan in parallel (`71d6b97`, `e7898fd`,
+  `94d9523`, `2266b79`, `825309c`, `cb08b44`, `8422347`, `adefd89`). Do not touch those files or the
+  owner's `.claude/agents/aw-*.md`, `.claude/skills/**`, `skills-lock.json` and `AGENTS.md` edits.
