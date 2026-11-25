@@ -56,14 +56,16 @@ head -1 "$TMP/home.headers"
 
 Expected: `<html lang="en">` (or equivalent), one canonical, zero `hreflang`, no Weglot markup. If any differ, record the actual value — do not normalize it.
 
-- [ ] **Step 2:** Verify the overlay guard in the public stylesheet:
+- [ ] **Step 2:** Verify the overlay guard. Baseline finding: it lives **only in `custom.css`**, not in `site.css`
+      (`site.css` has the base selectors without the guard). Use the exact versioned URL recorded in evidence:
 
 ```bash
-curl -sSL https://www.autumnandwool.com/site.css -o "$TMP/site.css"
-grep -n 'sqs-widgets-confirmation-overlay\|sqs-widgets-confirmation' "$TMP/site.css" | head -20
+curl -sSL 'https://static1.squarespace.com/static/custom-css/6908755e4a17f81b7629f4bc/6908755e4a17f81b7629f4c5/24/custom.css' -o "$TMP/custom.css"
+grep -n 'sqs-widgets-confirmation-overlay\|sqs-widgets-confirmation' "$TMP/custom.css" | head -20
 ```
 
-Expected: both selectors present with `pointer-events:none !important;`. If absent from `/site.css`, check the stylesheet URL linked in `home.html` and record where the guard actually lives.
+Expected: both selectors with `pointer-events:none !important;`. If that URL changes, find `custom.css` in the
+stylesheet links of `home.html` and record the new URL. Checking `site.css` alone is not sufficient.
 
 - [ ] **Step 3:** Write the evidence file with a fact table (URL, verified value, exact snippet), a baseline section for language/SEO/header, a separate overlay-guard section, and an explicit "not verified" list for anything requiring admin (Custom CSS panel contents, GSC data, word count).
 
@@ -161,7 +163,7 @@ Requires Task 4 to be complete. All checks are read-only against the live site p
 
 | Task | State | Note |
 |---|---|---|
-| Task 1 — public baseline | in progress | Read-only probe delegated to a subagent; evidence file not yet written. |
+| Task 1 — public baseline | DONE | `evidence/multilingual-2026-11-25/live-baseline.md`; `en-US`, no hreflang, no Weglot, guard in `custom.css` only. |
 | Task 2 — owner runbook | DONE | `business-os/localization/weglot-owner-runbook.md`, commit `e7898fd`. Subdomain SEO facts added. |
 | Task 3 — LV copy draft | in progress | Delegated to a subagent; file not yet present. Native review still required (G3). |
 | Task 4 — live admin setup | BLOCKED (environment + owner gates) | Browser relay offline (`browse status`: connected=false, paired-offline); no `ego` or `agent-browser` CLI in this shell; `computer-use` reports Accessibility=denied and Screen Recording=denied. Live Squarespace/Weglot actions cannot be executed from this session. Requires owner action plus G1–G5. |
