@@ -43,9 +43,11 @@ value is not a number, or one SKU has two different stock values. That is delibe
   for product-only information. Shipping/returns belong in Merchant Center account settings. Both
   feeds were regenerated on 25 Nov; see `2026-11-25-google-feed-conformance-audit.md` G1.
 - Output path is passed in, not hard-coded, and both writers emit LF.
-- New `--openai` output: 26 OpenAI columns, `variant_dict` as JSON, `accepts_returns=true`,
-  `return_deadline_in_days=14`, `shipping_price=0.00 EUR`, `listing_has_variations` true only on
-  multi-variant products (14 groups / 91 grouped rows / 7 single-variant rows).
+- New `--openai` output: 25 OpenAI columns (the two non-schema Google category columns were replaced
+  by the spec's `product_category` text-path field on 25 Nov), `variant_dict` as JSON,
+  `accepts_returns=true`, `return_deadline_in_days=14`, `shipping_price=0.00 EUR`,
+  `listing_has_variations` true only on multi-variant products (14 groups / 91 grouped rows /
+  7 single-variant rows).
 
 ## Non-negotiables
 

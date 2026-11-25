@@ -1,11 +1,11 @@
 # OpenAI feed spec check — 2026-11-25
 
 ## Verdict
-Our 26-column header contains all 11 fields the **Stable** OpenAI file-upload spec requires for discovery (the nine basic fields plus `target_countries` and `store_country`), and 13 of the 15 optional fields we use are real. It is **not uploadable as-is for our intended market**: `target_countries` is sent as `LV,EE,LT` where the spec documents a JSON array of ISO-2 codes and explicitly says standard uploads use `["US"]` regardless of the column; `store_country=LV` is likewise overridden to `US` in standard uploads. Two columns (`google_product_category`, `product_type`) are not in the OpenAI schema at all and are ignored. The single most important required change is to **confirm country/currency support with OpenAI and set the real markets in Business Hub**, not to rely on uploaded country columns; rename `google_product_category` → `product_category` with the text path in `product_type` is the second.
+Our 25-column header contains all 11 fields the **Stable** OpenAI file-upload spec requires for discovery (the nine basic fields plus `target_countries` and `store_country`), and all 14 optional fields we use are real. It is **not uploadable as-is for our intended market**: `target_countries` is sent as `LV,EE,LT` where the spec documents a JSON array of ISO-2 codes and explicitly says standard uploads use `["US"]` regardless of the column; `store_country=LV` is likewise overridden to `US` in standard uploads. The single most important required change is to **confirm country/currency support with OpenAI and set the real markets in Business Hub**, not to rely on uploaded country columns. The two non-schema columns (`google_product_category`, `product_type`) were replaced by the spec's `product_category` with the text path on 2026-11-25; the committed Google TSV was verified byte-identical after that change.
 
 Source of truth: `https://developers.openai.com/commerce/specs/file-upload/products` (Stable, read 2026-11-25). A Draft version exists at `?version=draft` and is published for planning only — it is not the supported contract; we did not use it.
 
-## Column-by-column table
+## Column-by-column table (25 columns)
 
 | # | Our column | Official field | Requirement | Expected format | Verdict | Source |
 |---|---|---|---|---|---|---|
@@ -24,17 +24,16 @@ Source of truth: `https://developers.openai.com/commerce/specs/file-upload/produ
 | 13 | `group_id` | `group_id` | Conditionally required for variants | Stable parent ID shared by all variants; must differ from each `item_id` | CORRECT (product ID when >1 variant, blank otherwise) | OFFICIAL products §Variants |
 | 14 | `listing_has_variations` | `listing_has_variations` | Conditionally required for variants | Boolean `true`/`false` | CORRECT (lowercase strings) | OFFICIAL products §Variants, §Value conventions |
 | 15 | `variant_dict` | `variant_dict` | Conditionally required for variants | JSON object of string values, e.g. `{"color":"Black","size":"10"}`; needs `listing_has_variations=true` and `group_id != item_id` | CORRECT (`json.dumps`, nonempty keys/values; group ID is a product ID, item IDs are SKUs) | OFFICIAL products §Variants |
-| 16 | `google_product_category` | **not in spec** | — | Spec uses `product_category` (text path, `>` separated) | **WRONG-NAME** — numeric Google ID (`212`/`173`) will be ignored | OFFICIAL products §Item information; §Compatibility notes (no alias listed) |
-| 17 | `product_type` | **not in spec** | — | Spec uses `product_category` | **WRONG-NAME** — value is a valid text path but field is ignored | OFFICIAL products §Item information |
-| 18 | `condition` | `condition` | Optional | `new`, `refurbished`, `used` | CORRECT (`new`) | OFFICIAL products §Item information |
-| 19 | `gender` | `gender` | Optional | `male`, `female`, `unisex` | CORRECT (`female`, `unisex`) | OFFICIAL products §Item information |
-| 20 | `age_group` | `age_group` | Optional | `newborn`, `infant`, `toddler`, `kids`, `adult` | CORRECT (`adult`) | OFFICIAL products §Item information |
-| 21 | `color` | `color` | Optional | String, consistent with image and `variant_dict` | CORRECT (empty on some rows = omitted, allowed) | OFFICIAL products §Item information |
-| 22 | `size` | `size` | Optional | String label; use `variant_dict` when size distinguishes variants | CORRECT (`One size` is a label, allowed) | OFFICIAL products §Item information |
-| 23 | `material` | `material` | Optional | String, principal materials | CORRECT (`Merino wool` etc.; no unverifiable fibre % — see policy note) | OFFICIAL products §Item information |
-| 24 | `accepts_returns` | `accepts_returns` | Optional | Boolean; policy URL does not set it | CORRECT (`true`) | OFFICIAL products §Returns |
-| 25 | `return_deadline_in_days` | `return_deadline_in_days` | Optional | Positive integer; only with `accepts_returns=true` (alias `return_window`) | CORRECT (`14`) | OFFICIAL products §Returns |
-| 26 | `shipping_price` | `shipping_price` | Optional | Money string, same currency as `price`, nonnegative; omitted = unknown, not free | CORRECT syntactically (`0.00 EUR` asserts free shipping); display support must be confirmed | OFFICIAL products §Fulfillment |
+| 16 | `product_category` | `product_category` | Optional | Text path, broad → specific, `>` separated, e.g. `Apparel & Accessories > Shoes` | CORRECT after 2026-11-25 fix (replaced `google_product_category` + `product_type`, which are not OpenAI fields) | OFFICIAL products §Item information; §Compatibility notes |
+| 17 | `condition` | `condition` | Optional | `new`, `refurbished`, `used` | CORRECT (`new`) | OFFICIAL products §Item information |
+| 18 | `gender` | `gender` | Optional | `male`, `female`, `unisex` | CORRECT (`female`, `unisex`) | OFFICIAL products §Item information |
+| 19 | `age_group` | `age_group` | Optional | `newborn`, `infant`, `toddler`, `kids`, `adult` | CORRECT (`adult`) | OFFICIAL products §Item information |
+| 20 | `color` | `color` | Optional | String, consistent with image and `variant_dict` | CORRECT (empty on some rows = omitted, allowed) | OFFICIAL products §Item information |
+| 21 | `size` | `size` | Optional | String label; use `variant_dict` when size distinguishes variants | CORRECT (`One size` is a label, allowed) | OFFICIAL products §Item information |
+| 22 | `material` | `material` | Optional | String, principal materials | CORRECT (`Merino wool` etc.; no unverifiable fibre % — see policy note) | OFFICIAL products §Item information |
+| 23 | `accepts_returns` | `accepts_returns` | Optional | Boolean; policy URL does not set it | CORRECT (`true`) | OFFICIAL products §Returns |
+| 24 | `return_deadline_in_days` | `return_deadline_in_days` | Optional | Positive integer; only with `accepts_returns=true` (alias `return_window`) | CORRECT (`14`) | OFFICIAL products §Returns |
+| 25 | `shipping_price` | `shipping_price` | Optional | Money string, same currency as `price`, nonnegative; omitted = unknown, not free | CORRECT syntactically (`0.00 EUR` asserts free shipping); display support must be confirmed | OFFICIAL products §Fulfillment |
 
 Compatibility aliases the spec does allow: `id`/`sku` → `item_id`, `item_group_id` → `group_id`, `enable_search` → `is_eligible_search`, `enable_checkout` → `is_eligible_checkout`, `is_eligible_ads` → `is_ads_eligible`, `return_window` → `return_deadline_in_days`. `google_product_category` and `product_type` are **not** in that list. (OFFICIAL products §Compatibility notes.)
 
@@ -54,7 +53,7 @@ Compatibility aliases the spec does allow: `id`/`sku` → `item_id`, `item_group
 1. **Do not upload until GEO-02 owner actions are complete.** Business Hub claim + identity verification are prerequisites to product upload (OFFICIAL submit-product-feeds); this is an account gate, not a schema fix.
 2. **Resolve the market mismatch (blocking for our Baltic goal).** Ask OpenAI, during onboarding, whether multi-country processing is enabled and which countries/currencies are allowed. Set the real markets in Business Hub ("Choose the countries and currencies where you sell your products"). Do not expect `LV,EE,LT` or `LV` in the file to select Latvia — the spec says standard uploads target US regardless. If multi-country is not available, this feed cannot serve our intended market and should not be uploaded as a Baltic catalog.
 3. **Fix `target_countries` value format** from `LV,EE,LT` to a JSON array (e.g. `["LV"]`) **only once step 2 confirms those codes are supported**; otherwise the value is inert and misleading. Keep the `-DRAFT-do-not-upload` filename until then.
-4. **Rename the two invalid category columns:** replace `google_product_category` (numeric `212`/`173`) and `product_type` with the single spec field `product_category` carrying the existing text path, e.g. `Apparel > Knitwear > Sweaters`. This needs a generator change in `build_google_feed.py` plus feed regeneration; the committed Google TSV must remain byte-identical.
+4. **DONE — category columns fixed 2026-11-25.** `google_product_category` (numeric `212`/`173`) and `product_type` were replaced by the single spec field `product_category` carrying the existing text path, e.g. `Apparel > Knitwear > Sweaters`. `build_google_feed.py` was updated and the OpenAI draft regenerated to 25 columns; the committed Google TSV was verified byte-identical to the previous version.
 5. **Confirm `shipping_price=0.00 EUR` is truthful** against the actual shipping policy, and confirm the integration displays this field. Spec note: omitted/empty means unknown, not free shipping.
 6. **Review description claims** for factual accuracy before upload: the copy contains `100%`, `extra-fine`, `Italian-spun`, `hand-sewn`, `kraft gift packaging` and a URL slug with `hand-knitted`. Schema accepts them as strings; our brand-voice policy does not allow unverifiable fibre/origin/handmade claims. This is a content gate, independent of the schema verdict.
 

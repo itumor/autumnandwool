@@ -159,7 +159,9 @@ for pid,title,url,color,gender,kind,desc,imgs,vars_ in D:
 with open(out,'w',newline='') as f:
     w=csv.writer(f,delimiter='\t',lineterminator='\n'); w.writerow(cols[:-1]); [w.writerow(r[:-1]) for r in rows]
 if OPENAI:
-    oc=['item_id','title','description','url','brand','seller_name','image_url','additional_image_urls','availability','price','target_countries','store_country','group_id','listing_has_variations','variant_dict','google_product_category','product_type','condition','gender','age_group','color','size','material','accepts_returns','return_deadline_in_days','shipping_price']
+    # OpenAI uses `product_category` (text path), not Google's `google_product_category`
+    # numeric ID or `product_type` (official product feed schema, 2026-11-25 check).
+    oc=['item_id','title','description','url','brand','seller_name','image_url','additional_image_urls','availability','price','target_countries','store_country','group_id','listing_has_variations','variant_dict','product_category','condition','gender','age_group','color','size','material','accepts_returns','return_deadline_in_days','shipping_price']
     orows=[]
     for r in rows:
         v={}
@@ -167,7 +169,7 @@ if OPENAI:
         if r[17]!='One size': v['size']=r[17]
         orows.append([r[0],r[2],r[3],r[4],'Autumn & Wool','Autumn & Wool',r[5],r[6],r[7],r[8],TARGET_COUNTRIES,STORE_COUNTRY,r[1],
             'true' if r[1] else 'false', json.dumps(v,ensure_ascii=False) if v else '',
-            r[12],r[13],r[10],r[14],r[15],r[16],r[17],r[18],'true','14','0.00 EUR'])
+            r[13],r[10],r[14],r[15],r[16],r[17],r[18],'true','14','0.00 EUR'])
     with open(OPENAI,'w',newline='') as f:
         w=csv.writer(f,delimiter='\t',lineterminator='\n'); w.writerow(oc); w.writerows(orows)
     print(f'STOP-CHECK: target_countries={TARGET_COUNTRIES} store_country={STORE_COUNTRY} '
