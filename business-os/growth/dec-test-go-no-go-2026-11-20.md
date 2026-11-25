@@ -5,15 +5,15 @@ Decision needed 20 Nov (#33): December paid test GO or NO-GO (default NO-GO, EUR
 aw-growth-marketing. Brief: `test-2026-10-21-dec-first-signal.md`. Gates: `paid-test-gates.md`.
 Rule: GO only if all 6 gates PASS **and** the owner names a ceiling. Any FAIL/MISSING = NO-GO (ruling C10).
 
-## Part 1. Go/no-go (fill on 20 Nov)
-| # | Check | Evidence to link | State 20 Nov |
+## Part 1. Go/no-go (re-checked 25 Nov; agent assessment, owner sign-off pending)
+| # | Check | Evidence to link | State 20 Nov / 25 Nov |
 |---|---|---|---|
-| 1 | Chosen SKU costed: BE_CAC in `be-cac-worksheet-priority-skus.md` | `unit_economics.py` output | TODO |
-| 2 | Chosen SKU GREEN in the latest owner-approved capacity file; max units | `capacity-2026-W47.md` | TODO |
-| 3 | PDP ready: CRO landing brief PASS | `landing-brief-2026-10-21-dec-first-signal.md` | TODO |
+| 1 | Chosen SKU costed: BE_CAC in `be-cac-worksheet-priority-skus.md` | `sku-economics.csv`: 0 of 82 SKUs have any cost field filled | **FAIL** |
+| 2 | Chosen SKU GREEN in the latest owner-approved capacity file; max units | only DRAFT `capacity-2026-W43.md` (valid to 30 Oct); no W44–W47 file | **MISSING** |
+| 3 | PDP ready: CRO landing brief PASS | `landing-brief-2026-10-21-dec-first-signal.md` still DRAFT; no completed per-SKU CRO audit | **UNVERIFIED** |
 | 4 | Orders countable (Squarespace Orders) | weekly export | PASS (manual) since 21 Oct |
-| 5 | Conversion signal: plan upgraded + checklist passed, or accept a traffic objective | `paid-test-gates.md` checklist | TODO |
-| 6 | Owner ceiling EUR ___ and FIN cash above buffer (G3) | owner note, FIN forecast | TODO |
+| 5 | Conversion signal: plan upgraded + checklist passed, or accept a traffic objective | Basic plan (A-GM-05); no Code Injection, no platform conversion signal | **FAIL** |
+| 6 | Owner ceiling EUR ___ and FIN cash above buffer (G3) | no ceiling recorded; `kpi-weekly.csv` empty | **MISSING** |
 | x | G8 claims evidence (concept A), photo rights (#16), Etsy proof line (#17) | owner evidence list | TODO |
 | x | OPS order-by dates carrier-backed (G5) | `../operations/christmas-cutoffs-2026.md` v2 | TODO |
 
@@ -26,7 +26,9 @@ Numbers once 1, 2 and 6 are known:
 | Daily | ceiling / working days in window (launch to last order-by) | TODO |
 | Max orders the SKU may take | PRD "Max units to promote" | TODO |
 
-Decision: [ ] NO-GO, EUR 0   [ ] GO, EUR ___, SKU ___, launch ___   Owner initials + date: ___
+Decision: [x] NO-GO, EUR 0 (agent assessment 25 Nov: 1 of 6 gates PASS)   [ ] GO, EUR ___, SKU ___, launch ___   Owner initials + date: ___
+
+Full reasoning and gate evidence: `../head-of-ecommerce/dec-paid-test-memo-2026-11-25.md`. The owner may override with six PASS gates and a named ceiling.
 
 ## Part 1b. Pre-filled on assumptions (2026-10-21, wave 3, GRO-18 ASSUMED)
 ASSUMPTION: A-GM-08 December paid = NO-GO, EUR 0; A-GM-05 Basic plan; P2 BE_CAC 24.82 (A-GRO-01/02); register:
