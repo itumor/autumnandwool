@@ -1,7 +1,7 @@
 # Google feed conformance audit — 2026-11-25
 
 ## Verdict
-The file is structurally clean (98 data rows, exactly 19 columns each, LF endings, no BOM, no duplicate IDs) and all required attributes are present with correct value formats. It is **not ready to re-upload**: two content issues can trigger disapprovals (promotional text — "Free shipping" — in all 98 descriptions, and unverifiable fibre/origin claims in up to 93 rows), and the variant-image problem (F4) still needs owner-bound photos. One new structural issue is `additional_image_link`: we put all extra images comma-separated in one cell, while Google documents including the attribute multiple times. The generator-side availability bug (F1) is now closed.
+The file is structurally clean (98 data rows, exactly 19 columns each, LF endings, no BOM, no duplicate IDs) and all required attributes are present with correct value formats. It is **not ready to re-upload**: unverifiable fibre/origin claims remain in up to 93 rows (G2), and the variant-image problem (F4/G3) still needs owner-bound photos. The promotional-text issue (G1) was fixed code-side on 2026-11-25: the generator no longer appends "Free shipping / Ships from Riga / 14-day returns" to descriptions, and both feeds were regenerated. One structural issue is `additional_image_link`: we put all extra images comma-separated in one cell, while Google documents including the attribute multiple times. The generator-side availability bug (F1) is also closed.
 
 Counts below come from a fresh read of `autumnandwool-google-feed.tsv` on 2026-11-25; commands are in `## Counting method`.
 
@@ -9,7 +9,7 @@ Counts below come from a fresh read of `autumnandwool-google-feed.tsv` on 2026-1
 
 | ID | Issue | Affected rows | Spec source | Fix |
 |---|---|---|---|---|
-| G1 | Description contains promotional text "Free shipping" plus shipping/returns details. Google says: "Don't include promotional text like 'free shipping' …" and "Include only information about the product." | 98 | OFFICIAL Product data specification, Basic product data → Description [description] (`https://support.google.com/merchants/answer/7052112`) | Remove the `SHIP` constant appended in `build_google_feed.py` line 51 from `description`. Shipping/returns belong in Merchant Center shipping settings and `return_policy`, not the product description. Regenerate both feeds. Needs owner approval because it changes public feed copy. |
+| G1 | **Closed code-side 2026-11-25.** Description no longer contains "Free shipping", "Ships from Riga" or "14-day returns". The old text violated Google's "Don't include promotional text like 'free shipping' …" and "Include only information about the product." | 0 (was 98) | OFFICIAL Product data specification, Basic product data → Description [description] (`https://support.google.com/merchants/answer/7052112`) | Done: removed the `SHIP` constant from `build_google_feed.py` and regenerated both feeds. Owner still needs Merchant Center account-level shipping/returns settings (W4); no feed change required for those. |
 | G2 | Unverifiable claims in `description`/`title`: "100%" (93 desc, 4 title), "Knitted on a manually operated knitting machine and hand-sewn in Latvia." (79), "extra-fine" (15), "Italian-spun" (14), "pure new wool" (25), "pure wool" (1 desc, 16 title), "kraft gift packaging" (14). Our policy allows only "knitted on manual machines and finished by hand in Riga" and forbids fibre % until supplier specs land. | up to 93 | OFFICIAL spec requires accurate product data and "incorrect, inaccurate, or missing product information can cause disapprovals" (`https://support.google.com/merchants/answer/7052112`); our brand-voice gate (repo) | Hold for G8 claims evidence / decision 16. If unproven, replace with the allowed wording and drop fibre/origin claims. Same owner gate as October F3. |
 | G3 | Wrong or missing variant photos. `image_link` is byte-identical across many rows of one product (e.g. 36 turtleneck rows, 11 beanie rows, 4+ per size range); October F4 estimated ~48 rows with `variant.imageIds=[]`. Google requires the image to "accurately display the product" and flags conflicting variant attributes. | ~48 (owner estimate, not re-counted today) | OFFICIAL spec, Basic product data → Image link (`https://support.google.com/merchants/answer/7052112`) | Bind real variant photos in Squarespace, then regenerate. `VIMG` override already fixes SQ7601591 only. Do not guess photos from the CDN. |
 
@@ -39,9 +39,9 @@ Counts are case-insensitive substring counts in the `description` column (and `t
 | `pure wool` (exact substring, not "pure new wool") | description | 1 | No — same |
 | `pure wool` | title | 16 | No — same |
 | `kraft gift packaging` | description | 14 | No — packaging claim needs evidence |
-| `Free shipping` | description | 98 | No — promotional text, explicitly forbidden by Google for descriptions |
-| `Ships from Riga` | description | 98 | Content, not promotional; verify factual |
-| `14-day returns` | description | 98 | Content, not promotional; verify factual |
+| `Free shipping` | description | 0 (was 98; removed 2026-11-25) | No — promotional text, explicitly forbidden by Google for descriptions |
+| `Ships from Riga` | description | 0 (was 98; removed 2026-11-25) | Was content, not promotional; shipping details now belong in Merchant Center |
+| `14-day returns` | description | 0 (was 98; removed 2026-11-25) | Was content, not promotional; returns policy now belongs in Merchant Center |
 | `handmade`, `sustainable`, `organic`, `certified`, `hand-knitted`, `hand-sewn` as literal words in `description` | description | 0 (all 98 use the longer "manually operated … hand-sewn" sentence, counted above) | The standalone banned words do not appear; the long sentence still needs the approved wording |
 
 ## October QA F1–F6 status

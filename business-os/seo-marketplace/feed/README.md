@@ -7,7 +7,7 @@ script allowed to write feed files. Never hand-edit a TSV; change the generator 
 
 | File | Status | Uploadable? |
 |---|---|---|
-| `/autumnandwool-google-feed.tsv` (repo root, 98 rows, 19 cols) | The file last uploaded to Google Merchant Center (19 Oct 01:31 EET). Regeneration is byte-identical while the generator inputs are unchanged | Yes, after the owner does the single re-upload pass (C7 photos + claims + colours) |
+| `/autumnandwool-google-feed.tsv` (repo root, 98 rows, 19 cols) | Last uploaded to Google Merchant Center 19 Oct 01:31 EET; regenerated 25 Nov to remove promotional text from descriptions. Regeneration is byte-identical only while generator inputs and copy constants are unchanged | Yes, after the owner does the single re-upload pass (C7 photos + claims + colours) |
 | `2026-11-25-openai-feed-DRAFT-do-not-upload.tsv` (98 rows, 26 cols) | Draft OpenAI / ChatGPT feed from the same data. `target_countries=LV,EE,LT` is **a starting guess, not an owner decision** | **No.** Blocked on the owner claiming the business in OpenAI Business Hub (GEO-02 owner actions 6) and on eligibility being confirmed |
 | `2026-10-21-feed-availability-proposal-wave3.md` + `-diff-wave3.csv` | Proposal only; its stock rule (A-PRD-12/13) is still an assumption | No |
 | `2026-10-21-feed-generator-patch-proposal.md` | The problem statement the 25 Nov generator patch implements | n/a, historical |
@@ -38,6 +38,10 @@ value is not a number, or one SKU has two different stock values. That is delibe
   When the owner supplies a physical count, update the export, then re-run; do not patch the TSV.
 - `VIMG` keeps the 19 Oct cardigan Brown image override (`SQ7601591`) so regeneration does not
   undo it. Per-variant photos still have to be bound in Squarespace for the other ~48 rows.
+- Promotional and non-product copy removed from `description` (`Free shipping`, `Ships from Riga`,
+  `14-day returns`): Google's product data spec forbids promotional text in descriptions and asks
+  for product-only information. Shipping/returns belong in Merchant Center account settings. Both
+  feeds were regenerated on 25 Nov; see `2026-11-25-google-feed-conformance-audit.md` G1.
 - Output path is passed in, not hard-coded, and both writers emit LF.
 - New `--openai` output: 26 OpenAI columns, `variant_dict` as JSON, `accepts_returns=true`,
   `return_deadline_in_days=14`, `shipping_price=0.00 EUR`, `listing_has_variations` true only on

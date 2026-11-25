@@ -48,7 +48,9 @@ TARGET_COUNTRIES = opt.get('--targets', 'LV,EE,LT')
 STORE_COUNTRY = opt.get('--store-country', 'LV')
 B='https://www.autumnandwool.com'
 P='https://images.squarespace-cdn.com/content/v1/6908755e4a17f81b7629f4bc/'
-SHIP='Free shipping. Ships from Riga within 2–5 working days. 14-day returns.'
+# Google's product data spec forbids promotional text ("free shipping") in description
+# and asks for product-only information. Shipping/returns belong in Merchant Center
+# account settings, not in the feed description (2026-11-25 conformance audit, G1).
 HAND='Knitted on a manually operated knitting machine and hand-sewn in Latvia.'
 # id, title, url, color, gender, category, product_type, desc, images, variants[(sku, price, attrs)]
 D=[
@@ -152,7 +154,7 @@ for pid,title,url,color,gender,kind,desc,imgs,vars_ in D:
         sz=a.get('Size') or "One size"
         vt=', '.join(x for x in (a.get('Primary color'),a.get('Size')) if x)
         main=VIMG.get(sku, imgs[0])
-        rows.append([sku, pid if len(vars_)>1 else '', (title+(f' ({vt})' if vt else ''))[:150], desc+' '+SHIP, B+url, P+main+'?format=1500w', ','.join(P+i+'?format=1500w' for i in imgs[1:]),
+        rows.append([sku, pid if len(vars_)>1 else '', (title+(f' ({vt})' if vt else ''))[:150], desc, B+url, P+main+'?format=1500w', ','.join(P+i+'?format=1500w' for i in imgs[1:]),
             availability(sku), price+' EUR','Autumn & Wool','new','no',CAT[kind][0],CAT[kind][1],gender,'adult',c,sz,mat,''])
 with open(out,'w',newline='') as f:
     w=csv.writer(f,delimiter='\t',lineterminator='\n'); w.writerow(cols[:-1]); [w.writerow(r[:-1]) for r in rows]
