@@ -63,6 +63,12 @@ the traffic flywheel. Goal marked complete with all verifiable layers green at 0
    - Prior: 2 auto items, 45 auto-targeted countries, zero shipping services — approval blocked.
    - Now: 98 primary rows (85 in-stock, 13 out → auto-excluded later); business-info countries trimmed to
      **Latvia + 18 EU + US/CA/AU/UK/NO/CH**; custom shipping services (free, 4–10 business days) per region.
+     **[Correction 2026-11-25]** The "85/13" split is a 19 Oct working figure, not a reproducible fact:
+     the 17 Oct export shows stock ≥ 1 for all 98 feed SKUs (turtleneck 10 each, beanie 20 each, others
+     1–4), and the only stock-0 rows are not in the feed. The generator now reads `Stock` from that export
+     and writes **98 `in_stock`, 0 `out_of_stock`**. Do not use "13" for availability until the owner's
+     physical count (decision 4) replaces the placeholder — see
+     `business-os/seo-marketplace/feed/2026-10-21-feed-qa.md` F2.
    - Diagnostics clean after the 01:31 re-upload. Approved>0 due by **2026-10-21** (24–72h window).
 5. **Contact form safety**: the mailto: form used `method=post` → Chrome security interstitial. CTA hidden via CSS,
    guidance text rendered instead: "Email us at autumnandwool@gmail.com — we reply within 24 hours." (CSS-only).
