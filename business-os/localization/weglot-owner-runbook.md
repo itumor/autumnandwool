@@ -103,6 +103,10 @@ Consequence for CX: do not promise a fully translated site; LV shoppers may stil
 
 ## J. Pre-flight checks on this store
 
+0. **VERIFY** native locale option: the live homepage markup contains a Squarespace language-picker hook with
+   `"enabled": false` and `i18n_beta_website_locales` in beta flags (evidence:
+   `evidence/multilingual-2026-11-25/live-baseline.md`). If Site Languages offers a native locale option in addition
+   to Weglot, pause and compare before committing — the approved design chose Weglot, not a beta feature.
 1. **VERIFY** Site Languages / Weglot panel is available on the current (assumed Basic) plan — docs state 7.1 only, not a plan tier.
 2. **VERIFY** Latvian is a selectable destination language.
 3. **VERIFY** a custom domain is connected to this Squarespace site (required for subdomains).
