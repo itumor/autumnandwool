@@ -166,8 +166,8 @@ Requires Task 4 to be complete. All checks are read-only against the live site p
 | Task 1 — public baseline | DONE | `evidence/multilingual-2026-11-25/live-baseline.md`; `en-US`, no hreflang, no Weglot, guard in `custom.css` only. |
 | Task 2 — owner runbook | DONE | `business-os/localization/weglot-owner-runbook.md`, commit `e7898fd`. Subdomain SEO facts added. |
 | Task 3 — LV copy draft | DONE (draft only) | `business-os/localization/lv-money-pages-draft.md`, commit `2266b79`. 94 rows, `translation-draft`; 28 `[PENDING ADVISER]`, 17 `[VERIFY]`. Native review (G3) and adviser (G4) still required before publication. |
-| Task 4 — live admin setup | BLOCKED (environment + owner gates) | Browser relay offline (`browse status`: connected=false, paired-offline); no `ego` or `agent-browser` CLI in this shell; `computer-use` reports Accessibility=denied and Screen Recording=denied. Live Squarespace/Weglot actions cannot be executed from this session. Requires owner action plus G1–G5. |
-| Task 5 — QA | BLOCKED | Needs a live LV version from Task 4. |
+| Task 4 — live admin setup | PARTIAL, then BLOCKED | Via ego-browser: Weglot connected with store email, LV enabled Public, 9 glossary rules added, word count measured (396/2,000 after 1 page). Evidence: `evidence/multilingual-2026-11-25/live-setup.md`. Blocked at G1 (paid plan; free tier cannot cover site), G2 (subdomain/hreflang), G3/G4 (reviewer/adviser), G5 (PDP list). |
+| Task 5 — QA | BLOCKED (partial) | Switcher and LV homepage verified live; full QA needs reviewed translations + paid-plan decision + no subdomain yet. |
 | Task 6 — measurement / RU gate | BLOCKED | Needs LV launch date and LOC-15 readout. |
 
 ## Self-Review (completed before handoff)
