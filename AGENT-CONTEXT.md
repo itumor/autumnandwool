@@ -97,8 +97,8 @@ under `evidence/`.
 `plans/2026-2027/status/*.md` holds one table per department plus two generated files.
 `python3 plans/2026-2027/status/rollup.py` rewrites `STATUS.md` and `OPEN-TASKS.md` (it also reorders
 departments by blocked count, so expect churn). After any status-table edit, run it — do not hand-edit
-the generated pair. The header line (currently `43 assumed · 42 blocked · 89 to do · 122 done`, after
-GM-18 moved to ASSUMED on 2026-11-25) must always equal the sum of the department tables;
+the generated pair. The header line (currently `44 assumed · 42 blocked · 88 to do · 122 done`, after
+GM-18 and OPS-17 moved to ASSUMED on 2026-11-25) must always equal the sum of the department tables;
 `rollup.py --selftest` checks the parser.
 
 Status words mean: `DONE` finished; `ASSUMED` finished on proposed values and awaiting owner
@@ -153,6 +153,8 @@ channels first.
 - **Subagents are unavailable in this install**: every `subagent` call fails with "Free usage limit
   reached … switch models", including on different free model IDs. Work that would be delegated
   must be done inline in the main session. This is an account limit, not a task failure.
+- OPS-17 (freeze check, overdue since 20 Nov) was closed on repo evidence as **NO-GO** (9 of 10 checks fail
+  the GO rule; stall check N/A). All fallbacks are in the filled file; owner sign-off still pending.
 - GM-18 (December paid test memo, overdue since 20 Nov) was closed on repo evidence as **NO-GO, EUR 0**
   (1 of 6 Growth gates PASS; owner sign-off still pending):
   `business-os/head-of-ecommerce/dec-paid-test-memo-2026-11-25.md`. GRO-19 stays TODO — no December test
