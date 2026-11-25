@@ -165,7 +165,7 @@ Requires Task 4 to be complete. All checks are read-only against the live site p
 |---|---|---|
 | Task 1 — public baseline | DONE | `evidence/multilingual-2026-11-25/live-baseline.md`; `en-US`, no hreflang, no Weglot, guard in `custom.css` only. |
 | Task 2 — owner runbook | DONE | `business-os/localization/weglot-owner-runbook.md`, commit `e7898fd`. Subdomain SEO facts added. |
-| Task 3 — LV copy draft | in progress | Delegated to a subagent; file not yet present. Native review still required (G3). |
+| Task 3 — LV copy draft | DONE (draft only) | `business-os/localization/lv-money-pages-draft.md`, commit `2266b79`. 94 rows, `translation-draft`; 28 `[PENDING ADVISER]`, 17 `[VERIFY]`. Native review (G3) and adviser (G4) still required before publication. |
 | Task 4 — live admin setup | BLOCKED (environment + owner gates) | Browser relay offline (`browse status`: connected=false, paired-offline); no `ego` or `agent-browser` CLI in this shell; `computer-use` reports Accessibility=denied and Screen Recording=denied. Live Squarespace/Weglot actions cannot be executed from this session. Requires owner action plus G1–G5. |
 | Task 5 — QA | BLOCKED | Needs a live LV version from Task 4. |
 | Task 6 — measurement / RU gate | BLOCKED | Needs LV launch date and LOC-15 readout. |
