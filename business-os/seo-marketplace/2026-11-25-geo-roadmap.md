@@ -33,3 +33,9 @@ Status: `todo` · `running` · `review` · `done` · `blocked (owner)`. Only the
 - 19:28 GEO-10 reviewed: 8 Riga targets (M50, RIIJA, JO, Gift Shop Riga, LSM, Svinam, Latvian Design Award…), plus a pitch in Latvian. Done.
 - 19:28 GEO-11 launched to merge the owner actions.
 - 19:30 GEO-11 reviewed: 45-item owner checklist (A this week 12, B facts 13, C approve 8, D decide 12). Sprint complete: 11/11 done as drafts, nothing live. Next: owner works through `00-OWNER-ACTIONS.md` section A; re-run prompt panel 2026-12-01.
+
+## Implementation phase (owner said implement, no drafts), 19:39
+- Committed and pushed sprint drafts (5ec3dbe).
+- GSC: all 9 GEO pages already "URL is on Google". No request needed.
+- Bing WMT: site already verified; resubmitted sitemap.xml; submitted 39 URLs (Success). AI Performance baseline: 36 Copilot citations in 3 months. Log: `geo-2026-11-25/live/2026-11-25-live-log.md`.
+- Squarespace copy (Home, About, /shop): final text with no placeholders in `geo-2026-11-25/live/apply-copy-final.md`. BLOCKED: admin logged out; owner must finish the Google sign-in pop-up in Chrome.
