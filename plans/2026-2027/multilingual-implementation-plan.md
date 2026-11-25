@@ -157,6 +157,17 @@ Requires Task 4 to be complete. All checks are read-only against the live site p
 - [ ] **Step 2:** Apply the Russian entry criteria from spec §8: G6 approved, paid Weglot plan covering a 2nd language, native RU reviewer named, LV QA green. Record evidence per criterion.
 - [ ] **Step 3:** If any criterion fails, hold RU and log the failed criterion with date. No partial RU launch.
 
+## Execution status (2026-11-25)
+
+| Task | State | Note |
+|---|---|---|
+| Task 1 — public baseline | in progress | Read-only probe delegated to a subagent; evidence file not yet written. |
+| Task 2 — owner runbook | DONE | `business-os/localization/weglot-owner-runbook.md`, commit `e7898fd`. Subdomain SEO facts added. |
+| Task 3 — LV copy draft | in progress | Delegated to a subagent; file not yet present. Native review still required (G3). |
+| Task 4 — live admin setup | BLOCKED (environment + owner gates) | Browser relay offline (`browse status`: connected=false, paired-offline); no `ego` or `agent-browser` CLI in this shell; `computer-use` reports Accessibility=denied and Screen Recording=denied. Live Squarespace/Weglot actions cannot be executed from this session. Requires owner action plus G1–G5. |
+| Task 5 — QA | BLOCKED | Needs a live LV version from Task 4. |
+| Task 6 — measurement / RU gate | BLOCKED | Needs LV launch date and LOC-15 readout. |
+
 ## Self-Review (completed before handoff)
 
 - Spec §1–§10 coverage: decisions → global constraints; phase 0 → Task 1+4; phase 1 → Tasks 2–4; QA/launch → Task 5; measurement/RU → Task 6; risks → global constraints + Task 4/5 gates; non-goals → global constraints.
