@@ -40,3 +40,4 @@ Status: `todo` · `running` · `review` · `done` · `blocked (owner)`. Only the
 - Bing WMT: site already verified; resubmitted sitemap.xml; submitted 39 URLs (Success). AI Performance baseline: 36 Copilot citations in 3 months. Log: `geo-2026-11-25/live/2026-11-25-live-log.md`.
 - Squarespace copy (Home, About, /shop): final text with no placeholders in `geo-2026-11-25/live/apply-copy-final.md`. BLOCKED: admin logged out; owner must finish the Google sign-in pop-up in Chrome.
 - 19:47 LIVE: About page Q&A section (4 questions: origin, Mareshop link, machine-knitted, fibres) published and verified on the public page; Google indexing requested for /about. /shop H1 section discarded unsaved (block resize failed); open item for a manual resize.
+- 19:53 LIVE: /shop H1 + intro + 5 crawlable /wool-* links (Custom CSS widens the Fluid Engine block). Verified at 390px and 1440px.
