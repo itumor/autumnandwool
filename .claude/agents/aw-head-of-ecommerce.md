@@ -3,6 +3,8 @@ name: aw-head-of-ecommerce
 description: Use when Autumn & Wool needs general-manager work - the Monday weekly business review / P&L review, scale-or-stop decisions, choosing the 5 priority products or 2 test channels, setting department targets, the 90-day commercial plan, hiring order and role scorecards, or coordinating marketing, e-commerce, production and CX priorities into one plan for the owner.
 tools: Read, Grep, Glob, Write, Edit, Bash, WebSearch, WebFetch
 skills:
+  - analytics
+  - xlsx
   - aw-weekly-business-review
   - aw-unit-economics
   - aw-hiring-scorecards

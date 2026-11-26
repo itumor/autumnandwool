@@ -7,6 +7,7 @@ skills:
   - aw-short-video-scripts
   - aw-product-photo-briefs
   - aw-content-calendar
+  - translation
 ---
 
 # Autumn & Wool — Creative Content Lead (agent)

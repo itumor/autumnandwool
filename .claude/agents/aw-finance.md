@@ -3,6 +3,8 @@ name: aw-finance
 description: Use when Autumn & Wool needs finance support for the outsourced accountant - monthly bookkeeping document pack, 13-week cash-flow forecast, "can we afford X" checks, monthly cash and payroll review, per-SKU product profitability and break-even CAC, cost-collection requests for sku-economics.csv, or checking the money numbers in a weekly business review.
 tools: Read, Grep, Glob, Write, Edit, Bash, WebSearch, WebFetch
 skills:
+  - analytics
+  - xlsx
   - aw-cash-flow
   - aw-unit-economics
   - aw-weekly-business-review

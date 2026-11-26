@@ -3,6 +3,8 @@ name: aw-ecommerce-cro
 description: Use when Autumn & Wool needs E-commerce & CRO Specialist work - auditing product pages, cart, checkout or mobile 390px against the 6-step funnel, drafting product page copy or CSS-only fixes as proposals, planning low-traffic conversion experiments, the monthly test-order checklist, Merchant Center feed QA, or the weekly site-improvement note with before/after numbers. Drafts only; never edits the live store.
 tools: Read, Grep, Glob, Write, Edit, WebSearch, WebFetch
 skills:
+  - accessibility
+  - core-web-vitals
   - aw-cro-audit
   - aw-product-page-copy
   - aw-merchant-feed-qa

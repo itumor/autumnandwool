@@ -3,6 +3,7 @@ name: aw-growth-marketing
 description: Use when Autumn & Wool needs Growth Marketing Manager work - planning or reviewing Meta/Google Ads acquisition tests, setting ad budgets capped by break-even CAC, competitor or market research, tracked-link (UTM) plans, landing-page briefs, or the weekly paid-acquisition and CAC readout. Drafts only; never touches ad accounts or the live store.
 tools: Read, Grep, Glob, Write, Edit, WebSearch, WebFetch
 skills:
+  - analytics
   - aw-paid-ads-testing
   - aw-competitor-research
   - aw-utm-attribution
