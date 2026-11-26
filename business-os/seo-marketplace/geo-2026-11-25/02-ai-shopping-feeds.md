@@ -49,14 +49,14 @@ Checkout/payments sections (ACP, Stripe) are out of scope: unconfirmed for Squar
 | Gap | Evidence | Fix (draft) | Needed by |
 |---|---|---|---|
 | `identifier_exists` = `no` on all 98 | TSV | Correct for handmade without GTIN. Keep. OpenAI: omit GTIN if unassigned, never invent MPN | Google, OpenAI |
-| `availability` hard-coded `in_stock` | `build_google_feed.py` line 108; QA F1 | Apply generator patch proposal. Owner stock count still missing (QA F2) | all |
+| `availability` hard-coded `in_stock` | `build_google_feed.py`; QA F1 | **FIXED code-side 2026-11-25**: stock now read from the export `Stock` column, `0` → `out_of_stock`, missing/ambiguous SKU stops the run. The 17 Oct export shows stock ≥ 1 for all 98 rows, so the handbook's "85 in / 13 out" (QA F2) is not reproducible — the export wins until the owner counts. Generator patch committed (`800caec`) | all |
 | Made-to-order turtleneck (36 rows) and beanie (11 rows) | `feed/2026-10-21-feed-availability-proposal-wave3.md` (assumed, not counted) | Keep `in_stock` only if lead time is true. Add handling time 5-10 days for turtleneck. OpenAI has no handling field I read; `backorder` or `pre_order` may fit, unconfirmed. Owner decides SEO-03 | Google, OpenAI |
 | `color` empty on 12 rows | TSV count; QA F6 | Owner gives colour names as on the product page. Never guess | Google, OpenAI |
 | `material` too thin | Values only "Merino wool" (58), "Wool" (28), "Lambswool" (12). No fibre % | `[FILL: fibre % per product]` from yarn spec. Do not write "100%" unless owner confirms | Google, OpenAI |
 | Claims in descriptions | "hand-sewn in Latvia", "Italian-spun", "extra-fine" (QA F3) | Keep only what owner evidences; align with "machine-knitted, hand-finished" wording | all (policy) |
 | Variant photos wrong or missing | about 48 rows (QA F4); SQ7601591 image check (F5) | Bind photos in Squarespace first, then re-upload | all |
-| Missing OpenAI-only fields | not in TSV: `seller_name`, `target_countries`, `store_country`, `group_id`/`variant_dict` (we have item_group_id only), `image_url` name, price needs `EUR` format (we have it) | Add a second output of the generator mapped to OpenAI names. Proposal only, do not run | OpenAI |
-| `shipping`, returns | shipping column dropped on purpose; returns text only in description | Add `shipping_price` 0 EUR, `accepts_returns` true, `return_deadline_in_days` 14 (all from our own feed text "Free shipping... 14-day returns") | OpenAI |
+| Missing OpenAI-only fields | not in the live TSV: `seller_name`, `target_countries`, `store_country`, `group_id`/`variant_dict`, `image_url` name | **DONE code-side 2026-11-25**: `--openai <out.tsv>` emits a 26-column feed (98 rows, 14 groups, `variant_dict` JSON). Draft at `feed/2026-11-25-openai-feed-DRAFT-do-not-upload.tsv`. `target_countries` is a guessed default — owner confirms before upload | OpenAI |
+| `shipping`, returns | shipping column dropped on purpose; returns text only in description | **DONE for the OpenAI output**: `shipping_price` 0 EUR, `accepts_returns` true, `return_deadline_in_days` 14 (from our own feed text "Free shipping... 14-day returns"). Google keeps account-level shipping | OpenAI |
 | No reviews | none on site | Leave empty. No fake ratings | OpenAI |
 | Brand name | feed uses "Autumn & Wool" | Good. Keep, not "AUTUMN AND WOOL, SIA" | all |
 
@@ -81,4 +81,4 @@ Checkout/payments sections (ACP, Stripe) are out of scope: unconfirmed for Squar
 - Google, Merchant Center announcements: https://support.google.com/merchants/announcements/6192467 (not opened)
 - Microsoft Advertising, Agentic commerce: https://about.ads.microsoft.com/en/solutions/technology/agentic-commerce (via search summary, unconfirmed)
 - Microsoft help, Google import / Google feed: https://help.ads.microsoft.com/apex/index/3/en/56870 and /51110 (first page returned "no results" when fetched; unconfirmed)
-- Repo: `autumnandwool-google-feed.tsv`, `build_google_feed.py`, `business-os/seo-marketplace/feed/2026-10-21-feed-qa.md`, `feed/2026-10-21-feed-availability-proposal-wave3.md`, `PROJECT-HANDBOOK.md` section 5.4
+- Repo: `autumnandwool-google-feed.tsv`, `build_google_feed.py`, `business-os/seo-marketplace/feed/README.md`, `business-os/seo-marketplace/feed/2026-10-21-feed-qa.md`, `feed/2026-10-21-feed-availability-proposal-wave3.md`, `PROJECT-HANDBOOK.md` §5 item 4

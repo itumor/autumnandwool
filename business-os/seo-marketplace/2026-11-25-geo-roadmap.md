@@ -7,7 +7,7 @@ Status: `todo` · `running` · `review` · `done` · `blocked (owner)`. Only the
 | ID | Step | Task | Worker | Output | Status |
 |---|---|---|---|---|---|
 | GEO-01 | 1 Index | Bing Webmaster Tools (import from GSC) + GSC request-indexing guide for owner | Haiku | `geo-2026-11-25/01-bing-gsc-indexing-guide.md` | done (draft) |
-| GEO-02 | 1 Index | ChatGPT / Perplexity / Google merchant-feed programmes: eligibility + steps | Sonnet | `geo-2026-11-25/02-ai-shopping-feeds.md` | done (draft) |
+| GEO-02 | 1 Index | ChatGPT / Perplexity / Google merchant-feed programmes: eligibility + steps | Sonnet | `geo-2026-11-25/02-ai-shopping-feeds.md` | done (draft) + code-side feed 25 Nov |
 | GEO-03 | 2 Entity | Brand consistency pack: Etsy Mareshop announcement/About, social bios, Business Info name, `sameAs` list | Sonnet | `geo-2026-11-25/03-brand-entity-pack.md` | done (draft) |
 | GEO-04 | 2 Entity | Marketplaces + Baltic press/gift guides shortlist with pitch drafts | Sonnet | `geo-2026-11-25/04-marketplaces-press.md` | done (draft) |
 | GEO-05 | 2 Entity | 60-second YouTube script + title/description; Reddit answer guidelines | Haiku | `geo-2026-11-25/05-youtube-reddit.md` | done (draft) |
@@ -42,3 +42,16 @@ Status: `todo` · `running` · `review` · `done` · `blocked (owner)`. Only the
 - 19:47 LIVE: About page Q&A section (4 questions: origin, Mareshop link, machine-knitted, fibres) published and verified on the public page; Google indexing requested for /about. /shop H1 section discarded unsaved (block resize failed); open item for a manual resize.
 - 19:53 LIVE: /shop H1 + intro + 5 crawlable /wool-* links (Custom CSS widens the Fluid Engine block). Verified at 390px and 1440px.
 - 19:57 SEO round: guides already answer-first and bylined (10 Nov), no change. /shop + /about resubmitted to Bing.
+
+## Code-side follow-up, 21:2x
+- `build_google_feed.py` patched and committed (`800caec`): stock read from the Squarespace export
+  instead of a hard-coded `in_stock`; missing SKU, non-numeric stock or conflicting duplicate stops the
+  run; output path passed in; per-variant image override for cardigan Brown kept; LF line endings.
+  Google TSV regenerates byte-identical (`diff` clean) so the committed Merchant Center feed is unchanged.
+- `--openai <out.tsv>` added: 26-column OpenAI feed (98 rows, 14 groups / 91 grouped rows,
+  `variant_dict` JSON, 14-day returns, free shipping). Draft written to
+  `feed/2026-11-25-openai-feed-DRAFT-do-not-upload.tsv`. `target_countries` defaults to LV,EE,LT and
+  prints a STOP-CHECK warning because the owner has not confirmed it.
+- `feed/README.md` added so the next session can tell uploadable files from drafts.
+- Still owner-blocked: Business Hub claim + identity verification (GEO-02 action 6), colours on 12 rows,
+  fibre %, stock count, variant photos in Squarespace, claims wording.

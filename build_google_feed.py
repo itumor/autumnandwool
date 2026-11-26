@@ -1,7 +1,56 @@
-import csv, re
+import csv, json, re, sys
+# Usage:
+#   python3 build_google_feed.py <squarespace-products-export.csv> <out-google.tsv>
+#   python3 build_google_feed.py <export.csv> <out-google.tsv> --openai <out-openai.tsv> --targets LV,EE,LT
+# Stock comes from the Squarespace products export (Stock column), never from a constant (SEO-03).
+# A SKU missing from the export, an unreadable stock value or a conflicting duplicate -> stop, never guess.
+FLAGS={'--openai','--targets','--store-country'}
+pos, opt = [], {}
+argv = sys.argv[1:]
+for i, a in enumerate(argv):
+    if a in FLAGS:
+        if i+1 >= len(argv): sys.exit(f'STOP: {a} needs a value')
+        opt[a] = argv[i+1]
+    elif i and argv[i-1] in FLAGS:
+        continue                      # value already consumed by the flag above
+    elif a.startswith('--'):
+        sys.exit(f'STOP: unknown flag {a}')
+    else:
+        pos.append(a)
+if len(pos)!=2:
+    sys.exit('usage: build_google_feed.py <products-export.csv> <out-google.tsv> '
+             '[--openai <out-openai.tsv>] [--targets LV,EE,LT] [--store-country LV]')
+EXPORT, out = pos
+OPENAI = opt.get('--openai')
+STOCK={}
+with open(EXPORT,newline='',encoding='utf-8') as f:
+    for r in csv.DictReader(f):
+        sku=(r.get('SKU') or '').strip()
+        if not sku: continue
+        s=(r.get('Stock') or '').strip()
+        if sku in STOCK and STOCK[sku]!=s:
+            sys.exit(f'STOP: {sku} has two stock values in {EXPORT}: {STOCK[sku]!r} vs {s!r}')
+        STOCK[sku]=s
+def availability(sku):
+    if sku not in STOCK:
+        sys.exit(f'STOP: {sku} not in {EXPORT}; refusing to guess availability')
+    s=STOCK[sku]
+    if s.lower()=='unlimited': return 'in_stock'
+    if not s.isdigit(): sys.exit(f'STOP: {sku} stock {s!r} is not a number')
+    return 'in_stock' if int(s)>0 else 'out_of_stock'
+# Per-variant image overrides: SKU -> asset path under P. Only photos bound in Squarespace and confirmed by eye.
+VIMG={
+    'SQ7601591':'1762677080229-61UOLLY9NEB98MTXF359/image_10.jpg',  # cardigan Brown: live feed image since 19 Oct
+}
+# OpenAI/ChatGPT feed (GEO-02). Owner picks the real target countries at Business Hub upload;
+# these defaults are a starting guess, not an owner decision. Store country is factual (Riga, LV).
+TARGET_COUNTRIES = opt.get('--targets', 'LV,EE,LT')
+STORE_COUNTRY = opt.get('--store-country', 'LV')
 B='https://www.autumnandwool.com'
 P='https://images.squarespace-cdn.com/content/v1/6908755e4a17f81b7629f4bc/'
-SHIP='Free shipping. Ships from Riga within 2–5 working days. 14-day returns.'
+# Google's product data spec forbids promotional text ("free shipping") in description
+# and asks for product-only information. Shipping/returns belong in Merchant Center
+# account settings, not in the feed description (2026-11-25 conformance audit, G1).
 HAND='Knitted on a manually operated knitting machine and hand-sewn in Latvia.'
 # id, title, url, color, gender, category, product_type, desc, images, variants[(sku, price, attrs)]
 D=[
@@ -104,9 +153,26 @@ for pid,title,url,color,gender,kind,desc,imgs,vars_ in D:
         c=a.get('Primary color') or color
         sz=a.get('Size') or "One size"
         vt=', '.join(x for x in (a.get('Primary color'),a.get('Size')) if x)
-        rows.append([sku, pid if len(vars_)>1 else '', (title+(f' ({vt})' if vt else ''))[:150], desc+' '+SHIP, B+url, P+imgs[0]+'?format=1500w', ','.join(P+i+'?format=1500w' for i in imgs[1:]),
-            'in_stock', price+' EUR','Autumn & Wool','new','no',CAT[kind][0],CAT[kind][1],gender,'adult',c,sz,mat,''])
-out='/mnt/user-data/outputs/autumnandwool-google-feed.tsv'
+        main=VIMG.get(sku, imgs[0])
+        rows.append([sku, pid if len(vars_)>1 else '', (title+(f' ({vt})' if vt else ''))[:150], desc, B+url, P+main+'?format=1500w', ','.join(P+i+'?format=1500w' for i in imgs[1:]),
+            availability(sku), price+' EUR','Autumn & Wool','new','no',CAT[kind][0],CAT[kind][1],gender,'adult',c,sz,mat,''])
 with open(out,'w',newline='') as f:
-    w=csv.writer(f,delimiter='\t'); w.writerow(cols[:-1]); [w.writerow(r[:-1]) for r in rows]
-print(len(rows),'rows', sum(1 for r in rows if not r[16]),'no color')
+    w=csv.writer(f,delimiter='\t',lineterminator='\n'); w.writerow(cols[:-1]); [w.writerow(r[:-1]) for r in rows]
+if OPENAI:
+    # OpenAI uses `product_category` (text path), not Google's `google_product_category`
+    # numeric ID or `product_type` (official product feed schema, 2026-11-25 check).
+    oc=['item_id','title','description','url','brand','seller_name','image_url','additional_image_urls','availability','price','target_countries','store_country','group_id','listing_has_variations','variant_dict','product_category','condition','gender','age_group','color','size','material','accepts_returns','return_deadline_in_days','shipping_price']
+    orows=[]
+    for r in rows:
+        v={}
+        if r[16]: v['color']=r[16]
+        if r[17]!='One size': v['size']=r[17]
+        orows.append([r[0],r[2],r[3],r[4],'Autumn & Wool','Autumn & Wool',r[5],r[6],r[7],r[8],TARGET_COUNTRIES,STORE_COUNTRY,r[1],
+            'true' if r[1] else 'false', json.dumps(v,ensure_ascii=False) if v else '',
+            r[13],r[10],r[14],r[15],r[16],r[17],r[18],'true','14','0.00 EUR'])
+    with open(OPENAI,'w',newline='') as f:
+        w=csv.writer(f,delimiter='\t',lineterminator='\n'); w.writerow(oc); w.writerows(orows)
+    print(f'STOP-CHECK: target_countries={TARGET_COUNTRIES} store_country={STORE_COUNTRY} '
+          f'are not owner-confirmed; do not upload until GEO-02 owner actions are done')
+print(len(rows),'rows', sum(1 for r in rows if not r[16]),'no color',
+      sum(1 for r in rows if r[7]=='out_of_stock'),'out_of_stock')
