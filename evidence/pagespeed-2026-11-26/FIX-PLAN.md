@@ -28,7 +28,12 @@ are platform- or vendor-owned, and two need credentials. No number below was inv
    Fix: in Weglot → switcher settings, use an accessible style (native select or a list of real
    links) so required child roles exist; **do not hide the switcher** — that would break the LV
    rollout. Re-run the desktop scan on `/`, `/shop` and the PDP; expect A11y 100 and Agentic 3/3.
-   CSS cannot add ARIA roles, so Custom CSS is not a fix.
+   CSS cannot add ARIA roles, so Custom CSS is not a fix. Confirmed against official W3C ARIA/APG and
+   axe `aria-required-children`: `listbox` requires `option` (or `group` of `option`) children; CSS has no
+   mechanism to create role-bearing DOM children, and `::before`/`::after` are not role-bearing.
+   Squarespace Basic offers Custom CSS (styling only), HTML/Markdown blocks (cannot reach an injected
+   widget), and no site-wide Code Injection — so no allowed Squarespace layer can patch this widget.
+   The fix must be made in Weglot's own dashboard/settings (login gate) or by the vendor.
 
 2. **PDP mobile LCP 15.0 s — owner, image assets + Squarespace.**
    LCP chain: render-blocking suggestions 1,760–1,770 ms (Squarespace Hosting HTML 159 KiB / 5.4 s,
