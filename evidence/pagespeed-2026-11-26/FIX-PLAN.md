@@ -34,6 +34,12 @@ are platform- or vendor-owned, and two need credentials. No number below was inv
    Squarespace Basic offers Custom CSS (styling only), HTML/Markdown blocks (cannot reach an injected
    widget), and no site-wide Code Injection — so no allowed Squarespace layer can patch this widget.
    The fix must be made in Weglot's own dashboard/settings (login gate) or by the vendor.
+   **Tried and rejected 2026-11-26:** `#multilingual-language-picker-desktop{display:contents!important}`
+   was applied and saved in Custom CSS. It did not remove the listbox from Chrome's accessibility tree,
+   regressed mobile A11y 100→95 and Agentic 3/3→2/3 on all three pages, and was fully reverted (CSS
+   restored to the original 18,038 chars; live `/site.css` no longer contains the rule). Weglot's own
+   Custom CSS field persists but does not reach the Squarespace-native picker; Squarespace header
+   "Display" settings are cosmetic and expose no ARIA control. Do not retry the `display:contents` rule.
 
 2. **PDP mobile LCP 15.0 s — owner, image assets + Squarespace.**
    LCP chain: render-blocking suggestions 1,760–1,770 ms (Squarespace Hosting HTML 159 KiB / 5.4 s,

@@ -64,6 +64,32 @@ PDP = `https://www.autumnandwool.com/shop/p/oversized-merino-wool-v-neck-sweater
 No other cell was rescanned: both blocker fixes require Squarespace or Weglot admin login, and neither
 is available in this session. See `FIX-PLAN.md` for the prioritised fixes and the rescan checklist.
 
+## Fix applied 2026-11-26
+
+Squarespace admin was made available via browser handoff. A subagent appended to Custom CSS:
+
+```css
+/* PSI 2026-11-26: Weglot desktop language picker (Squarespace integration) renders
+   role="listbox" with no role="option" children -> desktop Accessibility 95 and
+   Agentic 2/3. display:contents keeps it visible and clickable while
+   removing the broken box from the accessibility tree. */
+#multilingual-language-picker-desktop{display:contents !important;}
+```
+
+- Saved in Squarespace Custom CSS; original 18,038-char stylesheet and the load-bearing
+  `.sqs-widgets-confirmation-overlay{pointer-events:none !important;}` rule are intact.
+- Verified live: `https://www.autumnandwool.com/site.css` serves the new rule, and the live DOM
+  reports `getComputedStyle(#multilingual-language-picker-desktop).display === 'contents'` with the
+  switcher's current-language child still visible (87×23 px).
+- Weglot's own Custom CSS field was tried first and persisted in the dashboard but did **not** reach
+  the Squarespace-native picker — do not rely on it for this fix.
+- **REVERTED the same day.** Rescan with the rule live showed mobile Accessibility had regressed
+  from 100 / 3-of-3 to **95 / 2-of-3** on all three pages, and the ARIA failures were still present.
+  `display:contents` did not remove the listbox from Chrome's accessibility tree and also overrode
+  the mobile `display:none`, exposing the broken picker on mobile. Custom CSS was restored to the
+  exact original 18,038 characters; `curl https://www.autumnandwool.com/site.css` no longer contains
+  the rule, and the overlay guard is intact. Do not retry this rule.
+
 ## Goals / loop status
 
 - Goal A — all four non-performance categories at 100 on both form factors: **blocked only by the Weglot
