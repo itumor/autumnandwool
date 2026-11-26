@@ -1,0 +1,77 @@
+{
+  "version": 2,
+  "skills": {
+    "accessibility": {
+      "source": "addyosmani/web-quality-skills",
+      "commit": "afa8da942115f2961fdbfa80807ea0b232ff6c00",
+      "sourceType": "github",
+      "skillPath": "skills/accessibility/SKILL.md",
+      "computedHash": "c668809f5df57feb87cc06f1bc37fb340d1d92e26bacb6edbeab9258d22e76a5",
+      "installMode": "copy"
+    },
+    "analytics": {
+      "source": "coreyhaines31/marketingskills",
+      "commit": "8fd2fcade2fd6629026e9dfe6d133b55b36968b9",
+      "sourceType": "github",
+      "skillPath": "skills/analytics/SKILL.md",
+      "computedHash": "d427971cc71c44d5c8734195ff69288a75c2022b97a9170ee9312256560a5f72",
+      "installMode": "copy"
+    },
+    "core-web-vitals": {
+      "source": "addyosmani/web-quality-skills",
+      "commit": "afa8da942115f2961fdbfa80807ea0b232ff6c00",
+      "sourceType": "github",
+      "skillPath": "skills/core-web-vitals/SKILL.md",
+      "computedHash": "de50c203aa9dafa8dee9dd8c06782e3fc610704b83c1c408e4c5ee2337c4cd2a",
+      "installMode": "copy"
+    },
+    "retro": {
+      "source": "mattpocock/skills",
+      "commit": "6f7f7831a625f040a8e06a0e7954826b87ce775a",
+      "sourceType": "github",
+      "skillPath": "skills/engineering/retro/SKILL.md",
+      "computedHash": "e260aefb7b75b3548a3ee9883afbf8808e521f2e86feec92399617894f83b7c2",
+      "installMode": "copy"
+    },
+    "seo-aeo-geo": {
+      "source": "rampstackco/claude-skills",
+      "commit": "9d281db6e7a5c4a0084ba89c91633a07f5f7e42b",
+      "sourceType": "github",
+      "skillPath": "skills/seo-aeo-geo/SKILL.md",
+      "computedHash": "2f204e1c0c316905ba2b572b93fdf414dc105cf066e2f75934dd1b6705cd60b3",
+      "installMode": "copy"
+    },
+    "seo-geo": {
+      "source": "ReScienceLab/opc-skills",
+      "commit": "e5b4d6f0f60164abe1830c25acc16389b6b6cda4",
+      "sourceType": "github",
+      "skillPath": "skills/seo-geo/SKILL.md",
+      "computedHash": "3a38d9449cb57e24e14de88045865c237e974b2ccb3ef8127fa84582f5a702c8",
+      "installMode": "copy"
+    },
+    "translation": {
+      "source": "kostja94/marketing-skills",
+      "commit": "ac823a127782355339f21aef6c87f1ccff751c84",
+      "sourceType": "github",
+      "skillPath": "skills/content/translation/SKILL.md",
+      "computedHash": "2b506cf21fa542bda4ab0fd851adcae2949cc6a24e77f6b85784565af299e9c7",
+      "installMode": "copy"
+    },
+    "writing-for-agents": {
+      "source": "mattpocock/skills",
+      "commit": "6f7f7831a625f040a8e06a0e7954826b87ce775a",
+      "sourceType": "github",
+      "skillPath": "skills/productivity/writing-for-agents/SKILL.md",
+      "computedHash": "e79a2476b2417b228922453478d9505a6b9af19f3a412e560728ce62ed3555ca",
+      "installMode": "copy"
+    },
+    "xlsx": {
+      "source": "anthropics/skills",
+      "commit": "e4bb5d960d87126ff3b3a8af1a104b7db67560ba",
+      "sourceType": "github",
+      "skillPath": "skills/xlsx/SKILL.md",
+      "computedHash": "5100b54957a73ce2cb55933b224a483793f5f71555a181f287f43f94a9c1e149",
+      "installMode": "copy"
+    }
+  }
+}

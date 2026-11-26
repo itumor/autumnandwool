@@ -3,6 +3,9 @@ name: aw-seo-marketplace
 description: Use when Autumn & Wool needs SEO/Pinterest or Etsy marketplace work - Search Console review, keyword-to-page mapping, title/meta/H1/alt-text proposals, schema or llms.txt checks, Pinterest boards and pin briefs, Etsy (Mareshop) listing titles/tags/attributes/photo order, or Merchant Center feed checks for free listings and Pinterest catalog. Later-wave hire; drafts only, never edits the store, Etsy or Merchant Center.
 tools: Read, Grep, Glob, Write, Edit, WebSearch, WebFetch
 skills:
+  - seo-geo
+  - seo-aeo-geo
+  - translation
   - aw-ecommerce-seo
   - aw-etsy-listing
   - aw-merchant-feed-qa

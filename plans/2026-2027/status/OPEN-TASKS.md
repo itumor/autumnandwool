@@ -113,8 +113,8 @@ Assumed = done on proposed values, owner must confirm. Blocked = waiting on owne
 
 | ID | Task | Due | Notes |
 |---|---|---|---|
-| CX-26 | First weekly CX summary `cx-weekly-2026-W44.md` | 26 Oct | Prepared: cx-weekly-2026-W44.md; finish on 26 Oct (week 19-25 Oct closes; ISO W43 naming flagged) |
-| CX-27 | FAQ/PDP proposals from the first 2 weeks of real questions | 4-14 Nov | Prepared: prep-later-tasks.md s CX-27; finish on 14 Nov (needs inbound, CX-02) |
+| CX-26 | First weekly CX summary `cx-weekly-2026-W44.md` | 26 Oct | Prepared: cx-weekly-2026-W44.md; finish on 26 Oct (week 19-25 Oct closes; ISO W43 naming flagged) — 2026-11-26: closeout note in business-os/customer-experience/closeout-2026-11-26-CX-26.md — HELD on repo evidence (owner inbound export + confirmed week data). |
+| CX-27 | FAQ/PDP proposals from the first 2 weeks of real questions | 4-14 Nov | Prepared: prep-later-tasks.md s CX-27; finish on 14 Nov (needs inbound, CX-02) — 2026-11-26: closeout note in business-os/customer-experience/closeout-2026-11-26-CX-27.md — HELD on repo evidence (no real questions). |
 | CX-28 | No new automations after 10 Dec (freeze check) | 10 Dec | Prepared: prep-later-tasks.md s CX-28 (6-row checklist); finish on 10 Dec |
 | CX-29 | `crm-monthly-2026-12.md`: first email and retention report + Q1 campaign drafts | 31 Dec | Prepared: prep-later-tasks.md s CX-29 (skeleton + January care letter draft); finish on 31 Dec |
 | CX-30 | Q1 2027: baselines (reply time, SIZE_* return share, first repeat rate), January returns surge, first review wave, care campaign, MailerLite tier decision | 31 Mar 2027 | Prepared: prep-later-tasks.md s CX-30; finish on 31 Mar 2027 |
@@ -187,8 +187,8 @@ Assumed = done on proposed values, owner must confirm. Blocked = waiting on owne
 
 | ID | Task | Due | Notes |
 |---|---|---|---|
-| SEO-11 | Weekly notes every Monday (GSC movers, map update, 5–10 pin briefs, 3 proposals) | from 2026-10-26 | Prepared: business-os/seo-marketplace/2026-10-26-weekly-draft.md; finish on 2026-10-26 (numbers from owner inputs rows 1, 6, 7) |
-| SEO-18 | Pinterest: 10 pin briefs per week | weekly from 2026-11-02 | Prepared: business-os/seo-marketplace/2026-10-21-pin-batch-w45-draft.md (GM's 5 + alternates, Growth UTM pattern, new turtleneck board); finish on 2026-11-02 after the G2 list, the 31 Oct shoot and owner inputs rows 13–15. W3-7/W3-8 applied: W6 set pin uses the gift-note line, fibre % removed (CLAIM-CHECK) |
+| SEO-11 | Weekly notes every Monday (GSC movers, map update, 5–10 pin briefs, 3 proposals) | from 2026-10-26 | Prepared: business-os/seo-marketplace/2026-10-26-weekly-draft.md; finish on 2026-10-26 (numbers from owner inputs rows 1, 6, 7) — 2026-11-26: closeout note in business-os/seo-marketplace/closeout-2026-11-26-SEO-11.md — HELD on repo evidence. |
+| SEO-18 | Pinterest: 10 pin briefs per week | weekly from 2026-11-02 | Prepared: business-os/seo-marketplace/2026-10-21-pin-batch-w45-draft.md (GM's 5 + alternates, Growth UTM pattern, new turtleneck board); finish on 2026-11-02 after the G2 list, the 31 Oct shoot and owner inputs rows 13–15. W3-7/W3-8 applied: W6 set pin uses the gift-note line, fibre % removed (CLAIM-CHECK) — 2026-11-26: closeout note in business-os/seo-marketplace/closeout-2026-11-26-SEO-18.md — HELD on repo evidence. |
 | SEO-27 | Re-baseline Q4 KPIs after 4 weeks of data | 2026-11-23 | Prepared: business-os/seo-marketplace/2026-10-21-review-templates.md §A; finish on 2026-11-23 (needs 4 weekly GSC exports) |
 | SEO-28 | Monthly SEO review, November (indexation, on-page, schema, llms.txt, feed QA) | 2026-11-30 | Prepared: business-os/seo-marketplace/2026-10-21-review-templates.md §B; finish on 2026-11-30 |
 | SEO-29 | Monthly SEO review, December | 2026-12-31 | Prepared: business-os/seo-marketplace/2026-10-21-review-templates.md §B; finish on 2026-12-31 |
@@ -227,8 +227,8 @@ Assumed = done on proposed values, owner must confirm. Blocked = waiting on owne
 |---|---|---|---|
 | CRE-19 | Colour carousels, "every colour of the beanie", Pinterest 6-8 pins/week from real flat lays | 2-15 Nov | Needs the real flat lays (CRE-12/13, physical). Pinterest no longer held (A-GM-12): W44-W45 pins from GREEN PDP images are in content-calendar-W44-W45-assumed.md. Carousels C-1/C-2 in w45-batch-prep-2026-10-21.md Part 4 finish as flat lays arrive |
 | CRE-21 | December gift peak: parcel-packing, care card, "how to choose a size" fit videos | 27 Nov | Prepared: december-gift-peak-prep-2026-10-21.md Part A; finish on 27 Nov (Ops care card wording, CRO turtleneck size fix). Consent no longer needed in Q4 (A-CRE-02); no gift card (A-CRE-07) |
-| CRE-24 | Re-baseline content KPI targets after 4 weeks of data (C9); owner approves targets | 23 Nov | Prepared: content-measurement-prep-2026-10-21.md Part 2; finish on 23 Nov (needs 4 weeks of GA4 UTM sessions) |
-| CRE-25 | Monthly content reviews Oct / Nov / Dec (`content-review-2026-MM`) | 2 Nov / 1 Dec / 4 Jan | Prepared: content-measurement-prep-2026-10-21.md Part 1; finish on 2 Nov / 1 Dec / 4 Jan |
+| CRE-24 | Re-baseline content KPI targets after 4 weeks of data (C9); owner approves targets | 23 Nov | Prepared: content-measurement-prep-2026-10-21.md Part 2; finish on 23 Nov (needs 4 weeks of GA4 UTM sessions) — 2026-11-26: closeout note in campaign-assets/drafts/closeout-2026-11-26-CRE-24.md — HELD on repo evidence. |
+| CRE-25 | Monthly content reviews Oct / Nov / Dec (`content-review-2026-MM`) | 2 Nov / 1 Dec / 4 Jan | Prepared: content-measurement-prep-2026-10-21.md Part 1; finish on 2 Nov / 1 Dec / 4 Jan — 2026-11-26: closeout note in campaign-assets/drafts/closeout-2026-11-26-CRE-25.md — HELD on repo evidence. |
 | CRE-26 | Reset weeks 21 Dec-3 Jan: care and mend, year in review with Kristine, 2027 colour teaser, Q1 shoot plan | 21 Dec | Prepared: reset-weeks-and-2027-content-drafts.md Part 1; finish on 21 Dec (Production colours, Kristine's words) |
 | CRE-27 | Q1 2027: full standard shot set for every visible SKU, big on-body shoot, Facts video set, care/mend + Valentine's + Women's Day edits | 31 Mar 2027 | Prepared: reset-weeks-and-2027-content-drafts.md Part 2; finish on 15 Jan 2027 (decision 36, question 13; consent outline in filming-slot file) |
 | CRE-28 | Q2 2027: lighter-layer content, UGC with written consent, first creator collab with Partnerships, Mother's Day, Midsummer | 30 Jun 2027 | Prepared: reset-weeks-and-2027-content-drafts.md Part 3; finish on 1 Apr 2027 |
@@ -260,8 +260,8 @@ Assumed = done on proposed values, owner must confirm. Blocked = waiting on owne
 
 | ID | Task | Due | Notes |
 |---|---|---|---|
-| FIN-11 | Baseline `kpi-weekly.csv` money columns, week 2026-10-19 (ruling C16), in WBR of 2026-10-26 | 2026-10-26 | Prepared: kpi-baseline-2026-10-19.md; finish on 2026-10-26 (owner exports, form row 20; owner appends) |
-| FIN-23 | October monthly finance review | 2026-11-06 | Prepared: monthly-finance-2026-10.md; finish on 2026-11-06 (October exports, form row 19) |
+| FIN-11 | Baseline `kpi-weekly.csv` money columns, week 2026-10-19 (ruling C16), in WBR of 2026-10-26 | 2026-10-26 | Prepared: kpi-baseline-2026-10-19.md; finish on 2026-10-26 (owner exports, form row 20; owner appends) — 2026-11-26: closeout note in business-os/finance/closeout-2026-11-26-FIN-11.md — HELD on repo evidence. |
+| FIN-23 | October monthly finance review | 2026-11-06 | Prepared: monthly-finance-2026-10.md; finish on 2026-11-06 (October exports, form row 19) — 2026-11-26: closeout note in business-os/finance/closeout-2026-11-26-FIN-23.md — HELD on repo evidence. |
 | FIN-24 | November accountant pack + monthly review | 2026-12-04 | Prepared: accountant-pack-2026-11.md; finish on 2026-12-04 |
 | FIN-25 | December / year-end 2026 pack + inventory count | 2027-01-08 | Prepared: year-end-pack-2026.md incl. inventory count sheet; finish on 2027-01-08 (count method: accountant Q12, form row 17) |
 | FIN-26 | Q1 2027: year-end pack by 2027-01-15, season post-mortem by SKU/channel, all 82 SKUs costed or retired, VAT/OSS review, 2027 budget envelope by 2027-01-31 | 2027-03-31 | Prepared: plan-2027-quarters-draft.md; finish on 2027-03-31 |
@@ -322,9 +322,9 @@ Assumed = done on proposed values, owner must confirm. Blocked = waiting on owne
 
 | ID | Task | Due | Notes |
 |---|---|---|---|
-| GRO-17 | Weekly Monday readouts, results-log rows and proposed KPI rows, 2 Nov to 28 Dec | weekly from 2 Nov | Prepared: weekly-readout-template.md, exports asked in owner-inputs-wave2 rows 1-3; finish weekly from 2 Nov |
+| GRO-17 | Weekly Monday readouts, results-log rows and proposed KPI rows, 2 Nov to 28 Dec | weekly from 2 Nov | Prepared: weekly-readout-template.md, exports asked in owner-inputs-wave2 rows 1-3; finish weekly from 2 Nov — 2026-11-26: closeout note in business-os/growth/closeout-2026-11-26-GRO-17.md — HELD on repo evidence. |
 | GRO-19 | December test run (only if approved): no edits 3-5 days, weekly readouts, stop at kill lines | Dec | Prepared: dec-test-go-no-go-2026-11-20.md part 2 (run sheet); finish in Dec only if GO. Default is no test (C10) |
-| GRO-20 | Monthly competitor refresh (prices first) and `_angles.md` update, Nov and Dec | 21 Nov, 21 Dec | Prepared: _refresh-sheet-2026-11.md (price re-check table, Krista Elsta, Arela retry, ad pass); finish on 21 Nov and 21 Dec. Owner browser: owner-inputs-wave2 row 12 |
+| GRO-20 | Monthly competitor refresh (prices first) and `_angles.md` update, Nov and Dec | 21 Nov, 21 Dec | Prepared: _refresh-sheet-2026-11.md (price re-check table, Krista Elsta, Arela retry, ad pass); finish on 21 Nov and 21 Dec. Owner browser: owner-inputs-wave2 row 12 — 2026-11-26: closeout note in business-os/growth/closeout-2026-11-26-GRO-20.md — HELD on repo evidence. |
 | GRO-21 | Monthly creative performance report (organic UTM posts if no paid), Nov and Dec | 30 Nov, 31 Dec | Prepared: creative-performance-report-template.md; Creative's wave-1 links registered (GRO-29); finish on 30 Nov and 31 Dec |
 | GRO-22 | January 2027 budget proposal from December evidence | 15 Dec | Prepared: budget-proposal-2027-01.md (evidence table + options A/B/C, TODO cells); finish on 15 Dec |
 | GRO-23 | Q4 2026 review: sessions and orders by source, paid cost, per-SKU BE_CAC table | 31 Dec | Prepared: q4-2026-review.md (skeleton); finish on 31 Dec |
