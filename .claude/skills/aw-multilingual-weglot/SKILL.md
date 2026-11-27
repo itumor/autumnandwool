@@ -14,7 +14,10 @@ Live facts verified 2026-11-27 (PR #144). Evidence in `evidence/multilingual-202
 - Footer Code block (global, right cell): `<p class="aw-lang-links"><a href="https://www.autumnandwool.com/" lang="en" hreflang="en">English</a> | <a href="https://lv.autumnandwool.com/" lang="lv" hreflang="lv">Latviešu</a></p>`. Plain links, no script. They go to each home page (footer is global, path is lost).
 - Weglot Free = 2,000 words. Exclusion rule **Starts with `/shop`** (redirect to original URL, translations deleted) keeps usage under the limit. So `/shop` and all products stay English; home, contact, hats page, shipping-returns are Latvian.
 
+- Header: Main Navigation has two external Link items `EN` (https://www.autumnandwool.com/) and `LV` (https://lv.autumnandwool.com/), first in the nav row (added 2026-11-27). Squarespace can't place a true `EN | LV` pair top right (no code; one header Button max; announcement bar is plan-gated).
+
 ## Gotchas
+- Pages-panel drag-reorder does not work via automation (drag only selects text). To change nav order, edit each item's title/URL via its gear icon instead. New Link items always land at the top of the group.
 - Over the word limit Weglot stops serving new translations (title/H1 stay English, API 403). Words are translated lazily on request; after freeing words, a page fills in on its next visit.
 - `#Weglot-lv` hooks work only on click (Weglot rewrites them to `#`); hash navigation does nothing. Prefer real URLs now.
 - Weglot translates the English link label to "Angļu" in LV view if the link is not marked notranslate.
