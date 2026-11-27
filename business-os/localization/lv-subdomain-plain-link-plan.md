@@ -5,7 +5,7 @@ header switcher `div#multilingual-language-picker-desktop[role=listbox]` with no
 Squarespace-owned; Custom CSS cannot change roles and Code Injection is plan-gated (`PROJECT-HANDBOOK.md`).
 Fix = drop the generated switcher, link to a real language URL with an ordinary `<a>`.
 
-Status: **PLAN ONLY. Nothing changed live.** Steps marked OWNER need the owner's login, DNS or money.
+Status: **Steps 2-4 done live 2026-11-27** (lv CNAME added, `https://lv.autumnandwool.com/` serves `lang=lv`, hreflang en+lv present on LV page, EN page has none). Footer still uses `#Weglot-*` hooks; LV title still English (free-plan word limit). Steps marked OWNER need the owner's login, DNS or money.
 
 ## Steps
 
@@ -13,7 +13,7 @@ Status: **PLAN ONLY. Nothing changed live.** Steps marked OWNER need the owner's
 |---|---|---|---|
 | 1 | Decide Weglot plan (G1). Free = 2,000 words, already 396 after the home page only. Over limit = translations stop displaying. | OWNER | No card entered by the agent. |
 | 2 | Site Languages → Multilingual SEO → **Setup Subdomains**. Weglot shows a project-specific CNAME target. | OWNER | Earlier attempt (2026-11-25) landed on a generic "Setup finished" page — retry, record what Weglot shows. |
-| 3 | Add DNS record: type CNAME, host `lv`, value = Weglot target. **Checked 2026-11-27: the domain is "Third-party" in Squarespace Domains and its nameservers are NS1 (`dns1-4.p01.nsone.net`), so add it in the NS1 account, not in Squarespace.** `www` already CNAMEs to `ext-sq.squarespace.com`; `lv` has no record yet. | OWNER | Needs whoever holds the NS1 login. Propagation up to 72 h. |
+| 3 | DONE 2026-11-27. Added in **Squarespace DNS Settings** (registrar GoDaddy, DNS = Squarespace): CNAME, host `lv`, value `2e2862a6.translate-cf.weglot.io`, TTL 4 hrs. Public resolvers return it; HTTPS cert live within ~2 min. | OWNER (done) | Weglot "Check DNS" = ready, wizard reached Setup finished. |
 | 4 | Back in Weglot, verify DNS. Open `https://lv.autumnandwool.com/` in incognito; confirm Latvian renders and prices/checkout still work. | agent (ego-browser) | Record hreflang on EN and LV pages (runbook section J.5). |
 | 5 | Add plain link in footer code block: `<a href="https://lv.autumnandwool.com/" hreflang="lv" lang="lv">Latviešu</a>` (and a matching "English" link on the LV side if Weglot exposes one). | agent, after step 4 passes | HTML link only, no script (inline script is a hard gate). |
 | 6 | Language Switch = **off** (Style your language drop-down). Re-run PageSpeed; the `listbox` failure should be gone. | agent / OWNER | Do this LAST so there is no window with no switcher at all. |
