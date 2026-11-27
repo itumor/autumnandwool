@@ -140,3 +140,6 @@ Query clusters visible in GSC: "oversized merino wool sweater" pos 27, "timeless
 
 **Next concrete action**: once the owner uploads variant photos, run one binding + feed re-upload pass;
 the assistant has the CM6/admin script recipe + product selectors ready to deploy.
+
+## Latvian site (added 2026-11-27)
+`lv.autumnandwool.com` is live via Weglot Free. Header Language Switch stays OFF (its `role=listbox` fails PageSpeed Agentic Browsing); footer Code block has plain EN/LV links. `/shop*` is excluded from Weglot to stay under 2,000 words, so shop and products are English only. DNS lives in Squarespace DNS Settings. Full runbook: `.claude/skills/aw-multilingual-weglot/SKILL.md`; evidence: `evidence/multilingual-2026-11-27/`.
